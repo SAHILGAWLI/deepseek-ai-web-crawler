@@ -1,0 +1,21 @@
+                # Check if button has text like "more", "show", "details", etc.
+                button_text = await button.text_content()
+                # Check if button is visible before trying to click
+                is_visible = await button.is_visible()
+                
+                if button_text and is_visible:
+                    button_text = button_text.lower()
+                    if any(keyword in button_text for keyword in ['more', 'show', 'detail', 'expand', 'read']):
+                        print(f"Clicking button with text: {button_text}")
+                        try:
+                            # Use a much shorter timeout (5 seconds instead of 30)
+                            await button.click(timeout=5000)
+                            await asyncio.sleep(1)  # Wait for content to appear
+                        except PlaywrightError:
+                            print(f"  - Button click timed out, skipping")
+                            continue
+            except Exception as e:
+                print(f"Error with button {i}: {str(e)[:100]}")
+                continue
+        
+        # Look for tabs that might contain additional information

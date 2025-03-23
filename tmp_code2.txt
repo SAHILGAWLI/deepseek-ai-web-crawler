@@ -1,0 +1,16 @@
+        
+        # Only try to click visible tabs
+        for i, tab in enumerate(visible_tabs[:5]):  # Limit to first 5 tabs to save time
+            try:
+                print(f"Clicking visible tab {i}")
+                try:
+                    # Use a much shorter timeout (5 seconds instead of 30)
+                    await tab.click(timeout=5000)
+                    await asyncio.sleep(1)  # Wait for content to appear
+                except PlaywrightError:
+                    print(f"  - Tab click timed out, skipping")
+                    continue
+            except Exception as e:
+                print(f"Error with tab {i}: {str(e)[:100]}")
+                continue
+                

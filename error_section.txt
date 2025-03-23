@@ -1,0 +1,59 @@
+                    
+                    for text in schedule_info['schedule_text']:
+                        # Look for date ranges
+                        for pattern in date_patterns:
+                            match = re.search(pattern, text)
+                            if match:
+                                start_date = match.group(1)
+                                end_date = match.group(2)
+                                if not details['start_date'] or not details['end_date']:
+                                    details['start_date'] = start_date
+                                    details['end_date'] = end_date
+--
+                                break
+                        
+                        # Look for specific events
+                        for pattern in event_patterns:
+                            match = re.search(pattern, text, re.IGNORECASE)
+                            if match:
+                                event = match.group(1).strip()
+                                date = match.group(2).strip()
+                                timeline_info.append(f"{event}: {date}")
+                    
+                    # Filter out duplicates and format the timeline summary
+--
+                ]
+                
+                for text in all_text:
+                    for pattern in date_patterns:
+                        match = re.search(pattern, text)
+                        if match:
+                            details['start_date'] = match.group(1)
+                            details['end_date'] = match.group(2)
+                            print(f"Found dates in deeper extraction: {details['start_date']} to {details['end_date']}")
+                            break
+                    if details['start_date'] and details['end_date']:
+--
+            # Try to find prize pool
+            if not details['prize_pool']:
+                prize_pattern = r'(\$[\d,.]+|₹[\d,.]+|[\d,.]+\s*USD|[\d,.]+\s*INR)'
+                for text in all_text:
+                    match = re.search(prize_pattern, text)
+                    if match:
+                        details['prize_pool'] = match.group(1)
+                        print(f"Found prize pool in deeper extraction: {details['prize_pool']}")
+                        break
+            
+            # Try to find organizer
+--
+                ]
+                
+                for text in all_text:
+                    for pattern in organizer_patterns:
+                        match = re.search(pattern, text, re.IGNORECASE)
+                        if match:
+                            details['organizer'] = match.group(1).strip()
+                            print(f"Found organizer in deeper extraction: {details['organizer']}")
+                            break
+                    if details['organizer']:
+                        break
