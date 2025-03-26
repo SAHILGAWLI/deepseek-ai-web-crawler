@@ -12,7 +12,7 @@ from supabase import create_client, Client
 load_dotenv()
 
 # CSV file to import - you can change this to the file you want to import
-CSV_FILE = "hackathons_20250323_032151.csv"
+CSV_FILE = "hackathons_20250325_004455.csv"
 
 # Configure Supabase connection
 SUPABASE_URL = os.getenv("SUPABASE_URL")

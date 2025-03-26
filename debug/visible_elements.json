@@ -1,0 +1,538 @@
+[
+  {
+    "href": "https://devpost.com/",
+    "text": "",
+    "x": 32.5,
+    "y": -4979,
+    "width": 209,
+    "height": 20
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=3&status[]=open#",
+    "text": "Join a hackathon",
+    "x": 242.5,
+    "y": -5000,
+    "width": 207.078125,
+    "height": 62
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=3&status[]=open#",
+    "text": "Host a hackathon",
+    "x": 450.578125,
+    "y": -5000,
+    "width": 210.203125,
+    "height": 62
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=3&status[]=open#",
+    "text": "Resources",
+    "x": 661.78125,
+    "y": -5000,
+    "width": 158.171875,
+    "height": 62
+  },
+  {
+    "href": "https://secure.devpost.com/users/login?ref=top-nav-login",
+    "text": "Log in",
+    "x": 1043.21875,
+    "y": -5000,
+    "width": 86.125,
+    "height": 62
+  },
+  {
+    "href": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button",
+    "text": "Sign up",
+    "x": 1129.34375,
+    "y": -5000,
+    "width": 103.15625,
+    "height": 62
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=3&status[]=open#",
+    "text": "Clear filters 1",
+    "x": 47.5,
+    "y": -4661.203125,
+    "width": 110.5625,
+    "height": 20
+  },
+  {
+    "href": "https://devpost.com/users/register",
+    "text": "Match my eligibility",
+    "x": 47.5,
+    "y": -4609.203125,
+    "width": 174.390625,
+    "height": 20
+  },
+  {
+    "href": "https://help.devpost.com/article/42-what-does-e2809cmanaged-by-devposte2809d-mean",
+    "text": "",
+    "x": 238.828125,
+    "y": -4549.703125,
+    "width": 16,
+    "height": 16
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=3&status[]=open#",
+    "text": "Show more (23)",
+    "x": 47.5,
+    "y": -3882.203125,
+    "width": 112.0625,
+    "height": 20
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=3&status[]=open#",
+    "text": "Select host",
+    "x": 48.5,
+    "y": -3803.203125,
+    "width": 201,
+    "height": 40
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=3&status[]=open#",
+    "text": "",
+    "x": 249.5,
+    "y": -3803.203125,
+    "width": 35,
+    "height": 40
+  },
+  {
+    "href": "https://agentforcehackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Featured",
+    "x": 319.5,
+    "y": -4604.328125,
+    "width": 28,
+    "height": 256.5
+  },
+  {
+    "href": "https://agentforcehackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Agentforce Virtual Hackathonabout 1 month leftOnli",
+    "x": 347.5,
+    "y": -4603.328125,
+    "width": 869,
+    "height": 254.5
+  },
+  {
+    "href": "https://help.devpost.com/article/42-what-does-e2809cmanaged-by-devposte2809d-mean",
+    "text": "",
+    "x": 1158.34375,
+    "y": -4498.953125,
+    "width": 14,
+    "height": 14
+  },
+  {
+    "href": "https://azureaidev.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Featured",
+    "x": 319.5,
+    "y": -4323.828125,
+    "width": 28,
+    "height": 256.5
+  },
+  {
+    "href": "https://azureaidev.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Azure AI Developer Hackathon5 days leftOnline$10,0",
+    "x": 347.5,
+    "y": -4322.828125,
+    "width": 869,
+    "height": 254.5
+  },
+  {
+    "href": "https://help.devpost.com/article/42-what-does-e2809cmanaged-by-devposte2809d-mean",
+    "text": "",
+    "x": 1158.34375,
+    "y": -4218.453125,
+    "width": 14,
+    "height": 14
+  },
+  {
+    "href": "https://fetch-ai-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Featured",
+    "x": 319.5,
+    "y": -4043.328125,
+    "width": 28,
+    "height": 193.125
+  },
+  {
+    "href": "https://fetch-ai-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Global AI Agents League16 days leftOnline$10,000 i",
+    "x": 347.5,
+    "y": -4042.328125,
+    "width": 869,
+    "height": 191.125
+  },
+  {
+    "href": "https://hackreddit.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hack Reddit 20254 days leftOnline$36,000 in prizes",
+    "x": 347.5,
+    "y": -3825.203125,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://mhcp-mobile-genre-competition.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Featured",
+    "x": 319.5,
+    "y": -3575.703125,
+    "width": 28,
+    "height": 223.125
+  },
+  {
+    "href": "https://mhcp-mobile-genre-competition.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Meta Horizon Creator Competition: Mobile Genre Sho",
+    "x": 347.5,
+    "y": -3574.703125,
+    "width": 869,
+    "height": 221.125
+  },
+  {
+    "href": "https://help.devpost.com/article/42-what-does-e2809cmanaged-by-devposte2809d-mean",
+    "text": "",
+    "x": 1158.34375,
+    "y": -3470.328125,
+    "width": 14,
+    "height": 14
+  },
+  {
+    "href": "https://digital-jam.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Digital Jam5 days leftOnline$15,000 in prizes 1103",
+    "x": 347.5,
+    "y": -3327.578125,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://gnec-hackathon-2025-spring.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "GNEC Hackathon 2025 Spring - Compete For UN-Affili",
+    "x": 347.5,
+    "y": -3077.078125,
+    "width": 869,
+    "height": 219.25
+  },
+  {
+    "href": "https://ingeniumstem-winter-hacks-1-0.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "IngeniumSTEM Winter Hacks 1.06 days leftOnline$0 i",
+    "x": 347.5,
+    "y": -2831.828125,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://ctc-cui-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Featured",
+    "x": 319.5,
+    "y": -2582.328125,
+    "width": 28,
+    "height": 226.5
+  },
+  {
+    "href": "https://ctc-cui-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "2025 Crack the Code Hackathon @ Concordia Universi",
+    "x": 347.5,
+    "y": -2581.328125,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://acdblr-blogathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "AWS Community Day Bengaluru - Blogathon23 days lef",
+    "x": 347.5,
+    "y": -2330.828125,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://hackonomics25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hackonomics 20253 months leftOnline$0 in prizes 23",
+    "x": 347.5,
+    "y": -2080.328125,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://spacehack2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "SpaceHack 2025: Space Data Challengeabout 1 month ",
+    "x": 347.5,
+    "y": -1829.828125,
+    "width": 869,
+    "height": 249.5
+  },
+  {
+    "href": "https://hackatopia.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hackatopia13 days leftOnline$0 in prizes 183 parti",
+    "x": 347.5,
+    "y": -1554.328125,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://hackathon01.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hack_for_Carrier7 days leftOnline\u20b9 1,000 in prizes",
+    "x": 347.5,
+    "y": -1303.828125,
+    "width": 869,
+    "height": 165
+  },
+  {
+    "href": "https://zibs-startup-program.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Startup Program - Invitation only, participants fr",
+    "x": 347.5,
+    "y": -1112.828125,
+    "width": 869,
+    "height": 290.5
+  },
+  {
+    "href": "https://gated.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "The Gated NFTs University Regional Hackathonabout ",
+    "x": 347.5,
+    "y": -796.328125,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://lg-hacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "LG Hacksabout 3 hours leftLeigh High School$1,200 ",
+    "x": 347.5,
+    "y": -545.828125,
+    "width": 869,
+    "height": 191.125
+  },
+  {
+    "href": "https://codepi-ic-2025-1.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "CodePi 2025.12 months leftOnline$0 in prizes 118 p",
+    "x": 347.5,
+    "y": -328.703125,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://saai3.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "SAAI (Kids) - Hackathon on Art and AI20 days leftO",
+    "x": 347.5,
+    "y": -78.203125,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://portxfolio25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "PortXFolioabout 1 month leftOnline$100 in prizes 9",
+    "x": 347.5,
+    "y": 172.296875,
+    "width": 869,
+    "height": 191.125
+  },
+  {
+    "href": "https://pike-labs-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Pike Labs App Challenge2 months leftOnline$10,000 ",
+    "x": 347.5,
+    "y": 389.421875,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://ese4510s25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "2024-25 Fall ESE Senior Design [Spring]about 2 mon",
+    "x": 347.5,
+    "y": 639.921875,
+    "width": 869,
+    "height": 159.25
+  },
+  {
+    "href": "https://tinogwc-gummyhacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "TinoGWC GummyHacks8 days leftOnline$195 in prizes ",
+    "x": 347.5,
+    "y": 825.171875,
+    "width": 869,
+    "height": 265.5
+  },
+  {
+    "href": "https://world-green-growth-forum-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "WGGF2025_Green Growth Idea Hackathon7 days leftLah",
+    "x": 347.5,
+    "y": 1116.671875,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://blus-hacks-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Blu's Hacks 2025about 5 hours leftBranham High Sch",
+    "x": 347.5,
+    "y": 1367.171875,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://health-hack-x-illuminati.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HEALTH HACK X  - ILLUMINATI18 days leftOnline\u20b9 0 i",
+    "x": 347.5,
+    "y": 1617.671875,
+    "width": 869,
+    "height": 224.5
+  },
+  {
+    "href": "https://phystech2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "PhysTech 2025: Physical Activity and Technology Ha",
+    "x": 347.5,
+    "y": 1868.171875,
+    "width": 869,
+    "height": 191.125
+  },
+  {
+    "href": "https://info.devpost.com/about",
+    "text": "About",
+    "x": 115,
+    "y": 2226.296875,
+    "width": 44.03125,
+    "height": 20
+  },
+  {
+    "href": "https://info.devpost.com/careers",
+    "text": "Careers",
+    "x": 115,
+    "y": 2263.890625,
+    "width": 55.703125,
+    "height": 20
+  },
+  {
+    "href": "https://info.devpost.com/contact",
+    "text": "Contact",
+    "x": 115,
+    "y": 2301.484375,
+    "width": 57.3125,
+    "height": 20
+  },
+  {
+    "href": "https://help.devpost.com/",
+    "text": "Help",
+    "x": 115,
+    "y": 2339.078125,
+    "width": 33.53125,
+    "height": 20
+  },
+  {
+    "href": "https://devpost.com/hackathons",
+    "text": "Browse hackathons",
+    "x": 415,
+    "y": 2226.296875,
+    "width": 137.609375,
+    "height": 20
+  },
+  {
+    "href": "https://devpost.com/software",
+    "text": "Explore projects",
+    "x": 415,
+    "y": 2263.890625,
+    "width": 115.109375,
+    "height": 20
+  },
+  {
+    "href": "https://info.devpost.com/",
+    "text": "Host a hackathon",
+    "x": 415,
+    "y": 2301.484375,
+    "width": 123.484375,
+    "height": 20
+  },
+  {
+    "href": "https://info.devpost.com/guides",
+    "text": "Hackathon guides",
+    "x": 415,
+    "y": 2339.078125,
+    "width": 127.59375,
+    "height": 20
+  },
+  {
+    "href": "https://devpost.com/portfolio/redirect?page=projects",
+    "text": "Your projects",
+    "x": 715,
+    "y": 2226.296875,
+    "width": 93.078125,
+    "height": 20
+  },
+  {
+    "href": "https://devpost.com/portfolio/redirect?page=hackathons",
+    "text": "Your hackathons",
+    "x": 715,
+    "y": 2263.890625,
+    "width": 116.453125,
+    "height": 20
+  },
+  {
+    "href": "https://devpost.com/settings",
+    "text": "Settings",
+    "x": 715,
+    "y": 2301.484375,
+    "width": 57.734375,
+    "height": 20
+  },
+  {
+    "href": "https://twitter.com/devpost",
+    "text": "Twitter",
+    "x": 1015,
+    "y": 2226.296875,
+    "width": 83.703125,
+    "height": 20
+  },
+  {
+    "href": "https://discord.com/invite/HP4BhW3hnp",
+    "text": "Discord",
+    "x": 1015,
+    "y": 2263.890625,
+    "width": 88.890625,
+    "height": 20
+  },
+  {
+    "href": "https://www.facebook.com/devposthacks",
+    "text": "Facebook",
+    "x": 1015,
+    "y": 2301.484375,
+    "width": 103.890625,
+    "height": 20
+  },
+  {
+    "href": "https://www.linkedin.com/company/devpost/",
+    "text": "LinkedIn",
+    "x": 1015,
+    "y": 2339.078125,
+    "width": 94.40625,
+    "height": 20
+  },
+  {
+    "href": "https://info.devpost.com/legal/community-guidelines",
+    "text": "Community guidelines",
+    "x": 400.75,
+    "y": 2436.671875,
+    "width": 158.90625,
+    "height": 20
+  },
+  {
+    "href": "https://info.devpost.com/legal/security",
+    "text": "Security",
+    "x": 631.65625,
+    "y": 2436.671875,
+    "width": 58.59375,
+    "height": 20
+  },
+  {
+    "href": "https://info.devpost.com/legal/california-consumer-privacy-act",
+    "text": "CA notice",
+    "x": 762.25,
+    "y": 2436.671875,
+    "width": 70.828125,
+    "height": 20
+  },
+  {
+    "href": "https://info.devpost.com/legal/privacy-policy",
+    "text": "Privacy policy",
+    "x": 905.078125,
+    "y": 2436.671875,
+    "width": 97.984375,
+    "height": 20
+  },
+  {
+    "href": "https://info.devpost.com/legal/terms-of-service",
+    "text": "Terms of service",
+    "x": 1075.0625,
+    "y": 2436.671875,
+    "width": 115.71875,
+    "height": 20
+  }
+]

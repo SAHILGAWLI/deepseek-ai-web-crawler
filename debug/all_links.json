@@ -1,0 +1,3666 @@
+[
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "",
+    "classes": "toggle-topbar has-dropdown text-center not-click",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/",
+    "text": "",
+    "classes": "",
+    "containsImage": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "",
+    "classes": "align-items-center close-icon",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://secure.devpost.com/users/login?ref=top-nav-login",
+    "text": "Log in",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button",
+    "text": "Sign up",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "",
+    "text": "",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#join-a-hackathon",
+    "text": "Join a hackathon",
+    "classes": "accordion-tab",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons",
+    "text": "Devpost\n      Participate in our public hackathons",
+    "classes": "panel-product panel-product-content",
+    "containsImage": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons",
+    "text": "Hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/software",
+    "text": "Projects",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.team/",
+    "text": "Devpost for Teams\n      Access your company's priv",
+    "classes": "panel-product panel-product-content",
+    "containsImage": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.team/",
+    "text": "Login",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#host-a-hackathon",
+    "text": "Host a hackathon",
+    "classes": "accordion-tab",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/public-hackathons",
+    "text": "Devpost\n      Grow your developer ecosystem and pr",
+    "classes": "panel-product panel-product-content",
+    "containsImage": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/public-hackathons",
+    "text": "Host a public hackathon",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/devpost-for-teams",
+    "text": "Devpost for Teams\n      Drive innovation, collabor",
+    "classes": "panel-product panel-product-content",
+    "containsImage": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/devpost-for-teams",
+    "text": "Host an internal hackathon",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/ai-hackathons",
+    "text": "AI hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/customer-hackathons",
+    "text": "Customer hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/devpost-for-teams",
+    "text": "Employee hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/public-hackathons",
+    "text": "Public hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#resources",
+    "text": "Resources",
+    "classes": "accordion-tab",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/blog",
+    "text": "Blog\n      \n      \n        Insights into hackathon",
+    "classes": "bordered bordered-hover panel-section padded",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/customer-stories",
+    "text": "Customer stories\n      \n      \n        Inspiration",
+    "classes": "bordered bordered-hover panel-section padded",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/guides",
+    "text": "Planning guides\n      \n      \n        Best practic",
+    "classes": "bordered bordered-hover panel-section padded",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/webinar-events",
+    "text": "Webinars & events\n      \n      \n        Upcoming e",
+    "classes": "bordered bordered-hover panel-section padded",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://help.devpost.com/",
+    "text": "Help desk\n      \n      \n        Common questions a",
+    "classes": "bordered bordered-hover panel-section padded",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/",
+    "text": "",
+    "classes": "",
+    "containsImage": true,
+    "rect": {
+      "x": 32.5,
+      "y": -30513,
+      "width": 209,
+      "height": 20,
+      "top": -30513,
+      "right": 241.5,
+      "bottom": -30493,
+      "left": 32.5
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "Join a hackathon",
+    "classes": "main-link",
+    "containsImage": false,
+    "rect": {
+      "x": 242.5,
+      "y": -30534,
+      "width": 207.078125,
+      "height": 62,
+      "top": -30534,
+      "right": 449.578125,
+      "bottom": -30472,
+      "left": 242.5
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "Back",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons",
+    "text": "Devpost\n      Participate in our public hackathons",
+    "classes": "panel-product panel-product-content",
+    "containsImage": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons",
+    "text": "Hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/software",
+    "text": "Projects",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.team/",
+    "text": "Devpost for Teams\n      Access your company's priv",
+    "classes": "panel-product panel-product-content",
+    "containsImage": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.team/",
+    "text": "Login",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "Host a hackathon",
+    "classes": "main-link",
+    "containsImage": false,
+    "rect": {
+      "x": 450.578125,
+      "y": -30534,
+      "width": 210.203125,
+      "height": 62,
+      "top": -30534,
+      "right": 660.78125,
+      "bottom": -30472,
+      "left": 450.578125
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "Back",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/public-hackathons",
+    "text": "Devpost\n      Grow your developer ecosystem and pr",
+    "classes": "panel-product panel-product-content",
+    "containsImage": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/public-hackathons",
+    "text": "Host a public hackathon",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/devpost-for-teams",
+    "text": "Devpost for Teams\n      Drive innovation, collabor",
+    "classes": "panel-product panel-product-content",
+    "containsImage": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/devpost-for-teams",
+    "text": "Host an internal hackathon",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/ai-hackathons",
+    "text": "AI hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/customer-hackathons",
+    "text": "Customer hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/devpost-for-teams",
+    "text": "Employee hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/product/public-hackathons",
+    "text": "Public hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "Resources",
+    "classes": "main-link",
+    "containsImage": false,
+    "rect": {
+      "x": 661.78125,
+      "y": -30534,
+      "width": 158.171875,
+      "height": 62,
+      "top": -30534,
+      "right": 819.953125,
+      "bottom": -30472,
+      "left": 661.78125
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "Back",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/blog",
+    "text": "Blog\n      \n      \n        Insights into hackathon",
+    "classes": "bordered bordered-hover panel-section padded",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/customer-stories",
+    "text": "Customer stories\n      \n      \n        Inspiration",
+    "classes": "bordered bordered-hover panel-section padded",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/guides",
+    "text": "Planning guides\n      \n      \n        Best practic",
+    "classes": "bordered bordered-hover panel-section padded",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://info.devpost.com/webinar-events",
+    "text": "Webinars & events\n      \n      \n        Upcoming e",
+    "classes": "bordered bordered-hover panel-section padded",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://help.devpost.com/",
+    "text": "Help desk\n      \n      \n        Common questions a",
+    "classes": "bordered bordered-hover panel-section padded",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "",
+    "text": "",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 999.21875,
+      "y": -30534,
+      "width": 44,
+      "height": 62,
+      "top": -30534,
+      "right": 1043.21875,
+      "bottom": -30472,
+      "left": 999.21875
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "",
+    "classes": "align-items-center close-icon",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://secure.devpost.com/users/login?ref=top-nav-login",
+    "text": "Log in",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1043.21875,
+      "y": -30534,
+      "width": 86.125,
+      "height": 62,
+      "top": -30534,
+      "right": 1129.34375,
+      "bottom": -30472,
+      "left": 1043.21875
+    }
+  },
+  {
+    "href": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button",
+    "text": "Sign up",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1129.34375,
+      "y": -30534,
+      "width": 103.15625,
+      "height": 62,
+      "top": -30534,
+      "right": 1232.5,
+      "bottom": -30472,
+      "left": 1129.34375
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "Clear filters 0",
+    "classes": "is-faded",
+    "containsImage": false,
+    "rect": {
+      "x": 47.5,
+      "y": -30195.203125,
+      "width": 114.34375,
+      "height": 20,
+      "top": -30195.203125,
+      "right": 161.84375,
+      "bottom": -30175.203125,
+      "left": 47.5
+    }
+  },
+  {
+    "href": "https://devpost.com/users/register",
+    "text": "Match my eligibility",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 47.5,
+      "y": -30143.203125,
+      "width": 174.390625,
+      "height": 20,
+      "top": -30143.203125,
+      "right": 221.890625,
+      "bottom": -30123.203125,
+      "left": 47.5
+    }
+  },
+  {
+    "href": "https://help.devpost.com/article/42-what-does-e2809cmanaged-by-devposte2809d-mean",
+    "text": "",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 238.828125,
+      "y": -30083.703125,
+      "width": 16,
+      "height": 16,
+      "top": -30083.703125,
+      "right": 254.828125,
+      "bottom": -30067.703125,
+      "left": 238.828125
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "Show more (23)",
+    "classes": "link",
+    "containsImage": false,
+    "rect": {
+      "x": 47.5,
+      "y": -29416.203125,
+      "width": 112.0625,
+      "height": 20,
+      "top": -29416.203125,
+      "right": 159.5625,
+      "bottom": -29396.203125,
+      "left": 47.5
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "Select host",
+    "classes": "current-selection grow",
+    "containsImage": false,
+    "rect": {
+      "x": 48.5,
+      "y": -29337.203125,
+      "width": 201,
+      "height": 40,
+      "top": -29337.203125,
+      "right": 249.5,
+      "bottom": -29297.203125,
+      "left": 48.5
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14#",
+    "text": "",
+    "classes": "shrink caret icon",
+    "containsImage": false,
+    "rect": {
+      "x": 249.5,
+      "y": -29337.203125,
+      "width": 35,
+      "height": 40,
+      "top": -29337.203125,
+      "right": 284.5,
+      "bottom": -29297.203125,
+      "left": 249.5
+    }
+  },
+  {
+    "href": "",
+    "text": "Most relevant",
+    "classes": "selected",
+    "containsImage": false,
+    "rect": {
+      "x": 672.375,
+      "y": -30205.203125,
+      "width": 129.71875,
+      "height": 41.875,
+      "top": -30205.203125,
+      "right": 802.09375,
+      "bottom": -30163.328125,
+      "left": 672.375
+    }
+  },
+  {
+    "href": "",
+    "text": "Submission date",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 802.09375,
+      "y": -30205.203125,
+      "width": 147.53125,
+      "height": 41.875,
+      "top": -30205.203125,
+      "right": 949.625,
+      "bottom": -30163.328125,
+      "left": 802.09375
+    }
+  },
+  {
+    "href": "",
+    "text": "Recently added",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 949.625,
+      "y": -30205.203125,
+      "width": 141.53125,
+      "height": 41.875,
+      "top": -30205.203125,
+      "right": 1091.15625,
+      "bottom": -30163.328125,
+      "left": 949.625
+    }
+  },
+  {
+    "href": "",
+    "text": "Prize amount",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1091.15625,
+      "y": -30205.203125,
+      "width": 125.34375,
+      "height": 41.875,
+      "top": -30205.203125,
+      "right": 1216.5,
+      "bottom": -30163.328125,
+      "left": 1091.15625
+    }
+  },
+  {
+    "href": "https://agentforcehackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Featured",
+    "classes": "featured-tab align-items-center",
+    "containsImage": false,
+    "rect": {
+      "x": 319.5,
+      "y": -30138.328125,
+      "width": 28,
+      "height": 256.5,
+      "top": -30138.328125,
+      "right": 347.5,
+      "bottom": -29881.828125,
+      "left": 319.5
+    }
+  },
+  {
+    "href": "https://agentforcehackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Agentforce Virtual Hackathonabout 1 month leftOnli",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -30137.328125,
+      "width": 869,
+      "height": 254.5,
+      "top": -30137.328125,
+      "right": 1216.5,
+      "bottom": -29882.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "",
+    "text": "Managed by Devpost",
+    "classes": "mr-1",
+    "containsImage": false,
+    "rect": {
+      "x": 1021.5,
+      "y": -30032.953125,
+      "width": 132.84375,
+      "height": 14,
+      "top": -30032.953125,
+      "right": 1154.34375,
+      "bottom": -30018.953125,
+      "left": 1021.5
+    }
+  },
+  {
+    "href": "https://help.devpost.com/article/42-what-does-e2809cmanaged-by-devposte2809d-mean",
+    "text": "",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1158.34375,
+      "y": -30032.953125,
+      "width": 14,
+      "height": 14,
+      "top": -30032.953125,
+      "right": 1172.34375,
+      "bottom": -30018.953125,
+      "left": 1158.34375
+    }
+  },
+  {
+    "href": "https://azureaidev.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Featured",
+    "classes": "featured-tab align-items-center",
+    "containsImage": false,
+    "rect": {
+      "x": 319.5,
+      "y": -29857.828125,
+      "width": 28,
+      "height": 256.5,
+      "top": -29857.828125,
+      "right": 347.5,
+      "bottom": -29601.328125,
+      "left": 319.5
+    }
+  },
+  {
+    "href": "https://azureaidev.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Azure AI Developer Hackathon5 days leftOnline$10,0",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -29856.828125,
+      "width": 869,
+      "height": 254.5,
+      "top": -29856.828125,
+      "right": 1216.5,
+      "bottom": -29602.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "",
+    "text": "Managed by Devpost",
+    "classes": "mr-1",
+    "containsImage": false,
+    "rect": {
+      "x": 1021.5,
+      "y": -29752.453125,
+      "width": 132.84375,
+      "height": 14,
+      "top": -29752.453125,
+      "right": 1154.34375,
+      "bottom": -29738.453125,
+      "left": 1021.5
+    }
+  },
+  {
+    "href": "https://help.devpost.com/article/42-what-does-e2809cmanaged-by-devposte2809d-mean",
+    "text": "",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1158.34375,
+      "y": -29752.453125,
+      "width": 14,
+      "height": 14,
+      "top": -29752.453125,
+      "right": 1172.34375,
+      "bottom": -29738.453125,
+      "left": 1158.34375
+    }
+  },
+  {
+    "href": "https://fetch-ai-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Featured",
+    "classes": "featured-tab align-items-center",
+    "containsImage": false,
+    "rect": {
+      "x": 319.5,
+      "y": -29577.328125,
+      "width": 28,
+      "height": 193.125,
+      "top": -29577.328125,
+      "right": 347.5,
+      "bottom": -29384.203125,
+      "left": 319.5
+    }
+  },
+  {
+    "href": "https://fetch-ai-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Global AI Agents League16 days leftOnline$10,000 i",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -29576.328125,
+      "width": 869,
+      "height": 191.125,
+      "top": -29576.328125,
+      "right": 1216.5,
+      "bottom": -29385.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackreddit.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hack Reddit 20254 days leftOnline$36,000 in prizes",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -29359.203125,
+      "width": 869,
+      "height": 224.5,
+      "top": -29359.203125,
+      "right": 1216.5,
+      "bottom": -29134.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://mhcp-mobile-genre-competition.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Featured",
+    "classes": "featured-tab align-items-center",
+    "containsImage": false,
+    "rect": {
+      "x": 319.5,
+      "y": -29109.703125,
+      "width": 28,
+      "height": 223.125,
+      "top": -29109.703125,
+      "right": 347.5,
+      "bottom": -28886.578125,
+      "left": 319.5
+    }
+  },
+  {
+    "href": "https://mhcp-mobile-genre-competition.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Meta Horizon Creator Competition: Mobile Genre Sho",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -29108.703125,
+      "width": 869,
+      "height": 221.125,
+      "top": -29108.703125,
+      "right": 1216.5,
+      "bottom": -28887.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "",
+    "text": "Managed by Devpost",
+    "classes": "mr-1",
+    "containsImage": false,
+    "rect": {
+      "x": 1021.5,
+      "y": -29004.328125,
+      "width": 132.84375,
+      "height": 14,
+      "top": -29004.328125,
+      "right": 1154.34375,
+      "bottom": -28990.328125,
+      "left": 1021.5
+    }
+  },
+  {
+    "href": "https://help.devpost.com/article/42-what-does-e2809cmanaged-by-devposte2809d-mean",
+    "text": "",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1158.34375,
+      "y": -29004.328125,
+      "width": 14,
+      "height": 14,
+      "top": -29004.328125,
+      "right": 1172.34375,
+      "bottom": -28990.328125,
+      "left": 1158.34375
+    }
+  },
+  {
+    "href": "https://digital-jam.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Digital Jam5 days leftOnline$15,000 in prizes 1103",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -28861.578125,
+      "width": 869,
+      "height": 224.5,
+      "top": -28861.578125,
+      "right": 1216.5,
+      "bottom": -28637.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://gnec-hackathon-2025-spring.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "GNEC Hackathon 2025 Spring - Compete For UN-Affili",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -28611.078125,
+      "width": 869,
+      "height": 219.25,
+      "top": -28611.078125,
+      "right": 1216.5,
+      "bottom": -28391.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://ingeniumstem-winter-hacks-1-0.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "IngeniumSTEM Winter Hacks 1.06 days leftOnline$0 i",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -28365.828125,
+      "width": 869,
+      "height": 224.5,
+      "top": -28365.828125,
+      "right": 1216.5,
+      "bottom": -28141.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://ctc-cui-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Featured",
+    "classes": "featured-tab align-items-center",
+    "containsImage": false,
+    "rect": {
+      "x": 319.5,
+      "y": -28116.328125,
+      "width": 28,
+      "height": 226.5,
+      "top": -28116.328125,
+      "right": 347.5,
+      "bottom": -27889.828125,
+      "left": 319.5
+    }
+  },
+  {
+    "href": "https://ctc-cui-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "2025 Crack the Code Hackathon @ Concordia Universi",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -28115.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -28115.328125,
+      "right": 1216.5,
+      "bottom": -27890.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://acdblr-blogathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "AWS Community Day Bengaluru - Blogathon23 days lef",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -27864.828125,
+      "width": 869,
+      "height": 224.5,
+      "top": -27864.828125,
+      "right": 1216.5,
+      "bottom": -27640.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackonomics25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hackonomics 20253 months leftOnline$0 in prizes 23",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -27614.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -27614.328125,
+      "right": 1216.5,
+      "bottom": -27389.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://spacehack2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "SpaceHack 2025: Space Data Challengeabout 1 month ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -27363.828125,
+      "width": 869,
+      "height": 249.5,
+      "top": -27363.828125,
+      "right": 1216.5,
+      "bottom": -27114.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackatopia.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hackatopia13 days leftOnline$0 in prizes 183 parti",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -27088.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -27088.328125,
+      "right": 1216.5,
+      "bottom": -26863.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackathon01.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hack_for_Carrier7 days leftOnline\u20b9 1,000 in prizes",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -26837.828125,
+      "width": 869,
+      "height": 165,
+      "top": -26837.828125,
+      "right": 1216.5,
+      "bottom": -26672.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://zibs-startup-program.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Startup Program - Invitation only, participants fr",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -26646.828125,
+      "width": 869,
+      "height": 290.5,
+      "top": -26646.828125,
+      "right": 1216.5,
+      "bottom": -26356.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://gated.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "The Gated NFTs University Regional Hackathonabout ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -26330.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -26330.328125,
+      "right": 1216.5,
+      "bottom": -26105.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://lg-hacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "LG Hacksabout 2 hours leftLeigh High School$1,200 ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -26079.828125,
+      "width": 869,
+      "height": 191.125,
+      "top": -26079.828125,
+      "right": 1216.5,
+      "bottom": -25888.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://codepi-ic-2025-1.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "CodePi 2025.12 months leftOnline$0 in prizes 118 p",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -25862.703125,
+      "width": 869,
+      "height": 224.5,
+      "top": -25862.703125,
+      "right": 1216.5,
+      "bottom": -25638.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://saai3.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "SAAI (Kids) - Hackathon on Art and AI20 days leftO",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -25612.203125,
+      "width": 869,
+      "height": 224.5,
+      "top": -25612.203125,
+      "right": 1216.5,
+      "bottom": -25387.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://portxfolio25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "PortXFolioabout 1 month leftOnline$100 in prizes 9",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -25361.703125,
+      "width": 869,
+      "height": 191.125,
+      "top": -25361.703125,
+      "right": 1216.5,
+      "bottom": -25170.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://pike-labs-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Pike Labs App Challenge2 months leftOnline$10,000 ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -25144.578125,
+      "width": 869,
+      "height": 224.5,
+      "top": -25144.578125,
+      "right": 1216.5,
+      "bottom": -24920.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://ese4510s25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "2024-25 Fall ESE Senior Design [Spring]about 2 mon",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -24894.078125,
+      "width": 869,
+      "height": 159.25,
+      "top": -24894.078125,
+      "right": 1216.5,
+      "bottom": -24734.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://tinogwc-gummyhacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "TinoGWC GummyHacks8 days leftOnline$195 in prizes ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -24708.828125,
+      "width": 869,
+      "height": 265.5,
+      "top": -24708.828125,
+      "right": 1216.5,
+      "bottom": -24443.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://world-green-growth-forum-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "WGGF2025_Green Growth Idea Hackathon7 days leftLah",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -24417.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -24417.328125,
+      "right": 1216.5,
+      "bottom": -24192.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://blus-hacks-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Blu's Hacks 2025about 5 hours leftBranham High Sch",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -24166.828125,
+      "width": 869,
+      "height": 224.5,
+      "top": -24166.828125,
+      "right": 1216.5,
+      "bottom": -23942.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://health-hack-x-illuminati.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HEALTH HACK X  - ILLUMINATI18 days leftOnline2 non",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -23916.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -23916.328125,
+      "right": 1216.5,
+      "bottom": -23691.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://phystech2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "PhysTech 2025: Physical Activity and Technology Ha",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -23665.828125,
+      "width": 869,
+      "height": 191.125,
+      "top": -23665.828125,
+      "right": 1216.5,
+      "bottom": -23474.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://warriorhacks-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "WarriorHacks 20253 days leftOnline3 non-cash prize",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -23448.703125,
+      "width": 869,
+      "height": 265.5,
+      "top": -23448.703125,
+      "right": 1216.5,
+      "bottom": -23183.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://donsdevfest.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Dons DevFestabout 5 hours leftPurdue university Fo",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -23157.203125,
+      "width": 869,
+      "height": 265.5,
+      "top": -23157.203125,
+      "right": 1216.5,
+      "bottom": -22891.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://fssa-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "2025 FSSA MediHacks Hackathon9 days leftOnline\u20b9 9,",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -22865.703125,
+      "width": 869,
+      "height": 265.5,
+      "top": -22865.703125,
+      "right": 1216.5,
+      "bottom": -22600.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://gotechunite.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "TechUnite Innovation Challenge22 days leftNorth Cr",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -22574.203125,
+      "width": 869,
+      "height": 232.125,
+      "top": -22574.203125,
+      "right": 1216.5,
+      "bottom": -22342.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://test-contest.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Test Contest8 days leftOnline$6 in prizes 6 partic",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -22316.078125,
+      "width": 869,
+      "height": 191.125,
+      "top": -22316.078125,
+      "right": 1216.5,
+      "bottom": -22124.953125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://mvhacks-8-0.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "MVHacks 8.0about 5 hours leftMountain View Redwood",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -22098.953125,
+      "width": 869,
+      "height": 224.5,
+      "top": -22098.953125,
+      "right": 1216.5,
+      "bottom": -21874.453125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://codecatalyst-2024.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "CodeCatalyst 202418 days leftTech Haven Conference",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -21848.453125,
+      "width": 869,
+      "height": 191.125,
+      "top": -21848.453125,
+      "right": 1216.5,
+      "bottom": -21657.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://pearai-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "PearAI HackathonUpcomingOnline$10,000 in prizes 81",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -21631.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -21631.328125,
+      "right": 1216.5,
+      "bottom": -21406.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://launchhacks-iv.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "LaunchHacks IVUpcomingOnline$20,000 in prizes 527 ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -21380.828125,
+      "width": 869,
+      "height": 224.5,
+      "top": -21380.828125,
+      "right": 1216.5,
+      "bottom": -21156.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hpaistudio.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HP & NVIDIA Developer ChallengeUpcomingOnline$70,0",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -21130.328125,
+      "width": 869,
+      "height": 254.5,
+      "top": -21130.328125,
+      "right": 1216.5,
+      "bottom": -20875.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "",
+    "text": "Managed by Devpost",
+    "classes": "mr-1",
+    "containsImage": false,
+    "rect": {
+      "x": 1021.5,
+      "y": -21025.953125,
+      "width": 132.84375,
+      "height": 14,
+      "top": -21025.953125,
+      "right": 1154.34375,
+      "bottom": -21011.953125,
+      "left": 1021.5
+    }
+  },
+  {
+    "href": "https://help.devpost.com/article/42-what-does-e2809cmanaged-by-devposte2809d-mean",
+    "text": "",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1158.34375,
+      "y": -21025.953125,
+      "width": 14,
+      "height": 14,
+      "top": -21025.953125,
+      "right": 1172.34375,
+      "bottom": -21011.953125,
+      "left": 1158.34375
+    }
+  },
+  {
+    "href": "https://mitbitcoin.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "MIT Bitcoin Hackathon: Freedom TechUpcomingOnline$",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -20849.828125,
+      "width": 869,
+      "height": 191.125,
+      "top": -20849.828125,
+      "right": 1216.5,
+      "bottom": -20658.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackvortex-codestorm-5.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HackVortex Codestorm 5UpcomingOnline$0 in prizes 1",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -20632.703125,
+      "width": 869,
+      "height": 224.5,
+      "top": -20632.703125,
+      "right": 1216.5,
+      "bottom": -20408.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://nextstep2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "NextStep Hacks 2025UpcomingOnline$419,600 in prize",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -20382.203125,
+      "width": 869,
+      "height": 191.125,
+      "top": -20382.203125,
+      "right": 1216.5,
+      "bottom": -20191.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://unitedhacksv5.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "United Hacks V5UpcomingOnline$102,500 in prizes 14",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -20165.078125,
+      "width": 869,
+      "height": 224.5,
+      "top": -20165.078125,
+      "right": 1216.5,
+      "bottom": -19940.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://uwb-hacks-save-the-world.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "UWB Hacks: Save The World!UpcomingActivities & Rec",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -19914.578125,
+      "width": 869,
+      "height": 224.5,
+      "top": -19914.578125,
+      "right": 1216.5,
+      "bottom": -19690.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://ai-agent-beginners-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "AI Agent beginners HackathonUpcomingOnline$600 in ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -19664.078125,
+      "width": 869,
+      "height": 191.125,
+      "top": -19664.078125,
+      "right": 1216.5,
+      "bottom": -19472.953125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://developerweek-ai2025-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "DevNetwork [AI + ML] Hackathon 2025UpcomingSouth S",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -19446.953125,
+      "width": 869,
+      "height": 191.125,
+      "top": -19446.953125,
+      "right": 1216.5,
+      "bottom": -19255.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://ai-hackfest-23772.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "AI HackfestUpcomingOnline$0 in prizes 92 participa",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -19229.828125,
+      "width": 869,
+      "height": 224.5,
+      "top": -19229.828125,
+      "right": 1216.5,
+      "bottom": -19005.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://pacshackathon25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "\u200e UpcomingOnline$100 in prizes 90 participants PAN",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -18979.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -18979.328125,
+      "right": 1216.5,
+      "bottom": -18754.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://bearhacks2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "BearHacks 2025UpcomingSheridan College Hazel McCal",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -18728.828125,
+      "width": 869,
+      "height": 232.125,
+      "top": -18728.828125,
+      "right": 1216.5,
+      "bottom": -18496.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://dt10x-india.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "DiaTech 10X - Diabetes in India (Organized by Emor",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -18470.703125,
+      "width": 869,
+      "height": 219.25,
+      "top": -18470.703125,
+      "right": 1216.5,
+      "bottom": -18251.453125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://vital-hacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "ViTAL HacksUpcomingOnline$0 in prizes 69 participa",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -18225.453125,
+      "width": 869,
+      "height": 232.125,
+      "top": -18225.453125,
+      "right": 1216.5,
+      "bottom": -17993.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://stuyhacks-xii-17025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "StuyHacks XIIUpcomingStuyvesant High School4 non-c",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -17967.328125,
+      "width": 869,
+      "height": 265.5,
+      "top": -17967.328125,
+      "right": 1216.5,
+      "bottom": -17701.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://ridgehacks-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "RidgeHacks 2025UpcomingRidge High School$1,623 in ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -17675.828125,
+      "width": 869,
+      "height": 191.125,
+      "top": -17675.828125,
+      "right": 1216.5,
+      "bottom": -17484.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hacktech2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hacktech by Caltech 2025UpcomingCaltech - Avery Ho",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -17458.703125,
+      "width": 869,
+      "height": 224.5,
+      "top": -17458.703125,
+      "right": 1216.5,
+      "bottom": -17234.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://code-crunch-tropical-hack25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "CODE CRUNCH 305 Hackathon | Edition Spring 2025Upc",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -17208.203125,
+      "width": 869,
+      "height": 191.125,
+      "top": -17208.203125,
+      "right": 1216.5,
+      "bottom": -17017.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://tech-titans-hack-fest.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Tech Titans Hack FestUpcomingThunderbird High Scho",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -16991.078125,
+      "width": 869,
+      "height": 191.125,
+      "top": -16991.078125,
+      "right": 1216.5,
+      "bottom": -16799.953125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://agentic-rag-a-thon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Proving Ground: Agentic Startup HackathonUpcoming5",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -16773.953125,
+      "width": 869,
+      "height": 198.75,
+      "top": -16773.953125,
+      "right": 1216.5,
+      "bottom": -16575.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hack-the-bronx-4.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hack the Bronx 4UpcomingOnline$1,300 in prizes 39 ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -16549.203125,
+      "width": 869,
+      "height": 224.5,
+      "top": -16549.203125,
+      "right": 1216.5,
+      "bottom": -16324.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackusf.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HackUSF 2025UpcomingUSF\u2013 ENB II1 non-cash prizes 3",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -16298.703125,
+      "width": 869,
+      "height": 224.5,
+      "top": -16298.703125,
+      "right": 1216.5,
+      "bottom": -16074.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://c4h2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Code4Hope Hackathon '25UpcomingMicrosoft Office @ ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -16048.203125,
+      "width": 869,
+      "height": 224.5,
+      "top": -16048.203125,
+      "right": 1216.5,
+      "bottom": -15823.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://daibuild-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "DaiBuild HackathonUpcomingDelta state University -",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -15797.703125,
+      "width": 869,
+      "height": 191.125,
+      "top": -15797.703125,
+      "right": 1216.5,
+      "bottom": -15606.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://citytechdatathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "City Tech DatathonUpcomingNamm Building 3 non-cash",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -15580.578125,
+      "width": 869,
+      "height": 265.5,
+      "top": -15580.578125,
+      "right": 1216.5,
+      "bottom": -15315.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://techpals-code-for-change-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "TechPals Code for Change 2025UpcomingOnline$300 in",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -15289.078125,
+      "width": 869,
+      "height": 224.5,
+      "top": -15289.078125,
+      "right": 1216.5,
+      "bottom": -15064.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://liveai-lonestar-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "\u2730 LIVE AI Lone Star 2025UpcomingGoogle (Austin) + ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -15038.578125,
+      "width": 869,
+      "height": 191.125,
+      "top": -15038.578125,
+      "right": 1216.5,
+      "bottom": -14847.453125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hack-for-humanity-26.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hack for Humanity | 2026UpcomingOnline1 non-cash p",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -14821.453125,
+      "width": 869,
+      "height": 191.125,
+      "top": -14821.453125,
+      "right": 1216.5,
+      "bottom": -14630.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackpsu-spring-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HackPSU Spring 2025UpcomingBusiness Building$1,000",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -14604.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -14604.328125,
+      "right": 1216.5,
+      "bottom": -14379.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://gud-2025-design-a-thon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "GUD 2025 Design-A-Thon UpcomingOnline1 non-cash pr",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -14353.828125,
+      "width": 869,
+      "height": 191.125,
+      "top": -14353.828125,
+      "right": 1216.5,
+      "bottom": -14162.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://code-in-vision.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Code for Change: AI HackathonUpcomingOnline4 non-c",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -14136.703125,
+      "width": 869,
+      "height": 224.5,
+      "top": -14136.703125,
+      "right": 1216.5,
+      "bottom": -13912.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://midwest.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "The Midwest Block-a-ThonUpcomingUniversity of Kans",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -13886.203125,
+      "width": 869,
+      "height": 265.5,
+      "top": -13886.203125,
+      "right": 1216.5,
+      "bottom": -13620.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://texas-healthcare-challenge.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Texas Healthcare ChallengeUpcomingPegasus Park$100",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -13594.703125,
+      "width": 869,
+      "height": 191.125,
+      "top": -13594.703125,
+      "right": 1216.5,
+      "bottom": -13403.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://la-hacks-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "LA Hacks 2025Upcoming Edwin W. Pauley Pavilion$50,",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -13377.578125,
+      "width": 869,
+      "height": 232.125,
+      "top": -13377.578125,
+      "right": 1216.5,
+      "bottom": -13145.453125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://devnetwork--api-cloud-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "DevNetwork [API + Cloud + Data] Hackathon 2025Upco",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -13119.453125,
+      "width": 869,
+      "height": 214,
+      "top": -13119.453125,
+      "right": 1216.5,
+      "bottom": -12905.453125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hack-cupertino-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hack Cupertino 2025UpcomingQuinlan Community Cente",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -12879.453125,
+      "width": 869,
+      "height": 191.125,
+      "top": -12879.453125,
+      "right": 1216.5,
+      "bottom": -12688.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://blaze-hacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "BlazeHacksUpcomingIARE Campus\u20b9 50,000 in prizes 12",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -12662.328125,
+      "width": 869,
+      "height": 191.125,
+      "top": -12662.328125,
+      "right": 1216.5,
+      "bottom": -12471.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackabyte-2025-spring.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hackabyte's 2025 Spring HackathonUpcomingDigipen I",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -12445.203125,
+      "width": 869,
+      "height": 224.5,
+      "top": -12445.203125,
+      "right": 1216.5,
+      "bottom": -12220.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://impacthack-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "ImpactHack 2025UpcomingGlasgow\u00a3500 in prizes 11 pa",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -12194.703125,
+      "width": 869,
+      "height": 224.5,
+      "top": -12194.703125,
+      "right": 1216.5,
+      "bottom": -11970.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://luddyhacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Luddy HacksUpcomingBloomington, IN, USA$7,000 in p",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -11944.203125,
+      "width": 869,
+      "height": 224.5,
+      "top": -11944.203125,
+      "right": 1216.5,
+      "bottom": -11719.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://codecrunch-305hackathon-fall25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "CODE CRUNCH 305 Hackathon | Edition FALL 2025Upcom",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -11693.703125,
+      "width": 869,
+      "height": 191.125,
+      "top": -11693.703125,
+      "right": 1216.5,
+      "bottom": -11502.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://jistech-2k25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "JISTech 2K25UpcomingKalyani\u20b9 10,000,000 in prizes ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -11476.578125,
+      "width": 869,
+      "height": 224.5,
+      "top": -11476.578125,
+      "right": 1216.5,
+      "bottom": -11252.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hacknovate.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HackNovateUpcomingOnline\u20b9 1,000 in prizes 7 partic",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -11226.078125,
+      "width": 869,
+      "height": 224.5,
+      "top": -11226.078125,
+      "right": 1216.5,
+      "bottom": -11001.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://webvm-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "WebVM: The hackathon IIUpcomingNexus, University o",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -10975.578125,
+      "width": 869,
+      "height": 191.125,
+      "top": -10975.578125,
+      "right": 1216.5,
+      "bottom": -10784.453125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://q-hack-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Q-Hack 2025UpcomingUniversity of Mannheim\u20ac5,000 in",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -10758.453125,
+      "width": 869,
+      "height": 224.5,
+      "top": -10758.453125,
+      "right": 1216.5,
+      "bottom": -10533.953125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackxelerate-2k25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HackXelerate'25UpcomingArasur - Coimbatore\u20b9 884,00",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -10507.953125,
+      "width": 869,
+      "height": 191.125,
+      "top": -10507.953125,
+      "right": 1216.5,
+      "bottom": -10316.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://our-lucky-connect.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Our LUCKY Connect X Learning EDGE HackathonUpcomin",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -10290.828125,
+      "width": 869,
+      "height": 224.5,
+      "top": -10290.828125,
+      "right": 1216.5,
+      "bottom": -10066.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://pantherhack-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "PantherHack 2025UpcomingOnline$900 in prizes 6 par",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -10040.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -10040.328125,
+      "right": 1216.5,
+      "bottom": -9815.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://ieee-clarkhack-spring-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "IEEE ClarkHack Spring 2025UpcomingClark University",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -9789.828125,
+      "width": 869,
+      "height": 232.125,
+      "top": -9789.828125,
+      "right": 1216.5,
+      "bottom": -9557.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://illinois-design-challenge.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Illinois Design Challenge 2025UpcomingCampus Instr",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -9531.703125,
+      "width": 869,
+      "height": 191.125,
+      "top": -9531.703125,
+      "right": 1216.5,
+      "bottom": -9340.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://freysa-twin-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Digital Twins + Agent Coordination HackathonUpcomi",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -9314.578125,
+      "width": 869,
+      "height": 224.5,
+      "top": -9314.578125,
+      "right": 1216.5,
+      "bottom": -9090.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://dreamhacks-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "DreamHacks 2025UpcomingOnline7 non-cash prizes 5 p",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -9064.078125,
+      "width": 869,
+      "height": 224.5,
+      "top": -9064.078125,
+      "right": 1216.5,
+      "bottom": -8839.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackmhs-x.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "hackMHS XUpcomingMillburn High School$2,544 in pri",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -8813.578125,
+      "width": 869,
+      "height": 224.5,
+      "top": -8813.578125,
+      "right": 1216.5,
+      "bottom": -8589.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://the-web-dev-showdown.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "The Web Dev ShowdownUpcomingOnline1 non-cash prize",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -8563.078125,
+      "width": 869,
+      "height": 165,
+      "top": -8563.078125,
+      "right": 1216.5,
+      "bottom": -8398.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://cyhacks-25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "CYHacks '25UpcomingCentral York High School$25 in ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -8372.078125,
+      "width": 869,
+      "height": 191.125,
+      "top": -8372.078125,
+      "right": 1216.5,
+      "bottom": -8180.953125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://ai-for-social-good-dr-ambedkar.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "AI For Social Good: Dr. B. R. Ambedkar Birth Anniv",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -8154.953125,
+      "width": 869,
+      "height": 232.125,
+      "top": -8154.953125,
+      "right": 1216.5,
+      "bottom": -7922.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://sushacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "SusHacks 2025UpcomingVIIT Visakhapatnam\u20b9 15,000 in",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -7896.828125,
+      "width": 869,
+      "height": 224.5,
+      "top": -7896.828125,
+      "right": 1216.5,
+      "bottom": -7672.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://futurehacks-7.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "FutureHacks 7UpcomingOnline$975 in prizes 4 partic",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -7646.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -7646.328125,
+      "right": 1216.5,
+      "bottom": -7421.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://police.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "police hackUpcominggeorgia1 non-cash prizes 4 part",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -7395.828125,
+      "width": 869,
+      "height": 159.25,
+      "top": -7395.828125,
+      "right": 1216.5,
+      "bottom": -7236.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://milpitas-hacks-2.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Milpitas Hacks 2.0UpcomingMilpitas High School$3,6",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -7210.578125,
+      "width": 869,
+      "height": 224.5,
+      "top": -7210.578125,
+      "right": 1216.5,
+      "bottom": -6986.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hoya-hacks-2026.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hoya Hacks 2026UpcomingHealey Family Student Cente",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -6960.078125,
+      "width": 869,
+      "height": 159.25,
+      "top": -6960.078125,
+      "right": 1216.5,
+      "bottom": -6800.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hacktheherd25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hack The Herd 2025UpcomingA131, Science Center$300",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -6774.828125,
+      "width": 869,
+      "height": 224.5,
+      "top": -6774.828125,
+      "right": 1216.5,
+      "bottom": -6550.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://lumination.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "LuminationUpcomingNo Context3 non-cash prizes 3 pa",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -6524.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -6524.328125,
+      "right": 1216.5,
+      "bottom": -6299.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://diamondhacks-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "DiamondHacks 2025UpcomingSan Diego, CA, USA$1,799 ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -6273.828125,
+      "width": 869,
+      "height": 191.125,
+      "top": -6273.828125,
+      "right": 1216.5,
+      "bottom": -6082.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://cwru-hsm-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "CWRU MATLAB and Hacker Society HackathonUpcomingA.",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -6056.703125,
+      "width": 869,
+      "height": 191.125,
+      "top": -6056.703125,
+      "right": 1216.5,
+      "bottom": -5865.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://citrus-hack-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Citrus Hack 2025UpcomingUC Riverside - Winston Chu",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -5839.578125,
+      "width": 869,
+      "height": 191.125,
+      "top": -5839.578125,
+      "right": 1216.5,
+      "bottom": -5648.453125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackdartmouth-x.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HackDartmouth XUpcomingDartmouth College1 non-cash",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -5622.453125,
+      "width": 869,
+      "height": 159.25,
+      "top": -5622.453125,
+      "right": 1216.5,
+      "bottom": -5463.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://diabetes-tech-for-rural-ga.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Diabetes Tech Solutions for Rural GeorgiaUpcomingO",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -5437.203125,
+      "width": 869,
+      "height": 224.5,
+      "top": -5437.203125,
+      "right": 1216.5,
+      "bottom": -5212.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hackday2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HackDayUpcomingSEIR2 non-cash prizes 2 participant",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -5186.703125,
+      "width": 869,
+      "height": 224.5,
+      "top": -5186.703125,
+      "right": 1216.5,
+      "bottom": -4962.203125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://sharkhack2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "SharkHack 2025UpcomingSimmons University\u2013 LKP Cent",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -4936.203125,
+      "width": 869,
+      "height": 191.125,
+      "top": -4936.203125,
+      "right": 1216.5,
+      "bottom": -4745.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://scarlethacks-2025iit.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "ScarletHacks 2025UpcomingIllinois Tech Campus 3 no",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -4719.078125,
+      "width": 869,
+      "height": 224.5,
+      "top": -4719.078125,
+      "right": 1216.5,
+      "bottom": -4494.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://sasehacks-ucm.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "SASEHacks@UCM 2025UpcomingUniversity of California",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -4468.578125,
+      "width": 869,
+      "height": 191.125,
+      "top": -4468.578125,
+      "right": 1216.5,
+      "bottom": -4277.453125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hack-colossus-2-0-24603.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Colossus 2.0UpcomingBengaluru, India\u20b9 100,000 in p",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -4251.453125,
+      "width": 869,
+      "height": 191.125,
+      "top": -4251.453125,
+      "right": 1216.5,
+      "bottom": -4060.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://chilangohacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "ChilangoHacksUpcomingH. Congreso de la Uni\u00f3n Ciuda",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -4034.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -4034.328125,
+      "right": 1216.5,
+      "bottom": -3809.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://project-pitching-platform.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Project Pitching PlatformUpcomingCoimbatore \u20b9 2,00",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -3783.828125,
+      "width": 869,
+      "height": 191.125,
+      "top": -3783.828125,
+      "right": 1216.5,
+      "bottom": -3592.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://rutgers-ieee-2025-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Rutgers IEEE 2025 HackathonUpcomingRutgers Univers",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -3566.703125,
+      "width": 869,
+      "height": 191.125,
+      "top": -3566.703125,
+      "right": 1216.5,
+      "bottom": -3375.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://code-i-o-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Code I/O 2025UpcomingOhio State University - Drees",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -3349.578125,
+      "width": 869,
+      "height": 224.5,
+      "top": -3349.578125,
+      "right": 1216.5,
+      "bottom": -3125.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://codequantum-hackday.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "CodeQuantum HackdayUpcomingSan Antonio, TX, USA2 n",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -3099.078125,
+      "width": 869,
+      "height": 265.5,
+      "top": -3099.078125,
+      "right": 1216.5,
+      "bottom": -2833.578125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://innovate-create-win.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Innovate, Create, WINUpcomingStudent Union Buildin",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -2807.578125,
+      "width": 869,
+      "height": 224.5,
+      "top": -2807.578125,
+      "right": 1216.5,
+      "bottom": -2583.078125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://bcs-hacks-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "BCS HACKS 2025UpcomingUniversity of British Columb",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -2557.078125,
+      "width": 869,
+      "height": 232.125,
+      "top": -2557.078125,
+      "right": 1216.5,
+      "bottom": -2324.953125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://marihacks-8-0.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "MariHacks 8.0UpcomingMarianopolis College1 non-cas",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -2298.953125,
+      "width": 869,
+      "height": 191.125,
+      "top": -2298.953125,
+      "right": 1216.5,
+      "bottom": -2107.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://immersegt-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "ImmerseGT 2025UpcomingGeorgia Tech (Klaus Computin",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -2081.828125,
+      "width": 869,
+      "height": 265.5,
+      "top": -2081.828125,
+      "right": 1216.5,
+      "bottom": -1816.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://big-red-hacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Big Red HacksUpcomingThe Lawrenceville School$650 ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -1790.328125,
+      "width": 869,
+      "height": 265.5,
+      "top": -1790.328125,
+      "right": 1216.5,
+      "bottom": -1524.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hawkhack-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "HawkHack 2025UpcomingMontclair State University - ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -1498.828125,
+      "width": 869,
+      "height": 191.125,
+      "top": -1498.828125,
+      "right": 1216.5,
+      "bottom": -1307.703125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://mathworks-hackathon-microgrid.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "MathWorks Hackathon: Create a Microgrid on Mars! U",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -1281.703125,
+      "width": 869,
+      "height": 189.25,
+      "top": -1281.703125,
+      "right": 1216.5,
+      "bottom": -1092.453125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://blue-hacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Blue Wave HackathonUpcomingAndrew Shaw Memorial Sc",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -1066.453125,
+      "width": 869,
+      "height": 191.125,
+      "top": -1066.453125,
+      "right": 1216.5,
+      "bottom": -875.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://ai-cybersecurity-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "SANS AI Cybersecurity HackathonEndedOnline$10,000 ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -849.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -849.328125,
+      "right": 1216.5,
+      "bottom": -624.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://hilltop-hacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Hilltop HacksEndedSummit High School - Summit New ",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -598.828125,
+      "width": 869,
+      "height": 224.5,
+      "top": -598.828125,
+      "right": 1216.5,
+      "bottom": -374.328125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://electroneum-hackathon-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "Electroneum Hackathon 2025EndedOnline$52,500 in pr",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -348.328125,
+      "width": 869,
+      "height": 224.5,
+      "top": -348.328125,
+      "right": 1216.5,
+      "bottom": -123.828125,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://mega-hackathon-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "MEGA Hackathon 2025EndedOnline$1,019,230 in prizes",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": -97.828125,
+      "width": 869,
+      "height": 224.5,
+      "top": -97.828125,
+      "right": 1216.5,
+      "bottom": 126.671875,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://nextai-hack-students-only.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "text": "NextAI Hack (Students Only) (Open-Ended)EndedOnlin",
+    "classes": "flex-row tile-anchor",
+    "containsImage": true,
+    "rect": {
+      "x": 347.5,
+      "y": 152.671875,
+      "width": 869,
+      "height": 224.5,
+      "top": 152.671875,
+      "right": 1216.5,
+      "bottom": 377.171875,
+      "left": 347.5
+    }
+  },
+  {
+    "href": "https://info.devpost.com/about",
+    "text": "About",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 115,
+      "y": 544.171875,
+      "width": 44.03125,
+      "height": 20,
+      "top": 544.171875,
+      "right": 159.03125,
+      "bottom": 564.171875,
+      "left": 115
+    }
+  },
+  {
+    "href": "https://info.devpost.com/careers",
+    "text": "Careers",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 115,
+      "y": 581.765625,
+      "width": 55.703125,
+      "height": 20,
+      "top": 581.765625,
+      "right": 170.703125,
+      "bottom": 601.765625,
+      "left": 115
+    }
+  },
+  {
+    "href": "https://info.devpost.com/contact",
+    "text": "Contact",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 115,
+      "y": 619.359375,
+      "width": 57.3125,
+      "height": 20,
+      "top": 619.359375,
+      "right": 172.3125,
+      "bottom": 639.359375,
+      "left": 115
+    }
+  },
+  {
+    "href": "https://help.devpost.com/",
+    "text": "Help",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 115,
+      "y": 656.953125,
+      "width": 33.53125,
+      "height": 20,
+      "top": 656.953125,
+      "right": 148.53125,
+      "bottom": 676.953125,
+      "left": 115
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons",
+    "text": "Browse hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 415,
+      "y": 544.171875,
+      "width": 137.609375,
+      "height": 20,
+      "top": 544.171875,
+      "right": 552.609375,
+      "bottom": 564.171875,
+      "left": 415
+    }
+  },
+  {
+    "href": "https://devpost.com/software",
+    "text": "Explore projects",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 415,
+      "y": 581.765625,
+      "width": 115.109375,
+      "height": 20,
+      "top": 581.765625,
+      "right": 530.109375,
+      "bottom": 601.765625,
+      "left": 415
+    }
+  },
+  {
+    "href": "https://info.devpost.com/",
+    "text": "Host a hackathon",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 415,
+      "y": 619.359375,
+      "width": 123.484375,
+      "height": 20,
+      "top": 619.359375,
+      "right": 538.484375,
+      "bottom": 639.359375,
+      "left": 415
+    }
+  },
+  {
+    "href": "https://info.devpost.com/guides",
+    "text": "Hackathon guides",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 415,
+      "y": 656.953125,
+      "width": 127.59375,
+      "height": 20,
+      "top": 656.953125,
+      "right": 542.59375,
+      "bottom": 676.953125,
+      "left": 415
+    }
+  },
+  {
+    "href": "https://devpost.com/portfolio/redirect?page=projects",
+    "text": "Your projects",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 715,
+      "y": 544.171875,
+      "width": 93.078125,
+      "height": 20,
+      "top": 544.171875,
+      "right": 808.078125,
+      "bottom": 564.171875,
+      "left": 715
+    }
+  },
+  {
+    "href": "https://devpost.com/portfolio/redirect?page=hackathons",
+    "text": "Your hackathons",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 715,
+      "y": 581.765625,
+      "width": 116.453125,
+      "height": 20,
+      "top": 581.765625,
+      "right": 831.453125,
+      "bottom": 601.765625,
+      "left": 715
+    }
+  },
+  {
+    "href": "https://devpost.com/settings",
+    "text": "Settings",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 715,
+      "y": 619.359375,
+      "width": 57.734375,
+      "height": 20,
+      "top": 619.359375,
+      "right": 772.734375,
+      "bottom": 639.359375,
+      "left": 715
+    }
+  },
+  {
+    "href": "https://twitter.com/devpost",
+    "text": "Twitter",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1015,
+      "y": 544.171875,
+      "width": 83.703125,
+      "height": 20,
+      "top": 544.171875,
+      "right": 1098.703125,
+      "bottom": 564.171875,
+      "left": 1015
+    }
+  },
+  {
+    "href": "https://discord.com/invite/HP4BhW3hnp",
+    "text": "Discord",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1015,
+      "y": 581.765625,
+      "width": 88.890625,
+      "height": 20,
+      "top": 581.765625,
+      "right": 1103.890625,
+      "bottom": 601.765625,
+      "left": 1015
+    }
+  },
+  {
+    "href": "https://www.facebook.com/devposthacks",
+    "text": "Facebook",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1015,
+      "y": 619.359375,
+      "width": 103.890625,
+      "height": 20,
+      "top": 619.359375,
+      "right": 1118.890625,
+      "bottom": 639.359375,
+      "left": 1015
+    }
+  },
+  {
+    "href": "https://www.linkedin.com/company/devpost/",
+    "text": "LinkedIn",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1015,
+      "y": 656.953125,
+      "width": 94.40625,
+      "height": 20,
+      "top": 656.953125,
+      "right": 1109.40625,
+      "bottom": 676.953125,
+      "left": 1015
+    }
+  },
+  {
+    "href": "https://info.devpost.com/legal/community-guidelines",
+    "text": "Community guidelines",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 400.75,
+      "y": 754.546875,
+      "width": 158.90625,
+      "height": 20,
+      "top": 754.546875,
+      "right": 559.65625,
+      "bottom": 774.546875,
+      "left": 400.75
+    }
+  },
+  {
+    "href": "https://info.devpost.com/legal/security",
+    "text": "Security",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 631.65625,
+      "y": 754.546875,
+      "width": 58.59375,
+      "height": 20,
+      "top": 754.546875,
+      "right": 690.25,
+      "bottom": 774.546875,
+      "left": 631.65625
+    }
+  },
+  {
+    "href": "https://info.devpost.com/legal/california-consumer-privacy-act",
+    "text": "CA notice",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 762.25,
+      "y": 754.546875,
+      "width": 70.828125,
+      "height": 20,
+      "top": 754.546875,
+      "right": 833.078125,
+      "bottom": 774.546875,
+      "left": 762.25
+    }
+  },
+  {
+    "href": "https://info.devpost.com/legal/privacy-policy",
+    "text": "Privacy policy",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 905.078125,
+      "y": 754.546875,
+      "width": 97.984375,
+      "height": 20,
+      "top": 754.546875,
+      "right": 1003.0625,
+      "bottom": 774.546875,
+      "left": 905.078125
+    }
+  },
+  {
+    "href": "https://info.devpost.com/legal/terms-of-service",
+    "text": "Terms of service",
+    "classes": "",
+    "containsImage": false,
+    "rect": {
+      "x": 1075.0625,
+      "y": 754.546875,
+      "width": 115.71875,
+      "height": 20,
+      "top": 754.546875,
+      "right": 1190.78125,
+      "bottom": 774.546875,
+      "left": 1075.0625
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14",
+    "text": "",
+    "classes": "lb-prev",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "https://devpost.com/hackathons?page=14",
+    "text": "",
+    "classes": "lb-next",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "",
+    "text": "",
+    "classes": "lb-cancel",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "href": "",
+    "text": "",
+    "classes": "lb-close",
+    "containsImage": false,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  }
+]
