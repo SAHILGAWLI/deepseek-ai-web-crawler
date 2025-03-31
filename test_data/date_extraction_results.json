@@ -1,0 +1,22 @@
+{
+  "hackathons": [
+    {
+      "title": "Agentforce Virtual Hackathon",
+      "start_date": "Mar 05",
+      "end_date": "Apr 30, 2025",
+      "sources": [
+        "Calendar icon: Mar 05 - Apr 30, 2025",
+        "Submission period in calendar: Mar 05 - Apr 30, 2025"
+      ]
+    },
+    {
+      "title": "Hack_for_Carrier",
+      "start_date": "Jan 19",
+      "end_date": "Mar 31, 2025",
+      "sources": [
+        "Calendar icon: Jan 19 - Mar 31, 2025",
+        "Submission period in calendar: Jan 19 - Mar 31, 2025"
+      ]
+    }
+  ]
+}

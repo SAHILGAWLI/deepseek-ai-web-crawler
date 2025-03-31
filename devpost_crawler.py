@@ -2,6 +2,7 @@ import asyncio
 import json
 import os
 import time
+import random
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
 from playwright.async_api import async_playwright, Error as PlaywrightError
@@ -20,10 +21,14 @@ BASE_URL = "https://devpost.com/hackathons"
 DEFAULT_PARAMS = "?open_to[]=public&status[]=open"
 OUTPUT_CSV = "devpost_hackathons.csv"
 REQUIRED_FIELDS = ["title", "start_date", "end_date", "mode"]
-MAX_HACKATHONS = 30  # Increased to 30 to make sure we get all hackathons on the page
+MAX_HACKATHONS = 1000  # Increased to 30 to make sure we get all hackathons on the page
 START_PAGE = 3  # Updated to page 3 as requested by user
 PROCESS_SINGLE_PAGE = True  # Only process the specified page
 MAX_PAGES = 5  # Number of pagination pages to crawl
+MAX_SCROLL_ATTEMPTS = 50  # Increased from 30 to 50 for more thorough scrolling
+SCROLL_PAUSE_TIME = 1.2  # Increased from 0.8 to 1.2 seconds
+FINAL_PAUSE_TIME = 8  # Longer final pause after scrolling
+MAX_RETRIES = 3  # Maximum number of retries for page loading
 
 async def take_screenshot(page, filename):
     """Take a screenshot for debugging purposes"""
@@ -54,8 +59,8 @@ async def extract_hackathon_links(page):
                 const results = [];
                 
                 // Specifically target the hackathon-thumbnail class as described in the user's prompt
-                const thumbnails = document.querySelectorAll('.hackathon-thumbnail');
-                console.log(`Found ${thumbnails.length} elements with hackathon-thumbnail class`);
+                const thumbnails = document.querySelectorAll('.hackathon-thumbnail, img[src*="challenge_thumbnails"], img[src*="medium_square.png"]');
+                console.log(`Found ${thumbnails.length} elements with hackathon-thumbnail class or similar`);
                 
                 thumbnails.forEach(img => {
                     if (img.src) {
@@ -70,11 +75,16 @@ async def extract_hackathon_links(page):
                         let linkUrl = '';
                         let title = '';
                         
-                        // Traverse up to find the card container
-                        while (parentCard && !parentCard.classList.contains('challenge-listing') && 
-                               !parentCard.classList.contains('card') && 
+                        // Traverse up to find the card container - go up to 6 levels to ensure we catch all structures
+                        let searchDepth = 0;
+                        while (parentCard && searchDepth < 6 && 
+                               !parentCard.classList.contains('challenge-listing') && 
+                               !parentCard.classList.contains('card') &&
+                               !parentCard.classList.contains('tile') &&
+                               !parentCard.querySelector('a[href*="devpost.com"]') &&
                                parentCard.tagName !== 'BODY') {
                             parentCard = parentCard.parentElement;
+                            searchDepth++;
                         }
                         
                         // If we found a parent card, extract link and title
@@ -104,7 +114,7 @@ async def extract_hackathon_links(page):
             }
         """)
         
-        print(f"Found {len(logo_data)} logo images with class 'hackathon-thumbnail'")
+        print(f"Found {len(logo_data)} logo images with class 'hackathon-thumbnail' or similar")
         
         # Extract full hackathon data from cards
         hackathon_data = await page.evaluate("""
@@ -119,7 +129,8 @@ async def extract_hackathon_links(page):
                         title: '',
                         tags: [],
                         prize_amount: '',
-                        participants: ''
+                        participants: '',
+                        date_range: '' // Add field for date range
                     };
                     
                     // Get any links in the card
@@ -143,7 +154,7 @@ async def extract_hackathon_links(page):
                     }
                     
                     // Get the logo image - specifically target hackathon-thumbnail class
-                    const logoImg = card.querySelector('.hackathon-thumbnail');
+                    const logoImg = card.querySelector('.hackathon-thumbnail, img[src*="challenge_thumbnails"], img[src*="medium_square.png"]');
                     if (logoImg && logoImg.src) {
                         // Ensure we have a full URL by adding https: if it starts with //
                         let logoSrc = logoImg.src;
@@ -193,6 +204,29 @@ async def extract_hackathon_links(page):
                         data.participants = participantsEl.textContent.trim();
                     }
                     
+                    // Look for date range in the card
+                    // First, try to find it in a dedicated date element
+                    const dateElements = card.querySelectorAll('.date, [class*="date"], .time, [class*="time"], .duration, [class*="duration"]');
+                    for (const dateEl of dateElements) {
+                        const text = dateEl.textContent.trim();
+                        // Month abbreviated followed by day range and year
+                        if (/[A-Za-z]{3}\\s*\\d{1,2}\\s*-\\s*(?:[A-Za-z]{3}\\s*)?\\d{1,2},?\\s*\\d{4}/.test(text)) {
+                            data.date_range = text;
+                            break;
+                        }
+                    }
+                    
+                    // If we still don't have a date range, look in the full card text
+                    if (!data.date_range) {
+                        const cardText = card.textContent;
+                        // Try to match common date patterns - Month day - Month day, year
+                        const dateRegex = new RegExp("([A-Za-z]{3}\\s+\\d{1,2}\\s*-\\s*[A-Za-z]{3}\\s+\\d{1,2},?\\s*\\d{4}|[A-Za-z]{3}\\s+\\d{1,2}\\s*-\\s*\\d{1,2},?\\s*\\d{4})");
+                        const dateMatches = cardText.match(dateRegex);
+                        if (dateMatches) {
+                            data.date_range = dateMatches[1];
+                        }
+                    }
+                    
                     // If we have a URL, add this to our results
                     if (data.url) {
                         hackathonData.push(data);
@@ -200,13 +234,19 @@ async def extract_hackathon_links(page):
                 };
                 
                 // Process all potential hackathon cards
-                document.querySelectorAll('.challenge-listing').forEach(processCard);
+                document.querySelectorAll('.challenge-listing, .challenge-card, [class*="challenge"]:not([class*="challenge-empty"])').forEach(processCard);
                 
                 // Also check for other card types that might be hackathons
-                document.querySelectorAll('.card:not(.challenge-listing), [class*="card"]:not(.challenge-listing)').forEach(processCard);
+                document.querySelectorAll('.card:not(.challenge-listing), [class*="card"]:not(.challenge-listing), .tile, [class*="tile"]').forEach(processCard);
                 
-                // Look for other elements that might contain hackathon information
-                document.querySelectorAll('[class*="challenge"]:not(.challenge-listing):not(.card)').forEach(processCard);
+                // Process any elements that contain a valid hackathon link
+                document.querySelectorAll('a[href*="devpost.com"]:not([href*="devpost.com/hackathons"]):not([href*="help.devpost.com"]):not([href*="info.devpost.com"]):not([href*="devpost.com/software"])').forEach(link => {
+                    // Find the parent container
+                    const container = link.closest('[class*="card"], [class*="challenge"], [class*="tile"], [class*="listing"]') || link.parentElement;
+                    if (container && container.tagName !== 'BODY') {
+                        processCard(container);
+                    }
+                });
                 
                 return hackathonData;
             }
@@ -451,13 +491,105 @@ async def extract_hackathon_details(page, url, listing_data=None):
         
         # Check if we have pre-collected listing data for this URL
         logo_from_listing = None
+        date_range_from_listing = None
+        dates_from_listing = {"start_date": "", "end_date": "", "date_range": ""}
+        
         if listing_data and url in listing_data:
-            logo_from_listing = listing_data[url].get('logo_url')
+            # Extract listing details including dates
+            item_data = listing_data[url]
+            logo_from_listing = item_data.get('logo_url')
+            
+            # Try to extract dates from listing data direct date_range field
+            if item_data.get('date_range'):
+                date_range_from_listing = item_data.get('date_range')
+                print(f"Found date range directly from listing: {date_range_from_listing}")
+                dates_from_listing["date_range"] = date_range_from_listing
+                
+                # Try to split into start/end dates
+                parts = re.split(r'\s*[-–—]\s*', date_range_from_listing)
+                if len(parts) == 2:
+                    start_part, end_part = parts
+                    # Add year to start date if missing
+                    if not re.search(r'\d{4}', start_part) and re.search(r'\d{4}', end_part):
+                        year_match = re.search(r'(\d{4})', end_part)
+                        if year_match:
+                            dates_from_listing["start_date"] = f"{start_part}, {year_match.group(1)}"
+                    else:
+                        dates_from_listing["start_date"] = start_part
+                        
+                    dates_from_listing["end_date"] = end_part
+                    print(f"Parsed date range: {dates_from_listing['start_date']} to {dates_from_listing['end_date']}")
+            
+            # If no direct date range, try to extract from title
+            if not dates_from_listing["date_range"] and item_data.get('title'):
+                title_text = item_data.get('title', '')
+                # Look for date patterns like Mar 15 - Apr 10, 2025
+                date_match = re.search(r'([A-Za-z]{3}\s+\d{1,2}\s*[-–—]\s*[A-Za-z]{3}\s+\d{1,2},?\s*\d{4}|[A-Za-z]{3}\s+\d{1,2}\s*[-–—]\s*\d{1,2},?\s*\d{4})', title_text)
+                if date_match:
+                    dates_from_listing["date_range"] = date_match.group(1)
+                    print(f"Found date range in title: {dates_from_listing['date_range']}")
+                    
+                    # Try to split into start/end dates
+                    parts = re.split(r'\s*[-–—]\s*', dates_from_listing["date_range"])
+                    if len(parts) == 2:
+                        start_part, end_part = parts
+                        # Add year to start date if missing
+                        if not re.search(r'\d{4}', start_part) and re.search(r'\d{4}', end_part):
+                            year_match = re.search(r'(\d{4})', end_part)
+                            if year_match:
+                                dates_from_listing["start_date"] = f"{start_part}, {year_match.group(1)}"
+                        else:
+                            dates_from_listing["start_date"] = start_part
+                            
+                        dates_from_listing["end_date"] = end_part
+                        print(f"Parsed date range: {dates_from_listing['start_date']} to {dates_from_listing['end_date']}")
+            
+            # As a last resort, try to find dates in participants field which often contains them
+            if not dates_from_listing["date_range"] and item_data.get('participants'):
+                participants_text = item_data.get('participants', '')
+                date_match = re.search(r'([A-Za-z]{3}\s+\d{1,2}\s*[-–—]\s*[A-Za-z]{3}\s+\d{1,2},?\s*\d{4}|[A-Za-z]{3}\s+\d{1,2}\s*[-–—]\s*\d{1,2},?\s*\d{4})', participants_text)
+                if date_match:
+                    dates_from_listing["date_range"] = date_match.group(1)
+                    print(f"Found date range in participants field: {dates_from_listing['date_range']}")
+                    
+                    # Try to split into start/end dates
+                    parts = re.split(r'\s*[-–—]\s*', dates_from_listing["date_range"])
+                    if len(parts) == 2:
+                        start_part, end_part = parts
+                        # Add year to start date if missing
+                        if not re.search(r'\d{4}', start_part) and re.search(r'\d{4}', end_part):
+                            year_match = re.search(r'(\d{4})', end_part)
+                            if year_match:
+                                dates_from_listing["start_date"] = f"{start_part}, {year_match.group(1)}"
+                        else:
+                            dates_from_listing["start_date"] = start_part
+                            
+                        dates_from_listing["end_date"] = end_part
+                        print(f"Parsed date range from participants field: {dates_from_listing['start_date']} to {dates_from_listing['end_date']}")
+                
             if logo_from_listing:
                 print(f"Found logo URL from listing data: {logo_from_listing}")
         
         # Use a longer timeout and wait for more page elements to load
-        await page.goto(url, wait_until="networkidle", timeout=60000)
+        navigation_success = await goto_with_retry(page, url)
+        if not navigation_success:
+            print(f"Failed to navigate to {url} after multiple retries")
+            # Return basic information we have from listing data
+            if listing_data and url in listing_data:
+                basic_details = {
+                    'title': listing_data[url].get('title', url),
+                    'url': url,
+                    'logo_url': logo_from_listing or '',
+                    'start_date': dates_from_listing.get('start_date', ''),
+                    'end_date': dates_from_listing.get('end_date', ''),
+                    'tags': listing_data[url].get('tags', []),
+                    'mode': 'online',  # Default to online
+                    'source_platform': 'devpost'
+                }
+                print(f"Returning basic details from listing for {url}")
+                return basic_details
+            return None
+            
         await asyncio.sleep(3)  # Wait longer for JavaScript to execute
         
         # Get the hackathon slug for the screenshot filename
@@ -478,8 +610,8 @@ async def extract_hackathon_details(page, url, listing_data=None):
             'title': '',
             'description': '',
             'organizer': url.replace("https://", "").replace("http://", "").split('.')[0],  # Use domain as fallback organizer
-            'start_date': '',
-            'end_date': '',
+            'start_date': dates_from_listing.get('start_date', ''),  # Use date from listing if available
+            'end_date': dates_from_listing.get('end_date', ''),      # Use date from listing if available
             'location': '',
             'registration_deadline': '',
             'prize_pool': '',
@@ -507,9 +639,41 @@ async def extract_hackathon_details(page, url, listing_data=None):
                 details['title'] = listing_item['title']
                 print(f"Using title from listing: {details['title']}")
                 
+                # Extract date range from title if we haven't already
+                if not dates_from_listing.get('date_range') and not details['start_date'] and not details['end_date']:
+                    date_match = re.search(r'([A-Za-z]{3}\s+\d{1,2}\s*-\s*[A-Za-z]{3}\s+\d{1,2},?\s*\d{4}|[A-Za-z]{3}\s+\d{1,2}\s*-\s*\d{1,2},?\s*\d{4})', details['title'])
+                    if date_match:
+                        date_range = date_match.group(1)
+                        parts = re.split(r'\s*-\s*', date_range)
+                        if len(parts) == 2:
+                            start_part, end_part = parts
+                            if not re.search(r'\d{4}', start_part) and re.search(r'\d{4}', end_part):
+                                year_match = re.search(r'(\d{4})', end_part)
+                                if year_match:
+                                    details['start_date'] = f"{start_part}, {year_match.group(1)}"
+                            else:
+                                details['start_date'] = start_part
+                            details['end_date'] = end_part
+                            print(f"Extracted date range from title: {details['start_date']} to {details['end_date']}")
+                
             if not details['tags'] and listing_item.get('tags'):
                 details['tags'] = listing_item['tags']
                 print(f"Using tags from listing: {details['tags']}")
+                
+                # Try to extract dates from tags if needed
+                if not details['start_date'] or not details['end_date']:
+                    for tag in details['tags']:
+                        date_match = re.search(r'([A-Za-z]{3}\s+\d{1,2}\s*-\s*[A-Za-z]{3}\s+\d{1,2},?\s*\d{4}|[A-Za-z]{3}\s+\d{1,2}\s*-\s*\d{1,2},?\s*\d{4})', tag)
+                        if date_match:
+                            date_range = date_match.group(1)
+                            parts = re.split(r'\s*-\s*', date_range)
+                            if len(parts) == 2:
+                                if not details['start_date']:
+                                    details['start_date'] = parts[0]
+                                if not details['end_date']:
+                                    details['end_date'] = parts[1]
+                                print(f"Extracted date range from tag: {details['start_date']} to {details['end_date']}")
+                                break
                 
             if not details['prize_pool'] and listing_item.get('prize_amount'):
                 details['prize_pool'] = listing_item['prize_amount']
@@ -518,6 +682,20 @@ async def extract_hackathon_details(page, url, listing_data=None):
             if not details['num_participants'] and listing_item.get('participants'):
                 details['num_participants'] = listing_item['participants']
                 print(f"Using participants from listing: {details['num_participants']}")
+                
+            # Also try to extract dates from participants or prize info which often contains the date range
+            if (not details['start_date'] or not details['end_date']) and listing_item.get('participants'):
+                participant_text = listing_item.get('participants', '')
+                date_match = re.search(r'([A-Za-z]{3}\s+\d{1,2}\s*-\s*[A-Za-z]{3}\s+\d{1,2},?\s*\d{4}|[A-Za-z]{3}\s+\d{1,2}\s*-\s*\d{1,2},?\s*\d{4})', participant_text)
+                if date_match:
+                    date_range = date_match.group(1)
+                    parts = re.split(r'\s*-\s*', date_range)
+                    if len(parts) == 2:
+                        if not details['start_date']:
+                            details['start_date'] = parts[0]
+                        if not details['end_date']:
+                            details['end_date'] = parts[1]
+                        print(f"Extracted date range from participant info: {details['start_date']} to {details['end_date']}")
         
         # Wait for the page to fully load - properly using try/except instead of catch
         try:
@@ -733,15 +911,31 @@ async def extract_hackathon_details(page, url, listing_data=None):
                     data.status = statusEl.textContent.trim();
                 }
                 
-                // Extract exact deadline date with timezone
+                // Extract exact deadline date with timezone - FIX: capture the full month string
                 const exactDateEl = document.querySelector('[data-dates-text], [data-date-info-tag]');
                 if (exactDateEl) {
                     const dateText = exactDateEl.textContent.trim();
                     if (dateText) {
                         // Try to extract the date and timezone
-                        const dateMatch = dateText.match(/Deadline.*(\\w+ \\d{1,2}, \\d{4} @ \\d{1,2}:\\d{2}[ap]m) ([A-Z0-9+-:]+)/i);
+                        const dateMatch = dateText.match(/Deadline.*?(\\w+ \\d{1,2}, \\d{4} @ \\d{1,2}:\\d{2}[ap]m) ([A-Z0-9+-:]+)/i);
                         if (dateMatch && dateMatch[1]) {
                             data.submission_deadline = dateMatch[1] + ' ' + (dateMatch[2] || '');
+                        }
+                    }
+                }
+                
+                // If we still don't have a submission deadline, try other methods
+                if (!data.submission_deadline) {
+                    // Look for elements that might contain a deadline
+                    const deadlineElements = document.querySelectorAll('.deadline, [class*="deadline"], .end-date, [class*="end-date"]');
+                    for (const el of deadlineElements) {
+                        const text = el.textContent.trim();
+                        if (text && (text.toLowerCase().includes('deadline') || text.toLowerCase().includes('submit by') || text.toLowerCase().includes('end'))) {
+                            const fullMatch = text.match(/(\\w+ \\d{1,2},? \\d{4}\\s*@?\\s*\\d{1,2}:\\d{2}[ap]m)/i);
+                            if (fullMatch) {
+                                data.submission_deadline = fullMatch[1];
+                                break;
+                            }
                         }
                     }
                 }
@@ -902,43 +1096,52 @@ async def extract_hackathon_details(page, url, listing_data=None):
         """)
         
         # Update details with extracted dates
-        if dates['start_date']:
+        if dates['start_date'] and not details['start_date']:
             details['start_date'] = dates['start_date']
-        if dates['end_date']:
+        if dates['end_date'] and not details['end_date']:
             details['end_date'] = dates['end_date']
-        if dates['registration_deadline']:
+        if dates['registration_deadline'] and not details['registration_deadline']:
             details['registration_deadline'] = dates['registration_deadline']
         
-        print(f"Extracted dates: {dates['start_date']} to {dates['end_date']}")
-        
-        # If we still don't have dates, try pattern matching on the whole page content
-        if not details['start_date'] or not details['end_date']:
-            # Common date patterns
-            date_patterns = [
-                r'(\d{1,2}/\d{1,2}/\d{2,4})\s*(?:to|-)\s*(\d{1,2}/\d{1,2}/\d{2,4})',
-                r'([A-Za-z]+ \d{1,2},? \d{4})\s*(?:to|-)\s*([A-Za-z]+ \d{1,2},? \d{4})',
-                r'(\d{1,2} [A-Za-z]+ \d{4})\s*(?:to|-)\s*(\d{1,2} [A-Za-z]+ \d{4})'
-            ]
-            
-            # Get page content
-            page_content = await page.evaluate("document.body.innerText")
-            
-            # Look for date patterns in the page text
-            for pattern in date_patterns:
-                matches = re.findall(pattern, page_content)
-                if matches:
-                    details['start_date'] = matches[0][0]
-                    details['end_date'] = matches[0][1]
-                    print(f"Found dates with pattern matching: {details['start_date']} to {details['end_date']}")
-                    break
+        print(f"Extracted dates: {details['start_date']} to {details['end_date']}")
         
         # If we still don't have some of the required fields, use fallbacks
+        # Only use current date as fallback if we have no date from any source
         if not details['start_date']:
             details['start_date'] = datetime.now().strftime("%B %d, %Y")
+            print(f"Using current date as fallback for start_date: {details['start_date']}")
         
         if not details['end_date']:
-            future_date = datetime.now() + timedelta(days=30)
-            details['end_date'] = future_date.strftime("%B %d, %Y")
+            # If we have a start date, set end date to 30 days after start date
+            if details['start_date']:
+                try:
+                    # Parse the start date
+                    start_date_dt = None
+                    for fmt in ["%B %d, %Y", "%b %d, %Y", "%b %d %Y", "%Y-%m-%d"]:
+                        try:
+                            start_date_dt = datetime.strptime(details['start_date'], fmt)
+                            break
+                        except ValueError:
+                            continue
+                    
+                    if start_date_dt:
+                        future_date = start_date_dt + timedelta(days=30)
+                        details['end_date'] = future_date.strftime("%B %d, %Y")
+                        print(f"Setting end_date to 30 days after start_date: {details['end_date']}")
+                    else:
+                        # If parsing failed, use current date + 30 days
+                        future_date = datetime.now() + timedelta(days=30)
+                        details['end_date'] = future_date.strftime("%B %d, %Y")
+                        print(f"Using current date + 30 days as fallback for end_date: {details['end_date']}")
+                except Exception as e:
+                    # If date parsing fails, use simple fallback
+                    future_date = datetime.now() + timedelta(days=30)
+                    details['end_date'] = future_date.strftime("%B %d, %Y")
+                    print(f"Error parsing start date, using current date + 30 days as fallback: {details['end_date']}")
+            else:
+                future_date = datetime.now() + timedelta(days=30)
+                details['end_date'] = future_date.strftime("%B %d, %Y")
+                print(f"Using current date + 30 days as fallback for end_date: {details['end_date']}")
         
         # Double-check that we're using logo from listing if available - 
         # this ensures we prioritize the logo from the listing page as mentioned in the prompt
@@ -968,6 +1171,118 @@ async def extract_hackathon_details(page, url, listing_data=None):
         print(f"  Status: {details.get('status', 'Not found')}")
         print(f"  Submission Deadline: {details.get('submission_deadline', 'Not found')}")
         
+        # If we still don't have dates, try pattern matching on the whole page content
+        if not details['start_date'] or not details['end_date']:
+            # Common date patterns
+            date_patterns = [
+                r'(\d{1,2}/\d{1,2}/\d{2,4})\s*(?:to|-)\s*(\d{1,2}/\d{1,2}/\d{2,4})',
+                r'([A-Za-z]+ \d{1,2},? \d{4})\s*(?:to|-)\s*([A-Za-z]+ \d{1,2},? \d{4})',
+                r'(\d{1,2} [A-Za-z]+ \d{4})\s*(?:to|-)\s*(\d{1,2} [A-Za-z]+ \d{4})',
+                r'([A-Za-z]{3} \d{1,2})\s*[-–—]\s*([A-Za-z]{3} \d{1,2}, \d{4})',
+                r'([A-Za-z]{3} \d{1,2})\s*[-–—]\s*(\d{1,2}, \d{4})'
+            ]
+            
+            # Get page content
+            page_content = await page.evaluate("document.body.innerText")
+            
+            # Look for date patterns in the page text
+            for pattern in date_patterns:
+                matches = re.findall(pattern, page_content)
+                if matches:
+                    # Only use if we don't already have start/end dates
+                    if not details['start_date']:
+                        details['start_date'] = matches[0][0]
+                    if not details['end_date']:
+                        details['end_date'] = matches[0][1]
+                    print(f"Found dates with pattern matching: {details['start_date']} to {details['end_date']}")
+                    break
+        
+        # Final check before returning results - Fix for submission_deadline truncation
+        if details.get('submission_deadline') and len(details['submission_deadline']) > 0:
+            # Check if the submission deadline starts with just a letter that might be a truncated month
+            if re.match(r'^[a-zA-Z] \d', details['submission_deadline']):
+                # Find what month it should be based on the first letter
+                month_letter = details['submission_deadline'][0].lower()
+                possible_months = {
+                    'j': ['January', 'June', 'July'],
+                    'f': ['February'],
+                    'm': ['March', 'May'],
+                    'a': ['April', 'August'],
+                    's': ['September'],
+                    'o': ['October'],
+                    'n': ['November'],
+                    'd': ['December']
+                }
+                
+                # Try to determine the month from context (end date or status)
+                probable_month = None
+                if month_letter in possible_months:
+                    if month_letter == 'a':
+                        # Differentiate April vs August
+                        if details.get('end_date') and 'apr' in details['end_date'].lower():
+                            probable_month = 'April'
+                        elif details.get('end_date') and 'aug' in details['end_date'].lower():
+                            probable_month = 'August'
+                    elif month_letter == 'm':
+                        # Differentiate March vs May
+                        if details.get('end_date') and 'mar' in details['end_date'].lower():
+                            probable_month = 'March'
+                        elif details.get('end_date') and 'may' in details['end_date'].lower():
+                            probable_month = 'May'
+                    elif month_letter == 'j':
+                        # Differentiate Jan vs Jun vs Jul
+                        if details.get('end_date') and 'jan' in details['end_date'].lower():
+                            probable_month = 'January'
+                        elif details.get('end_date') and 'jun' in details['end_date'].lower():
+                            probable_month = 'June'
+                        elif details.get('end_date') and 'jul' in details['end_date'].lower():
+                            probable_month = 'July'
+                    else:
+                        # For other letters, just take the first possible month
+                        probable_month = possible_months[month_letter][0]
+                
+                if probable_month:
+                    # Replace the single letter with the full month name
+                    details['submission_deadline'] = probable_month + details['submission_deadline'][1:]
+                    print(f"Fixed truncated month in submission deadline: {details['submission_deadline']}")
+            
+            # Also fix any 2-letter month abbreviations (like Ma for May)
+            elif re.match(r'^[a-zA-Z]{2} \d', details['submission_deadline']):
+                month_abbr = details['submission_deadline'][:2].lower()
+                month_mapping = {
+                    'ja': 'January',
+                    'fe': 'February',
+                    'ma': 'March',
+                    'ap': 'April',
+                    'ma': 'May',
+                    'ju': 'June',
+                    'ju': 'July',
+                    'au': 'August',
+                    'se': 'September',
+                    'oc': 'October',
+                    'no': 'November',
+                    'de': 'December'
+                }
+                
+                # Try to determine which month based on context
+                if month_abbr in month_mapping:
+                    if month_abbr == 'ma':
+                        # Disambiguate March vs May
+                        if details.get('end_date') and 'march' in details['end_date'].lower():
+                            details['submission_deadline'] = 'March' + details['submission_deadline'][2:]
+                        elif details.get('end_date') and 'may' in details['end_date'].lower():
+                            details['submission_deadline'] = 'May' + details['submission_deadline'][2:]
+                    elif month_abbr == 'ju':
+                        # Disambiguate June vs July
+                        if details.get('end_date') and 'june' in details['end_date'].lower():
+                            details['submission_deadline'] = 'June' + details['submission_deadline'][2:]
+                        elif details.get('end_date') and 'july' in details['end_date'].lower():
+                            details['submission_deadline'] = 'July' + details['submission_deadline'][2:]
+                    else:
+                        details['submission_deadline'] = month_mapping[month_abbr] + details['submission_deadline'][2:]
+                
+                print(f"Fixed abbreviated month in submission deadline: {details['submission_deadline']}")
+
         return details
         
     except Exception as e:
@@ -1018,6 +1333,40 @@ def save_hackathons_to_csv(hackathons: List[Dict[str, Any]], filename: str) -> N
     
     print(f"Saved {len(hackathons)} hackathons to '{filename}'")
 
+async def goto_with_retry(page, url, max_retries=MAX_RETRIES):
+    """Navigate to a URL with retries on timeout or other common errors"""
+    for attempt in range(max_retries):
+        try:
+            print(f"Navigation attempt {attempt+1}/{max_retries} to {url}")
+            # Add a random delay between retries to avoid rate limiting
+            if attempt > 0:
+                delay = random.uniform(2, 5) * attempt
+                print(f"Waiting {delay:.1f} seconds before retry...")
+                await asyncio.sleep(delay)
+            
+            # Try different wait_until strategies on subsequent attempts
+            if attempt == 0:
+                await page.goto(url, wait_until="domcontentloaded", timeout=90000)
+            elif attempt == 1:
+                await page.goto(url, wait_until="load", timeout=90000)
+            else:
+                await page.goto(url, timeout=120000)  # No wait_until on last attempt, longer timeout
+            
+            # Successfully navigated
+            print(f"Successfully navigated to {url}")
+            return True
+        except PlaywrightError as e:
+            print(f"Error navigating to {url} (attempt {attempt+1}/{max_retries}): {e}")
+            if attempt == max_retries - 1:
+                print(f"Failed all {max_retries} attempts to navigate to {url}")
+                return False
+            
+            # Try to recover the page if it's in a bad state
+            try:
+                await page.reload()
+            except:
+                pass
+
 async def crawl_devpost_hackathons():
     """Main function to crawl hackathons from Devpost"""
     print("Starting Devpost Hackathon Crawler...")
@@ -1040,7 +1389,7 @@ async def crawl_devpost_hackathons():
         )
         
         # Set default timeout
-        context.set_default_timeout(60000)  # 60 seconds
+        context.set_default_timeout(90000)  # 90 seconds
         
         page = await context.new_page()
         all_hackathon_links = []
@@ -1055,8 +1404,10 @@ async def crawl_devpost_hackathons():
                 page_url = f"{BASE_URL}{DEFAULT_PARAMS}&page={START_PAGE}"
                 print(f"\nProcessing page {START_PAGE}: {page_url}")
                 
-                # Navigate to the page
-                await page.goto(page_url, wait_until="domcontentloaded")
+                # Navigate to the page with retry mechanism
+                if not await goto_with_retry(page, page_url):
+                    raise Exception(f"Failed to load page {page_url} after multiple attempts")
+                
                 await asyncio.sleep(5)  # Wait longer for initial load
                 
                 # Take screenshot on initial load
@@ -1072,14 +1423,13 @@ async def crawl_devpost_hackathons():
                 # Scroll multiple times with pauses to allow content to load
                 prev_height = initial_height
                 same_height_count = 0
-                max_scrolls = 30  # Increase from 20 to 30 for more complete loading
                 
-                for i in range(max_scrolls):
+                for i in range(MAX_SCROLL_ATTEMPTS):
                     # Scroll down by a larger amount
                     await page.evaluate(f"window.scrollBy(0, 1200)")
                     
                     # Small pause to let content load
-                    await asyncio.sleep(0.8)  # Increase from 0.5 to 0.8
+                    await asyncio.sleep(SCROLL_PAUSE_TIME)
                     
                     # Check if page height has changed
                     current_height = await page.evaluate("document.body.scrollHeight")
@@ -1104,10 +1454,19 @@ async def crawl_devpost_hackathons():
                 
                 # Final scroll to the bottom to ensure all content is loaded
                 await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                await asyncio.sleep(3)  # Wait longer for final load
+                await asyncio.sleep(FINAL_PAUSE_TIME)  # Wait longer for final load
+
+                # Additional random scrolls to trigger any remaining lazy-loaded content
+                for _ in range(3):
+                    random_scroll = await page.evaluate("Math.floor(Math.random() * document.body.scrollHeight * 0.8)")
+                    await page.evaluate(f"window.scrollTo(0, {random_scroll})")
+                    await asyncio.sleep(1)
                 
-                # Take final screenshot after scrolling
-                await take_screenshot(page, f"page_{START_PAGE}_after_scrolling.png")
+                # Final scroll back to top and then to bottom again
+                await page.evaluate("window.scrollTo(0, 0)")
+                await asyncio.sleep(1)
+                await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                await asyncio.sleep(3)
                 
                 # Extract hackathon links from this page
                 print(f"Extracting hackathon links from page {START_PAGE}...")
@@ -1145,8 +1504,10 @@ async def crawl_devpost_hackathons():
                     page_url = f"{BASE_URL}{DEFAULT_PARAMS}&page={current_page}"
                     print(f"\nProcessing page {current_page} of {end_page}: {page_url}")
                     
-                    # Navigate to the page
-                    await page.goto(page_url, wait_until="domcontentloaded")
+                    # Navigate to the page with retry mechanism
+                    if not await goto_with_retry(page, page_url):
+                        raise Exception(f"Failed to load page {page_url} after multiple attempts")
+                    
                     await asyncio.sleep(5)  # Wait longer for initial load
                     
                     # Take screenshot on initial load
@@ -1162,14 +1523,13 @@ async def crawl_devpost_hackathons():
                     # Scroll multiple times with pauses to allow content to load
                     prev_height = initial_height
                     same_height_count = 0
-                    max_scrolls = 30  # Increased for more thorough loading
                     
-                    for i in range(max_scrolls):
+                    for i in range(MAX_SCROLL_ATTEMPTS):
                         # Scroll down by a larger amount
                         await page.evaluate(f"window.scrollBy(0, 1200)")
                         
                         # Small pause to let content load
-                        await asyncio.sleep(0.8)
+                        await asyncio.sleep(SCROLL_PAUSE_TIME)
                         
                         # Check if page height has changed
                         current_height = await page.evaluate("document.body.scrollHeight")

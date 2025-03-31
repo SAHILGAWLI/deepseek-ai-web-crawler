@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+conda activate deep-seek-crawler  use this first when ever we are trying to run any command

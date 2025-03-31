@@ -1,93 +1,507 @@
 {
   "https://agentforcehackathon.devpost.com/?ref_feature=challenge&ref_medium=discover": {
     "url": "https://agentforcehackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/278/434/datas/medium_square.png"
-  },
-  "https://azureaidev.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://azureaidev.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/267/017/datas/medium_square.png"
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/278/434/datas/medium_square.png",
+    "title": "Featured",
+    "tags": [
+      "Machine Learning/AI Beginner Friendly Low/No Code",
+      "",
+      "Machine Learning/AI",
+      "Beginner Friendly",
+      "Low/No Code"
+    ],
+    "prize_amount": "$140,000 in prizes 4851 participants",
+    "participants": "$140,000 in prizes 4851 participants",
+    "date_range": ""
   },
   "https://fetch-ai-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover": {
     "url": "https://fetch-ai-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/265/243/datas/medium_square.png"
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/265/243/datas/medium_square.png",
+    "title": "Featured",
+    "tags": [
+      "Blockchain Fintech Machine Learning/AI",
+      "",
+      "Blockchain",
+      "Fintech",
+      "Machine Learning/AI"
+    ],
+    "prize_amount": "$10,000 in prizes 1259 participants",
+    "participants": "$10,000 in prizes 1259 participants",
+    "date_range": ""
   },
-  "https://hackreddit.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://hackreddit.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/254/011/datas/medium_square.png"
-  },
-  "https://digital-jam.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://digital-jam.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/254/887/datas/medium_square.png"
+  "https://mhcp-mobile-genre-competition.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://mhcp-mobile-genre-competition.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/295/852/datas/medium_square.jpg",
+    "title": "Featured",
+    "tags": [
+      "AR/VR Gaming Mobile",
+      "",
+      "AR/VR",
+      "Gaming",
+      "Mobile"
+    ],
+    "prize_amount": "$1,000,000 in prizes 786 participants",
+    "participants": "$1,000,000 in prizes 786 participants",
+    "date_range": ""
   },
   "https://gnec-hackathon-2025-spring.devpost.com/?ref_feature=challenge&ref_medium=discover": {
     "url": "https://gnec-hackathon-2025-spring.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/219/991/datas/medium_square.png"
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/219/991/datas/medium_square.png",
+    "title": "GNEC Hackathon 2025 Spring - Compete For UN-Affiliated/NGO Internships & Prizesabout 1 month leftOnline$10,000 in prizes 624 participants Global NGO Executive CommitteeMar 12 - May 10, 2025 Beginner Friendly Social Good Web",
+    "tags": [
+      "Beginner Friendly Social Good Web",
+      "",
+      "Beginner Friendly",
+      "Social Good",
+      "Web"
+    ],
+    "prize_amount": "$10,000 in prizes 624 participants",
+    "participants": "$10,000 in prizes 624 participants",
+    "date_range": ""
   },
-  "https://ingeniumstem-winter-hacks-1-0.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://ingeniumstem-winter-hacks-1-0.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/197/183/datas/medium_square.png"
+  "https://acdblr-blogathon.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://acdblr-blogathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/297/015/datas/medium_square.jpeg",
+    "title": "AWS Community Day Bengaluru - Blogathon15 days leftOnline5 non-cash prizes 288 participants AWS User Group BengaluruMar 01 - Apr 15, 2025 Databases Machine Learning/AI Web",
+    "tags": [
+      "Databases Machine Learning/AI Web",
+      "",
+      "Databases",
+      "Machine Learning/AI",
+      "Web"
+    ],
+    "prize_amount": "5 non-cash prizes 288 participants",
+    "participants": "5 non-cash prizes 288 participants",
+    "date_range": ""
   },
   "https://hackonomics25.devpost.com/?ref_feature=challenge&ref_medium=discover": {
     "url": "https://hackonomics25.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/205/686/datas/medium_square.png"
-  },
-  "https://hackatopia.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://hackatopia.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/209/681/datas/medium_square.png"
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/205/686/datas/medium_square.png",
+    "title": "Hackonomics 20253 months leftOnline$0 in prizes 287 participants hackonomicsFeb 01 - Jun 15, 2025 Beginner Friendly Education Open Ended",
+    "tags": [
+      "Beginner Friendly Education Open Ended",
+      "",
+      "Beginner Friendly",
+      "Education",
+      "Open Ended"
+    ],
+    "prize_amount": "$0 in prizes 287 participants",
+    "participants": "$0 in prizes 287 participants",
+    "date_range": ""
   },
   "https://portxfolio25.devpost.com/?ref_feature=challenge&ref_medium=discover": {
     "url": "https://portxfolio25.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/324/097/datas/medium_square.png"
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/324/097/datas/medium_square.png",
+    "title": "PortXFolio25 days leftOnline$3,100 in prizes 264 participants BurgerOSMar 16 - Apr 24, 2025 Beginner Friendly Design Web",
+    "tags": [
+      "Beginner Friendly Design Web",
+      "",
+      "Beginner Friendly",
+      "Design",
+      "Web"
+    ],
+    "prize_amount": "$3,100 in prizes 264 participants",
+    "participants": "$3,100 in prizes 264 participants",
+    "date_range": ""
+  },
+  "https://spacehack2025.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://spacehack2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/180/857/datas/medium_square.jpg",
+    "title": "SpaceHack 2025: Space Data Challengeabout 1 month leftOnline$550 in prizes 232 participants Bishop Academy High SchoolDec 15, 2024 - May 01, 2025 Machine Learning/AI Robotic Process Automation Social Good",
+    "tags": [
+      "Machine Learning/AI Robotic Process Automation Social Good",
+      "",
+      "Machine Learning/AI",
+      "Robotic Process Automation",
+      "Social Good"
+    ],
+    "prize_amount": "$550 in prizes 232 participants",
+    "participants": "$550 in prizes 232 participants",
+    "date_range": ""
+  },
+  "https://hackathon01.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://hackathon01.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/198/357/datas/medium_square.jpg",
+    "title": "Hack_for_Carrierabout 6 hours leftOnline\u20b9 1,000 in prizes 225 participants NoneJan 19 - Mar 31, 2025 Education",
+    "tags": [
+      "Education",
+      "",
+      "Education"
+    ],
+    "prize_amount": "\u20b9 1,000 in prizes 225 participants",
+    "participants": "\u20b9 1,000 in prizes 225 participants",
+    "date_range": ""
+  },
+  "https://hackatopia.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://hackatopia.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/209/681/datas/medium_square.png",
+    "title": "Hackatopia6 days leftOnline$0 in prizes 224 participants Youth Pioneers in STEMFeb 10 - Apr 05, 2025 Beginner Friendly Open Ended Low/No Code",
+    "tags": [
+      "Beginner Friendly Open Ended Low/No Code",
+      "",
+      "Beginner Friendly",
+      "Open Ended",
+      "Low/No Code"
+    ],
+    "prize_amount": "$0 in prizes 224 participants",
+    "participants": "$0 in prizes 224 participants",
+    "date_range": ""
+  },
+  "https://ai-agent-beginners-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://ai-agent-beginners-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/298/029/datas/medium_square.png",
+    "title": "AI Agent beginners Hackathon7 days leftOnline$600 in prizes 166 participants RMIT UniversityMar 30 - Apr 06, 2025 Beginner Friendly Mobile Web",
+    "tags": [
+      "Beginner Friendly Mobile Web",
+      "",
+      "Beginner Friendly",
+      "Mobile",
+      "Web"
+    ],
+    "prize_amount": "$600 in prizes 166 participants",
+    "participants": "$600 in prizes 166 participants",
+    "date_range": ""
   },
   "https://gated.devpost.com/?ref_feature=challenge&ref_medium=discover": {
     "url": "https://gated.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/256/000/datas/medium_square.png"
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/256/000/datas/medium_square.png",
+    "title": "The Gated NFTs University Regional Hackathonabout 2 months leftOnline$3,225 in prizes 148 participants BitBadgesFeb 15 - May 15, 2025 Blockchain E-commerce/Retail Web",
+    "tags": [
+      "Blockchain E-commerce/Retail Web",
+      "",
+      "Blockchain",
+      "E-commerce/Retail",
+      "Web"
+    ],
+    "prize_amount": "$3,225 in prizes 148 participants",
+    "participants": "$3,225 in prizes 148 participants",
+    "date_range": ""
   },
   "https://codepi-ic-2025-1.devpost.com/?ref_feature=challenge&ref_medium=discover": {
     "url": "https://codepi-ic-2025-1.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/268/128/datas/medium_square.png"
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/268/128/datas/medium_square.png",
+    "title": "CodePi 2025.1about 2 months leftOnline$0 in prizes 148 participants CodePiFeb 16 - May 25, 2025 Education Low/No Code Social Good",
+    "tags": [
+      "Education Low/No Code Social Good",
+      "",
+      "Education",
+      "Low/No Code",
+      "Social Good"
+    ],
+    "prize_amount": "$0 in prizes 148 participants",
+    "participants": "$0 in prizes 148 participants",
+    "date_range": ""
+  },
+  "https://pike-labs-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://pike-labs-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/227/901/datas/medium_square.jpeg",
+    "title": "Pike Labs App Challenge2 months leftOnline$10,000 in prizes 116 participants Pike LabsMar 01 - May 30, 2025 Machine Learning/AI Open Ended Social Good",
+    "tags": [
+      "Machine Learning/AI Open Ended Social Good",
+      "",
+      "Machine Learning/AI",
+      "Open Ended",
+      "Social Good"
+    ],
+    "prize_amount": "$10,000 in prizes 116 participants",
+    "participants": "$10,000 in prizes 116 participants",
+    "date_range": ""
   },
   "https://saai3.devpost.com/?ref_feature=challenge&ref_medium=discover": {
     "url": "https://saai3.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/217/298/datas/medium_square.png"
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/217/298/datas/medium_square.png",
+    "title": "SAAI (Kids) - Hackathon on Art and AI13 days leftOnline$1,000 in prizes 114 participants KAUSTFeb 08 - Apr 12, 2025 Education Machine Learning/AI Social Good",
+    "tags": [
+      "Education Machine Learning/AI Social Good",
+      "",
+      "Education",
+      "Machine Learning/AI",
+      "Social Good"
+    ],
+    "prize_amount": "$1,000 in prizes 114 participants",
+    "participants": "$1,000 in prizes 114 participants",
+    "date_range": ""
   },
-  "https://world-green-growth-forum-2025.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://world-green-growth-forum-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/279/852/datas/medium_square.png"
+  "https://code-crunch-tropical-hack25.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://code-crunch-tropical-hack25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/335/861/datas/medium_square.png",
+    "title": "CODE CRUNCH 305 Hackathon | Edition Spring 2025about 22 hours leftOnline16 non-cash prizes 86 participants CODE CRUNCHMar 29 - 31, 2025 Fintech Health Machine Learning/AI",
+    "tags": [
+      "Fintech Health Machine Learning/AI",
+      "",
+      "Fintech",
+      "Health",
+      "Machine Learning/AI"
+    ],
+    "prize_amount": "16 non-cash prizes 86 participants",
+    "participants": "16 non-cash prizes 86 participants",
+    "date_range": ""
+  },
+  "https://ai-agent-hackatho.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://ai-agent-hackatho.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/336/494/datas/medium_square.png",
+    "title": "Xpecto'25 about 4 hours leftOnline\u20b9 60,000 in prizes 84 participants Fetch.aiMar 28 - 31, 2025 Blockchain Machine Learning/AI IoT",
+    "tags": [
+      "Blockchain Machine Learning/AI IoT",
+      "",
+      "Blockchain",
+      "Machine Learning/AI",
+      "IoT"
+    ],
+    "prize_amount": "\u20b9 60,000 in prizes 84 participants",
+    "participants": "\u20b9 60,000 in prizes 84 participants",
+    "date_range": ""
+  },
+  "https://ese4510s25.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://ese4510s25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+    "title": "2024-25 Fall ESE Senior Design [Spring]about 1 month leftMoore building $0 in prizes 54 participants university of pennsylvaniaJan 15 - May 10, 2025 Education",
+    "tags": [
+      "Education",
+      "",
+      "Education"
+    ],
+    "prize_amount": "$0 in prizes 54 participants",
+    "participants": "$0 in prizes 54 participants",
+    "date_range": ""
   },
   "https://health-hack-x-illuminati.devpost.com/?ref_feature=challenge&ref_medium=discover": {
     "url": "https://health-hack-x-illuminati.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/317/763/datas/medium_square.png"
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/317/763/datas/medium_square.png",
+    "title": "HEALTH HACK X  - ILLUMINATI11 days leftOnline2 non-cash prizes 52 participants Armed Forces Medical CollegeMar 15 - Apr 10, 2025 Health Machine Learning/AI Productivity",
+    "tags": [
+      "Health Machine Learning/AI Productivity",
+      "",
+      "Health",
+      "Machine Learning/AI",
+      "Productivity"
+    ],
+    "prize_amount": "2 non-cash prizes 52 participants",
+    "participants": "2 non-cash prizes 52 participants",
+    "date_range": ""
   },
   "https://phystech2025.devpost.com/?ref_feature=challenge&ref_medium=discover": {
     "url": "https://phystech2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
-    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/325/122/datas/medium_square.png"
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/325/122/datas/medium_square.png",
+    "title": "PhysTech 2025: Physical Activity and Technology Hack Day3 months leftOnline11 non-cash prizes 39 participants BinnovativeMar 16 - Jun 28, 2025 Beginner Friendly Health Open Ended",
+    "tags": [
+      "Beginner Friendly Health Open Ended",
+      "",
+      "Beginner Friendly",
+      "Health",
+      "Open Ended"
+    ],
+    "prize_amount": "11 non-cash prizes 39 participants",
+    "participants": "11 non-cash prizes 39 participants",
+    "date_range": ""
   },
-  "https://mhcp-mobile-genre-competition.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://mhcp-mobile-genre-competition.devpost.com/?ref_feature=challenge&ref_medium=discover"
+  "https://helpingai-hacks.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://helpingai-hacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/335/516/datas/medium_square.png",
+    "title": "Helpingai Hacksabout 17 hours leftOnline3 non-cash prizes 37 participants HelpingaiMar 27 - 31, 2025 Machine Learning/AI Mobile Open Ended",
+    "tags": [
+      "Machine Learning/AI Mobile Open Ended",
+      "",
+      "Machine Learning/AI",
+      "Mobile",
+      "Open Ended"
+    ],
+    "prize_amount": "3 non-cash prizes 37 participants",
+    "participants": "3 non-cash prizes 37 participants",
+    "date_range": ""
   },
-  "https://acdblr-blogathon.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://acdblr-blogathon.devpost.com/?ref_feature=challenge&ref_medium=discover"
+  "https://dawsoncollege-ai-making-2025.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://dawsoncollege-ai-making-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/325/682/datas/medium_square.png",
+    "title": "Dawson College AI Making Challengeabout 1 month leftOnline$0 in prizes 16 participants Dawson CollegeMar 26 - May 04, 2025 Machine Learning/AI Open Ended",
+    "tags": [
+      "Machine Learning/AI Open Ended",
+      "",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "prize_amount": "$0 in prizes 16 participants",
+    "participants": "$0 in prizes 16 participants",
+    "date_range": ""
   },
-  "https://spacehack2025.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://spacehack2025.devpost.com/?ref_feature=challenge&ref_medium=discover"
+  "https://fetch-ai-hackathon-techkriti25.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://fetch-ai-hackathon-techkriti25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+    "title": "Fetch.ai Hackathon at Techkriti'25, IIT Kanpurabout 11 hours leftIndian Institute of Technology Kanpur\u20b9 100,000 in prizes 14 participants Fetch.aiMar 30 - 31, 2025 Beginner Friendly Blockchain Machine Learning/AI",
+    "tags": [
+      "Beginner Friendly Blockchain Machine Learning/AI",
+      "",
+      "Beginner Friendly",
+      "Blockchain",
+      "Machine Learning/AI"
+    ],
+    "prize_amount": "\u20b9 100,000 in prizes 14 participants",
+    "participants": "\u20b9 100,000 in prizes 14 participants",
+    "date_range": ""
   },
-  "https://hackathon01.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://hackathon01.devpost.com/?ref_feature=challenge&ref_medium=discover"
+  "https://the-work-revolution.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://the-work-revolution.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/337/710/datas/medium_square.png",
+    "title": "Workato x IMDA National Developer Challenge: The Work Revolution21 days leftPIXEL$18,000 in prizes 11 participants WorkatoMar 27 - Apr 21, 2025 Low/No Code Machine Learning/AI Open Ended",
+    "tags": [
+      "Low/No Code Machine Learning/AI Open Ended",
+      "",
+      "Low/No Code",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "prize_amount": "$18,000 in prizes 11 participants",
+    "participants": "$18,000 in prizes 11 participants",
+    "date_range": ""
   },
-  "https://pike-labs-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://pike-labs-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover"
+  "https://hack4-ai.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://hack4-ai.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/337/690/datas/medium_square.png",
+    "title": "hack4.ai16 days leftLatvijas Kult\u016bras akad\u0113mija$15,000 in prizes 8 participants HelveMar 26 - Apr 15, 2025 Design Machine Learning/AI Social Good",
+    "tags": [
+      "Design Machine Learning/AI Social Good",
+      "",
+      "Design",
+      "Machine Learning/AI",
+      "Social Good"
+    ],
+    "prize_amount": "$15,000 in prizes 8 participants",
+    "participants": "$15,000 in prizes 8 participants",
+    "date_range": ""
   },
-  "https://ese4510s25.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://ese4510s25.devpost.com/?ref_feature=challenge&ref_medium=discover"
+  "https://devdock-code-earn-week-3.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://devdock-code-earn-week-3.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+    "title": "Devdock Code & Earn Week 35 days leftOnline$60 in prizes 7 participants DevdockMar 30 - Apr 05, 2025 Health Open Ended Web",
+    "tags": [
+      "Health Open Ended Web",
+      "",
+      "Health",
+      "Open Ended",
+      "Web"
+    ],
+    "prize_amount": "$60 in prizes 7 participants",
+    "participants": "$60 in prizes 7 participants",
+    "date_range": ""
   },
-  "https://jistech-2k25.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://jistech-2k25.devpost.com/?ref_feature=challenge&ref_medium=discover"
+  "https://ai-agents-2025.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://ai-agents-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/336/468/datas/medium_square.png",
+    "title": "AI Agent Showcaseabout 1 month leftGeekdom$500 in prizes 6 participants Geeks&&Mar 28 - May 03, 2025 Beginner Friendly Machine Learning/AI Open Ended",
+    "tags": [
+      "Beginner Friendly Machine Learning/AI Open Ended",
+      "",
+      "Beginner Friendly",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "prize_amount": "$500 in prizes 6 participants",
+    "participants": "$500 in prizes 6 participants",
+    "date_range": ""
   },
-  "https://test-24561.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://test-24561.devpost.com/?ref_feature=challenge&ref_medium=discover"
+  "https://ese1900s25.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://ese1900s25.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d2dmyh35ffsxbl.cloudfront.net/assets/defaults/thumbnail-placeholder-8c916ef4da99a222ce6ece077c71c7e282f071f830747b2abb5718018cbfa699.gif",
+    "title": "ESE 1900, Silicon Garage, Spring 2025about 1 month leftMoore building1 non-cash prizes 4 participants university of pennsylvaniaMar 26 - May 07, 2025 Education",
+    "tags": [
+      "Education",
+      "",
+      "Education"
+    ],
+    "prize_amount": "1 non-cash prizes 4 participants",
+    "participants": "1 non-cash prizes 4 participants",
+    "date_range": ""
+  },
+  "https://iwd-yeg-2025-redefine-possible.devpost.com/?ref_feature=challenge&ref_medium=discover": {
+    "url": "https://iwd-yeg-2025-redefine-possible.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/246/890/datas/medium_square.png",
+    "title": "IWD 2025: Redefine Possible Edmontonabout 6 hours leftEdmonton Unlimited$CAD 600 in prizes 3 participants GDG Cloud EdmontonMar 29 - 31, 2025 Beginner Friendly Blockchain Machine Learning/AI",
+    "tags": [
+      "Beginner Friendly Blockchain Machine Learning/AI",
+      "",
+      "Beginner Friendly",
+      "Blockchain",
+      "Machine Learning/AI"
+    ],
+    "prize_amount": "$CAD 600 in prizes 3 participants",
+    "participants": "$CAD 600 in prizes 3 participants",
+    "date_range": ""
   },
   "https://codecatalyst-2024.devpost.com/?ref_feature=challenge&ref_medium=discover": {
-    "url": "https://codecatalyst-2024.devpost.com/?ref_feature=challenge&ref_medium=discover"
+    "url": "https://codecatalyst-2024.devpost.com/?ref_feature=challenge&ref_medium=discover",
+    "logo_url": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/189/205/datas/medium_square.jpg",
+    "title": "CodeCatalyst 202410 days leftTech Haven Conference Center$5,000 in prizes -19 participants noMar 19 - Apr 10, 2025 Health Machine Learning/AI",
+    "tags": [
+      "Health Machine Learning/AI",
+      "",
+      "Health",
+      "Machine Learning/AI"
+    ],
+    "prize_amount": "$5,000 in prizes -19 participants",
+    "participants": "$5,000 in prizes -19 participants",
+    "date_range": ""
+  },
+  "https://devpost.com/": {
+    "url": "https://devpost.com/",
+    "logo_url": "https://d2dmyh35ffsxbl.cloudfront.net/assets/reimagine2/devpost-logo-mobile-f3aff76bfc0b6ada9bb4ddd773bfc534769ed793f962612804a1e84c305a5f94.svg",
+    "title": "",
+    "tags": [],
+    "prize_amount": "",
+    "participants": "",
+    "date_range": ""
+  },
+  "https://secure.devpost.com/users/login?ref=top-nav-login": {
+    "url": "https://secure.devpost.com/users/login?ref=top-nav-login",
+    "logo_url": "",
+    "title": "Log in",
+    "tags": [],
+    "prize_amount": "",
+    "participants": "",
+    "date_range": ""
+  },
+  "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button": {
+    "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button",
+    "logo_url": "",
+    "title": "Sign up",
+    "tags": [],
+    "prize_amount": "",
+    "participants": "",
+    "date_range": ""
+  },
+  "https://devpost.com/users/register": {
+    "url": "https://devpost.com/users/register",
+    "logo_url": "",
+    "title": "Match my eligibility",
+    "tags": [],
+    "prize_amount": "",
+    "participants": "",
+    "date_range": ""
+  },
+  "https://devpost.com/portfolio/redirect?page=projects": {
+    "url": "https://devpost.com/portfolio/redirect?page=projects",
+    "logo_url": "",
+    "title": "Your projects",
+    "tags": [],
+    "prize_amount": "",
+    "participants": "",
+    "date_range": ""
+  },
+  "https://devpost.com/portfolio/redirect?page=hackathons": {
+    "url": "https://devpost.com/portfolio/redirect?page=hackathons",
+    "logo_url": "",
+    "title": "Your hackathons",
+    "tags": [],
+    "prize_amount": "",
+    "participants": "",
+    "date_range": ""
+  },
+  "https://devpost.com/settings": {
+    "url": "https://devpost.com/settings",
+    "logo_url": "",
+    "title": "Settings",
+    "tags": [],
+    "prize_amount": "",
+    "participants": "",
+    "date_range": ""
   }
 }
