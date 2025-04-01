@@ -609,6 +609,17 @@ async def extract_hackathon_details(page, url):
     # Create a dictionary to store hackathon details
     hackathon_data = {}
     
+    # Create referral link - append referral parameters to original URL
+    referral_params = "?lb=91VCSzkY&utm_medium=Share&utm_source=shortUrl"
+    # Check if URL already has parameters
+    if "?" in url:
+        referral_url = f"{url}&lb=91VCSzkY&utm_medium=Share&utm_source=shortUrl"
+    else:
+        referral_url = f"{url}{referral_params}"
+    
+    hackathon_data["referral_url"] = referral_url
+    print(f"Generated referral URL: {referral_url}")
+    
     # Use data from listing page if available
     if url in hackathon_listing_data:
         listing_data = hackathon_listing_data[url]
@@ -1560,6 +1571,7 @@ async def crawl_unstop_hackathons():
                         "team_size": details.get("team_size", ""),
                         "registration_deadline": details.get("registration_deadline", ""),
                         "url": details.get("url", ""),
+                        "referral_url": details.get("referral_url", "")  # Add the referral URL to output
                     }
                     hackathons.append(hackathon)
             

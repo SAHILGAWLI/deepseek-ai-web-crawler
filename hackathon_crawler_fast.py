@@ -160,30 +160,27 @@ async def extract_hackathon_links(page):
         return []
 
 async def click_all_buttons_and_extract(page):
-    """Try to click all buttons and show more information sections on the page but with optimizations for speed"""
+    """Click buttons that might expand content and extract text."""
     try:
-        # Look for buttons that might reveal more information - ONLY those that are visible
-        buttons = await page.query_selector_all('button:visible, [role="button"]:visible, .btn:visible, .button:visible, a.more:visible, a.show-more:visible, div.expand:visible')
-        
-        if len(buttons) > 0:
-            print(f"Found {len(buttons)} visible buttons/links to try")
+        # Try to find and click buttons that might expand more content
+        buttons = await page.query_selector_all("button, .button, .btn, [role='button'], a.show-more, a.read-more, .expandable")
         
         # Only process up to 5 buttons to avoid too many clicks
         for i, button in enumerate(buttons[:5]):
             try:
                 # Check if button has text like "more", "show", "details", etc.
                 button_text = await button.text_content() or ""
-                    button_text = button_text.lower()
+                button_text = button_text.lower()
                 
-                    if any(keyword in button_text for keyword in ['more', 'show', 'detail', 'expand', 'read']):
-                        print(f"Clicking button with text: {button_text}")
-                        try:
+                if any(keyword in button_text for keyword in ['more', 'show', 'detail', 'expand', 'read']):
+                    print(f"Clicking button with text: {button_text}")
+                    try:
                         # Use a much shorter timeout (3 seconds instead of 30)
                         await button.click(timeout=3000)
                         await asyncio.sleep(0.5)  # Reduced wait time
                     except Exception:
                         print(f"  - Button click failed, skipping")
-                            continue
+                        continue
             except Exception as e:
                 print(f"Error with button {i}: {str(e)[:100]}")
                 continue

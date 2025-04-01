@@ -1,0 +1,15 @@
+                    
+                    if start_date_dt:
+                        future_date = start_date_dt + timedelta(days=30)
+                        details['end_date'] = future_date.strftime("%B %d, %Y")
+                        print(f"Setting end_date to 30 days after start_date: {details['end_date']}")
+                    else:
+                        # If parsing failed, use current date + 30 days
+                        future_date = datetime.now() + timedelta(days=30)
+                        details['end_date'] = future_date.strftime("%B %d, %Y")
+                        print(f"Using current date + 30 days as fallback for end_date: {details['end_date']}")
+                except Exception as e:
+                    # If date parsing fails, use simple fallback
+                    future_date = datetime.now() + timedelta(days=30)
+                    details['end_date'] = future_date.strftime("%B %d, %Y")
+                    print(f"Error parsing start date, using current date + 30 days as fallback: {details['end_date']}")

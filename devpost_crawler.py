@@ -79,7 +79,7 @@ async def extract_hackathon_links(page):
                         let searchDepth = 0;
                         while (parentCard && searchDepth < 6 && 
                                !parentCard.classList.contains('challenge-listing') && 
-                               !parentCard.classList.contains('card') &&
+                               !parentCard.classList.contains('card') && 
                                !parentCard.classList.contains('tile') &&
                                !parentCard.querySelector('a[href*="devpost.com"]') &&
                                parentCard.tagName !== 'BODY') {
@@ -1130,8 +1130,8 @@ async def extract_hackathon_details(page, url, listing_data=None):
                         print(f"Setting end_date to 30 days after start_date: {details['end_date']}")
                     else:
                         # If parsing failed, use current date + 30 days
-                        future_date = datetime.now() + timedelta(days=30)
-                        details['end_date'] = future_date.strftime("%B %d, %Y")
+            future_date = datetime.now() + timedelta(days=30)
+            details['end_date'] = future_date.strftime("%B %d, %Y")
                         print(f"Using current date + 30 days as fallback for end_date: {details['end_date']}")
                 except Exception as e:
                     # If date parsing fails, use simple fallback
@@ -1282,7 +1282,7 @@ async def extract_hackathon_details(page, url, listing_data=None):
                         details['submission_deadline'] = month_mapping[month_abbr] + details['submission_deadline'][2:]
                 
                 print(f"Fixed abbreviated month in submission deadline: {details['submission_deadline']}")
-
+        
         return details
         
     except Exception as e:
@@ -1614,6 +1614,222 @@ async def crawl_devpost_hackathons():
             
             # Save results to CSV
             if all_hackathons:
+                # Filter out non-hackathon entries and deduplicate
+                filtered_hackathons = []
+                seen_urls = set()
+                seen_titles = set()
+                
+                # System pages to exclude
+                system_page_patterns = [
+                    r"secure\.devpost\.com/users/login",
+                    r"secure\.devpost\.com/users/register",
+                    r"devpost\.com/settings",
+                    r"devpost\.com/portfolio",
+                    r"devpost\.com/users/register",
+                    r"devpost\.com$",  # Main Devpost homepage
+                    r"devpost\.com/$",  # Main Devpost homepage with trailing slash
+                    r"devpost\.com/users",
+                    r"devpost\.com/software",
+                    r"devpost\.com/jobs",
+                    r"devpost\.com/challenges",
+                    r"devpost\.com/auth",
+                    r"devpost\.com/api",
+                    r"devpost\.com/account",
+                    r"devpost\.com/profile",
+                    r"devpost\.com/faq",
+                    r"devpost\.com/terms"
+                ]
+                
+                # System titles to exclude
+                system_titles = [
+                    "Log in to Devpost", 
+                    "Join Devpost", 
+                    "Settings", 
+                    "Your projects", 
+                    "Your hackathons", 
+                    "The home for hackathons",
+                    "Match my eligibility",
+                    "Featured",
+                    "Devpost",
+                    "Login",
+                    "Sign up",
+                    "Register",
+                    "Profile",
+                    "FAQ",
+                    "Terms of Service",
+                    "Privacy Policy"
+                ]
+                
+                # Helper function to normalize title for fuzzy matching
+                def normalize_title(title):
+                    """Normalize a title for better comparison by removing common words and symbols"""
+                    # Convert to lowercase
+                    title = title.lower()
+                    # Remove special characters and replace with spaces
+                    title = re.sub(r'[^\w\s]', ' ', title)
+                    # Remove common words that don't help with matching
+                    common_words = ['hackathon', 'challenge', 'competition', 'the', 'a', 'an', 'and', 'at', 'in', 'on', 'by', 'for', 'with', 'edition']
+                    for word in common_words:
+                        title = re.sub(r'\b' + word + r'\b', '', title)
+                    # Remove extra spaces
+                    title = re.sub(r'\s+', ' ', title).strip()
+                    return title
+                
+                # Helper function to check title similarity
+                def title_similarity(title1, title2):
+                    """Calculate similarity between two titles"""
+                    # Don't compare very short titles (less than 10 chars) to avoid false positives
+                    if len(title1) < 10 or len(title2) < 10:
+                        return False
+                        
+                    # Normalize both titles
+                    norm1 = normalize_title(title1)
+                    norm2 = normalize_title(title2)
+                    
+                    # Don't compare normalized titles that are too short
+                    if len(norm1) < 5 or len(norm2) < 5:
+                        return False
+                    
+                    # Direct containment is a strong signal
+                    if norm1 in norm2 or norm2 in norm1:
+                        return True
+                    
+                    # Extract and compare words
+                    words1 = set(norm1.split())
+                    words2 = set(norm2.split())
+                    
+                    # Both should have some meaningful content
+                    if len(words1) < 2 or len(words2) < 2:
+                        return False
+                        
+                    # Calculate word overlap
+                    intersection = words1.intersection(words2)
+                    
+                    # We need enough matching words
+                    if len(intersection) < 2:
+                        return False
+                        
+                    # Check if the intersection is a significant portion of the smaller set
+                    similarity_ratio = len(intersection) / min(len(words1), len(words2))
+                    
+                    # More words in common = higher confidence
+                    if len(intersection) >= 3 and similarity_ratio >= 0.5:
+                        return True
+                        
+                    # With just 2 words in common, we need a higher ratio
+                    if len(intersection) == 2 and similarity_ratio >= 0.6:
+                        return True
+                    
+                    # Special case for unique identifiers that strongly indicate the same event
+                    unique_identifiers = ['2025', 'techkriti', 'dawson', 'illuminati', 'agentforce', 'phystech']
+                    shared_identifiers = [word for word in intersection if any(id in word for id in unique_identifiers)]
+                    
+                    if len(shared_identifiers) >= 1 and similarity_ratio >= 0.4:
+                        return True
+                    
+                    return False
+                
+                for hackathon in all_hackathons:
+                    url = hackathon.get("url", "")
+                    title = hackathon.get("title", "")
+                    
+                    # Skip system pages
+                    if any(re.search(pattern, url) for pattern in system_page_patterns):
+                        print(f"Skipping system page by URL: {title} - {url}")
+                        continue
+                        
+                    # Skip entries with generic/system titles
+                    if any(title == system_title or title.startswith(system_title) for system_title in system_titles):
+                        print(f"Skipping system page by title: {title}")
+                        continue
+                        
+                    # Skip entries without proper dates or descriptions
+                    if not hackathon.get("start_date") or not hackathon.get("end_date"):
+                        print(f"Skipping incomplete entry: {title}")
+                        continue
+                    
+                    # Detect if URL has ref=challenge parameter, which is typical for real hackathon pages
+                    is_likely_hackathon = "?ref_feature=challenge" in url or "?ref=challenge" in url or "?ref_medium=discover" in url
+                    
+                    # If URL doesn't have challenge parameter, apply more scrutiny
+                    if not is_likely_hackathon:
+                        # Require both title and description to be non-empty
+                        if not title or not hackathon.get("description"):
+                            print(f"Skipping likely non-hackathon page: {title} - {url}")
+                            continue
+                        
+                        # Skip URLs that are definitely not hackathon detail pages
+                        if "/p/" not in url and not re.search(r'\.devpost\.com', url):
+                            print(f"Skipping non-detail page: {title} - {url}")
+                            continue
+                        
+                    # Additional checks to ensure this is a real hackathon page:
+                    
+                    # 1. Check for minimum data completeness
+                    if not hackathon.get("tags") and not hackathon.get("organizer") and not hackathon.get("prize_pool"):
+                        # If missing ALL these fields, likely not a real hackathon
+                        print(f"Skipping entry missing key data: {title}")
+                        continue
+                            
+                    # 2. Check for reasonable date ranges (hackathons typically don't last more than 6 months)
+                    try:
+                        start_date = datetime.strptime(hackathon["start_date"], "%B %d, %Y")
+                        end_date = datetime.strptime(hackathon["end_date"], "%B %d, %Y")
+                        date_diff = (end_date - start_date).days
+                        
+                        # If hackathon lasts more than 180 days, it's suspicious
+                        if date_diff > 180:
+                            print(f"Skipping entry with suspicious date range ({date_diff} days): {title}")
+                            continue
+                    except:
+                        # Don't skip if date parsing fails, as this could be a formatting issue
+                        pass
+                    
+                    # Deduplicate by URL (but allow for URL variants of the same hackathon)
+                    url_base = re.sub(r'\?.*$', '', url)  # Remove query parameters
+                    if url_base in seen_urls:
+                        print(f"Skipping duplicate by URL: {title}")
+                        continue
+                    seen_urls.add(url_base)
+                    
+                    # Skip empty or very short titles
+                    if not title or len(title) < 5:
+                        continue
+                    
+                    # Additional deduplication by title
+                    if title in seen_titles:
+                        print(f"Skipping duplicate by title: {title}")
+                        continue
+                    
+                    # Fuzzy title matching for near-duplicates
+                    is_duplicate = False
+                    for seen_title in seen_titles:
+                        # Skip very short titles for comparison
+                        if len(seen_title) < 5:
+                            continue
+                            
+                        # Use our improved similarity function
+                        if title_similarity(title, seen_title):
+                            # Double check by comparing organizers to confirm it's really a duplicate
+                            if (hackathon.get("organizer") and any(h.get("organizer") == hackathon.get("organizer") for h in filtered_hackathons if h.get("title") == seen_title)):
+                                print(f"Skipping fuzzy duplicate: '{title}' matches '{seen_title}'")
+                                is_duplicate = True
+                                break
+                    
+                    if is_duplicate:
+                        continue
+                        
+                    seen_titles.add(title)
+                    
+                    # If we got here, the hackathon passes all filters
+                    filtered_hackathons.append(hackathon)
+                
+                print(f"Filtered out {len(all_hackathons) - len(filtered_hackathons)} non-hackathon or duplicate entries")
+                print(f"Remaining hackathons: {len(filtered_hackathons)}")
+                
+                # Replace original list with filtered list
+                all_hackathons = filtered_hackathons
+                
                 # Generate timestamp for the filename
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 page_info = f"page{START_PAGE}_only" if PROCESS_SINGLE_PAGE else "multipages"
