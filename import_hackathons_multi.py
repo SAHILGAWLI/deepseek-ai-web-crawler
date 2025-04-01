@@ -209,10 +209,10 @@ def map_source_fields(df, source_platform):
         else:
             transformed_df['tags'] = [[] for _ in range(len(df))]
         
-        # Participants count
+        # Devfolio - Participants count
         if 'num_participants' in df.columns:
-            transformed_df['num_participants'] = pd.to_numeric(df['num_participants'], errors='coerce')
-        
+            transformed_df['num_participants'] = pd.to_numeric(df['num_participants'], errors='coerce').fillna(0).astype(int)
+            
     elif source_platform == 'devpost':
         # Devpost mapping
         transformed_df['name'] = df['title'].fillna('Unnamed Hackathon') if 'title' in df.columns else 'Unnamed Hackathon'
@@ -270,10 +270,10 @@ def map_source_fields(df, source_platform):
         else:
             transformed_df['tags'] = [[] for _ in range(len(df))]
         
-        # Participants count
+        # Devpost - Participants count
         if 'num_participants' in df.columns:
-            transformed_df['num_participants'] = pd.to_numeric(df['num_participants'], errors='coerce')
-    
+            transformed_df['num_participants'] = pd.to_numeric(df['num_participants'], errors='coerce').fillna(0).astype(int)
+            
     elif source_platform == 'mlh':
         # MLH mapping
         transformed_df['name'] = df['title'].fillna('Unnamed Hackathon') if 'title' in df.columns else 'Unnamed Hackathon'
@@ -391,11 +391,11 @@ def map_source_fields(df, source_platform):
         else:
             transformed_df['tags'] = [[] for _ in range(len(df))]
         
-        # Participants count
+        # HackerEarth - Participants count
         if 'registered_participants' in df.columns:
-            transformed_df['num_participants'] = pd.to_numeric(df['registered_participants'], errors='coerce')
+            transformed_df['num_participants'] = pd.to_numeric(df['registered_participants'], errors='coerce').fillna(0).astype(int)
         elif 'num_participants' in df.columns:
-            transformed_df['num_participants'] = pd.to_numeric(df['num_participants'], errors='coerce')
+            transformed_df['num_participants'] = pd.to_numeric(df['num_participants'], errors='coerce').fillna(0).astype(int)
 
     elif source_platform == 'kaggle':
         # Kaggle mapping
@@ -496,18 +496,122 @@ def map_source_fields(df, source_platform):
         else:
             transformed_df['tags'] = [[] for _ in range(len(df))]
         
-        # Participants count - handle various field names
+        # Kaggle - Participants count
         if 'participation_stats' in df.columns:
             # Extract numeric participant count from participation_stats
             transformed_df['num_participants'] = df['participation_stats'].apply(
-                lambda x: extract_participant_count(x) if x else None
-            )
+                lambda x: extract_participant_count(x) if x else 0
+            ).fillna(0).astype(int)
         elif 'num_participants' in df.columns:
-            transformed_df['num_participants'] = pd.to_numeric(df['num_participants'], errors='coerce')
+            transformed_df['num_participants'] = pd.to_numeric(df['num_participants'], errors='coerce').fillna(0).astype(int)
         elif 'participants_count' in df.columns:
-            transformed_df['num_participants'] = pd.to_numeric(df['participants_count'], errors='coerce')
+            transformed_df['num_participants'] = pd.to_numeric(df['participants_count'], errors='coerce').fillna(0).astype(int)
         elif 'entrants' in df.columns:
-            transformed_df['num_participants'] = pd.to_numeric(df['entrants'], errors='coerce')
+            transformed_df['num_participants'] = pd.to_numeric(df['entrants'], errors='coerce').fillna(0).astype(int)
+
+    elif source_platform == 'unstop':
+        # Unstop mapping
+        transformed_df['name'] = df['title'].fillna('Unnamed Hackathon') if 'title' in df.columns else 'Unnamed Hackathon'
+        transformed_df['description'] = df['description'].fillna('') if 'description' in df.columns else ''
+        transformed_df['location'] = df['location'].fillna('India') if 'location' in df.columns else 'India'  # Most Unstop hackathons are in India
+        
+        # Mode (online/offline/hybrid)
+        if 'mode' in df.columns:
+            transformed_df['mode'] = df['mode']
+        else:
+            transformed_df['mode'] = 'online'  # Default to online if not specified
+        
+        # Set prize pool
+        transformed_df['prize_amount'] = df['prize_pool'].fillna('') if 'prize_pool' in df.columns else ''
+        
+        # Set organizer
+        transformed_df['organizer'] = df['organizer'].fillna('Unstop') if 'organizer' in df.columns else 'Unstop'
+        
+        # Ensure URL is set - critical for deduplication
+        if 'url' in df.columns:
+            transformed_df['url'] = df['url'].fillna('').astype(str)
+        elif 'hackathon_url' in df.columns:
+            transformed_df['url'] = df['hackathon_url'].fillna('').astype(str)
+        else:
+            # Generate a URL based on ID if needed
+            transformed_df['url'] = df['id'].apply(
+                lambda x: f"https://unstop.com/hackathon/{x}" if x else ""
+            )
+        
+        # Set status based on available data or default to active
+        if 'status' in df.columns:
+            transformed_df['status'] = df['status'].fillna('active')
+        else:
+            transformed_df['status'] = 'active'  # Default to active
+        
+        # Set original_id
+        transformed_df['original_id'] = df['id'] if 'id' in df.columns else None
+        
+        # Process dates
+        for date_field in ['start_date', 'end_date', 'registration_deadline']:
+            if date_field in df.columns:
+                transformed_df[date_field] = pd.to_datetime(df[date_field], errors='coerce')
+            else:
+                transformed_df[date_field] = None
+        
+        # Images
+        transformed_df['banner_image_url'] = df['banner_url'].fillna('') if 'banner_url' in df.columns else ''
+        transformed_df['logo_image_url'] = df['logo_url'].fillna('') if 'logo_url' in df.columns else ''
+        
+        # Create images JSON object
+        transformed_df['images'] = df.apply(
+            lambda row: {
+                'banner': row.get('banner_url', '') if pd.notna(row.get('banner_url', '')) else '',
+                'logo': row.get('logo_url', '') if pd.notna(row.get('logo_url', '')) else '',
+            }, axis=1
+        )
+        
+        # Handle JSON fields for schedule details
+        if 'schedule_details' in df.columns:
+            transformed_df['schedule_details'] = df['schedule_details'].apply(
+                lambda x: x if isinstance(x, dict) else
+                         try_parse_json(x) if isinstance(x, str) else
+                         {} 
+            )
+        else:
+            # Create schedule details from dates
+            transformed_df['schedule_details'] = df.apply(
+                lambda row: {'schedule': f"{row.get('start_date', '')} to {row.get('end_date', '')}"} 
+                if 'start_date' in row and 'end_date' in row and not pd.isna(row.get('start_date')) and not pd.isna(row.get('end_date')) 
+                else {}, axis=1
+            )
+        
+        # Handle JSON fields for prizes
+        if 'prizes_details' in df.columns:
+            transformed_df['prizes_details'] = df['prizes_details'].apply(
+                lambda x: x if isinstance(x, dict) or isinstance(x, list) else 
+                         try_parse_json(x) if isinstance(x, str) else []
+            )
+        else:
+            # Create empty prizes details
+            transformed_df['prizes_details'] = [[] for _ in range(len(df))]
+        
+        # Tags - competitions often have categories or tags
+        if 'tags' in df.columns:
+            transformed_df['tags'] = df['tags'].apply(
+                lambda x: x if isinstance(x, list) else 
+                        (try_parse_json(x) if isinstance(x, str) and x.strip().startswith('[') else 
+                        x.split(',') if isinstance(x, str) else [])
+            )
+        elif 'categories' in df.columns:
+            transformed_df['tags'] = df['categories'].apply(
+                lambda x: x if isinstance(x, list) else 
+                         try_parse_json(x) if isinstance(x, str) and x.strip().startswith('[') else
+                         x.split(',') if isinstance(x, str) else []
+            )
+        else:
+            transformed_df['tags'] = [[] for _ in range(len(df))]
+        
+        # Participants count
+        if 'participants' in df.columns:
+            transformed_df['num_participants'] = pd.to_numeric(df['participants'], errors='coerce').fillna(0).astype(int)
+        elif 'num_participants' in df.columns:
+            transformed_df['num_participants'] = pd.to_numeric(df['num_participants'], errors='coerce').fillna(0).astype(int)
 
     # Create the images JSON object for all platforms if not already set (for kaggle)
     if 'images' not in transformed_df.columns:
@@ -527,29 +631,31 @@ def map_source_fields(df, source_platform):
 def extract_participant_count(stats):
     """Extract participant count from participation_stats dict"""
     if not stats:
-        return None
+        return 0
     
     # Convert string representation to dict if needed
     if isinstance(stats, str):
         try:
             stats = json.loads(stats)
         except:
-            return None
+            return 0
     
     # Check if it's a dictionary
     if not isinstance(stats, dict):
-        return None
+        return 0
     
     # Try different possible keys
     for key in ['participants', 'entrants', 'teams', 'submissions']:
         if key in stats:
             try:
-                # Convert to numeric, removing commas
-                return pd.to_numeric(stats[key].replace(',', '') if isinstance(stats[key], str) else stats[key])
+                # Convert to numeric, removing commas, and then to integer
+                value_str = stats[key].replace(',', '') if isinstance(stats[key], str) else str(stats[key])
+                value = pd.to_numeric(value_str, errors='coerce')
+                return int(value) if not pd.isna(value) else 0
             except:
                 pass
     
-    return None
+    return 0
 
 def import_from_csv(csv_file, source_platform=None):
     """Import data from CSV file with source platform detection"""
@@ -567,6 +673,8 @@ def import_from_csv(csv_file, source_platform=None):
             source_platform = 'hackerearth'
         elif 'kaggle' in csv_file.lower():
             source_platform = 'kaggle'
+        elif 'unstop' in csv_file.lower():
+            source_platform = 'unstop'
         else:
             raise ValueError(f"Could not detect source platform from filename: {csv_file}. Please specify source_platform.")
     
@@ -679,6 +787,8 @@ def main():
                     source_platform = 'hackerearth'
                 elif 'kaggle' in csv_file.lower():
                     source_platform = 'kaggle'
+                elif 'unstop' in csv_file.lower():
+                    source_platform = 'unstop'
                 
                 # Import and transform data
                 transformed_df = import_from_csv(csv_file, source_platform)
@@ -738,7 +848,7 @@ def main():
         else:
             # Process all CSV files in the current directory with hackathon data
             csv_files = []
-            sources = ['devfolio', 'devpost', 'mlh', 'hackerearth', 'kaggle']
+            sources = ['devfolio', 'devpost', 'mlh', 'hackerearth', 'kaggle', 'unstop']
             
             for source in sources:
                 # Look for CSV files for this source
