@@ -12,6 +12,29 @@ import glob
 # Load environment variables
 load_dotenv()
 
+def try_parse_json(json_str):
+    """Safely try to parse JSON string, returning empty list on failure"""
+    if not isinstance(json_str, str):
+        return []
+    
+    try:
+        return json.loads(json_str)
+    except json.JSONDecodeError:
+        # If it fails, try to clean the string (sometimes there are invalid quotes or escapes)
+        try:
+            # Replace single quotes with double quotes if needed
+            if "'" in json_str and '"' not in json_str:
+                cleaned = json_str.replace("'", '"')
+                return json.loads(cleaned)
+            # For brackets with comma-separated values without quotes
+            elif json_str.strip().startswith('[') and json_str.strip().endswith(']'):
+                items = json_str.strip()[1:-1].split(',')
+                return [item.strip() for item in items if item.strip()]
+            else:
+                return []
+        except:
+            return []
+
 # Configure Supabase connection
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
@@ -192,12 +215,12 @@ def map_source_fields(df, source_platform):
         
     elif source_platform == 'devpost':
         # Devpost mapping
-        transformed_df['name'] = df['title'].fillna('Unnamed Hackathon')
-        transformed_df['description'] = df['description'].fillna('')
-        transformed_df['location'] = df['location'].fillna('')
-        transformed_df['mode'] = df['mode'].fillna('')
-        transformed_df['prize_amount'] = df['prize_pool'].fillna('')
-        transformed_df['organizer'] = df['organizer'].fillna('')
+        transformed_df['name'] = df['title'].fillna('Unnamed Hackathon') if 'title' in df.columns else 'Unnamed Hackathon'
+        transformed_df['description'] = df['description'].fillna('') if 'description' in df.columns else ''
+        transformed_df['location'] = df['location'].fillna('') if 'location' in df.columns else ''
+        transformed_df['mode'] = df['mode'].fillna('') if 'mode' in df.columns else ''
+        transformed_df['prize_amount'] = df['prize_pool'].fillna('') if 'prize_pool' in df.columns else ''
+        transformed_df['organizer'] = df['organizer'].fillna('') if 'organizer' in df.columns else ''
         transformed_df['status'] = df['status'].fillna('active') if 'status' in df.columns else 'active'
         
         # Set original_id if it exists
@@ -211,8 +234,8 @@ def map_source_fields(df, source_platform):
                 transformed_df[date_field] = None
         
         # Images
-        transformed_df['banner_image_url'] = df['banner_url'].fillna('')
-        transformed_df['logo_image_url'] = df['logo_url'].fillna('')
+        transformed_df['banner_image_url'] = df['banner_url'].fillna('') if 'banner_url' in df.columns else ''
+        transformed_df['logo_image_url'] = df['logo_url'].fillna('') if 'logo_url' in df.columns else ''
         
         # Handle JSON fields
         if 'schedule_details' in df.columns:
@@ -237,12 +260,12 @@ def map_source_fields(df, source_platform):
         else:
             transformed_df['prizes_details'] = [[] for _ in range(len(df))]
         
-        # Tags
+        # Tags for devpost
         if 'tags' in df.columns:
             transformed_df['tags'] = df['tags'].apply(
                 lambda x: x if isinstance(x, list) else 
-                         json.loads(x) if isinstance(x, str) and x.startswith('[') else 
-                         x.split(',') if isinstance(x, str) else []
+                        (try_parse_json(x) if isinstance(x, str) and x.strip().startswith('[') else 
+                        x.split(',') if isinstance(x, str) else [])
             )
         else:
             transformed_df['tags'] = [[] for _ in range(len(df))]
@@ -253,11 +276,11 @@ def map_source_fields(df, source_platform):
     
     elif source_platform == 'mlh':
         # MLH mapping
-        transformed_df['name'] = df['title'].fillna('Unnamed Hackathon')
-        transformed_df['description'] = df['description'].fillna('')
-        transformed_df['location'] = df['location'].fillna('')
-        transformed_df['mode'] = df['mode'].fillna('')
-        transformed_df['organizer'] = df['organizer'].fillna('MLH')
+        transformed_df['name'] = df['title'].fillna('Unnamed Hackathon') if 'title' in df.columns else 'Unnamed Hackathon'
+        transformed_df['description'] = df['description'].fillna('') if 'description' in df.columns else ''
+        transformed_df['location'] = df['location'].fillna('') if 'location' in df.columns else ''
+        transformed_df['mode'] = df['mode'].fillna('') if 'mode' in df.columns else ''
+        transformed_df['organizer'] = df['organizer'].fillna('MLH') if 'organizer' in df.columns else 'MLH'
         transformed_df['status'] = 'active'  # MLH mainly lists active hackathons
         
         # Set original_id if it exists
@@ -280,8 +303,8 @@ def map_source_fields(df, source_platform):
         transformed_df['registration_deadline'] = None
         
         # Images
-        transformed_df['banner_image_url'] = df['banner_url'].fillna('')
-        transformed_df['logo_image_url'] = df['logo_url'].fillna('')
+        transformed_df['banner_image_url'] = df['banner_url'].fillna('') if 'banner_url' in df.columns else ''
+        transformed_df['logo_image_url'] = df['logo_url'].fillna('') if 'logo_url' in df.columns else ''
         
         # Create JSON fields
         transformed_df['schedule_details'] = df.apply(
@@ -296,6 +319,7 @@ def map_source_fields(df, source_platform):
         if 'tags' in df.columns:
             transformed_df['tags'] = df['tags'].apply(
                 lambda x: x if isinstance(x, list) else 
+                         try_parse_json(x) if isinstance(x, str) and x.strip().startswith('[') else
                          x.split(',') if isinstance(x, str) else []
             )
         else:
@@ -303,12 +327,12 @@ def map_source_fields(df, source_platform):
 
     elif source_platform == 'hackerearth':
         # HackerEarth mapping
-        transformed_df['name'] = df['title'].fillna('Unnamed Hackathon')
-        transformed_df['description'] = df['description'].fillna('')
-        transformed_df['location'] = df['location'].fillna('')
-        transformed_df['mode'] = df['mode'].fillna('')
-        transformed_df['prize_amount'] = df['prize_pool'].fillna('')
-        transformed_df['organizer'] = df['organizer'].fillna('HackerEarth')
+        transformed_df['name'] = df['title'].fillna('Unnamed Hackathon') if 'title' in df.columns else 'Unnamed Hackathon'
+        transformed_df['description'] = df['description'].fillna('') if 'description' in df.columns else ''
+        transformed_df['location'] = df['location'].fillna('') if 'location' in df.columns else ''
+        transformed_df['mode'] = df['mode'].fillna('') if 'mode' in df.columns else ''
+        transformed_df['prize_amount'] = df['prize_pool'].fillna('') if 'prize_pool' in df.columns else ''
+        transformed_df['organizer'] = df['organizer'].fillna('HackerEarth') if 'organizer' in df.columns else 'HackerEarth'
         
         # Status from HackerEarth data if available
         if 'status' in df.columns:
@@ -331,14 +355,14 @@ def map_source_fields(df, source_platform):
                 transformed_df[date_field] = None
         
         # Images
-        transformed_df['banner_image_url'] = df['banner_url'].fillna('')
-        transformed_df['logo_image_url'] = df['logo_url'].fillna('')
+        transformed_df['banner_image_url'] = df['banner_url'].fillna('') if 'banner_url' in df.columns else ''
+        transformed_df['logo_image_url'] = df['logo_url'].fillna('') if 'logo_url' in df.columns else ''
         
         # Handle JSON fields
         if 'prizes' in df.columns:
             transformed_df['prizes_details'] = df['prizes'].apply(
                 lambda x: x if isinstance(x, dict) or isinstance(x, list) else 
-                         json.loads(x) if isinstance(x, str) else []
+                         try_parse_json(x) if isinstance(x, str) else []
             )
         else:
             transformed_df['prizes_details'] = [[] for _ in range(len(df))]
@@ -357,6 +381,7 @@ def map_source_fields(df, source_platform):
         if 'tags' in df.columns:
             transformed_df['tags'] = df['tags'].apply(
                 lambda x: x if isinstance(x, list) else 
+                         try_parse_json(x) if isinstance(x, str) and x.strip().startswith('[') else
                          x.split(',') if isinstance(x, str) else []
             )
         elif 'themes_summary' in df.columns:
@@ -374,12 +399,23 @@ def map_source_fields(df, source_platform):
 
     elif source_platform == 'kaggle':
         # Kaggle mapping
-        transformed_df['name'] = df['title'].fillna('Unnamed Competition')
-        transformed_df['description'] = df['description'].fillna('')
+        transformed_df['name'] = df['title'].fillna('Unnamed Competition') if 'title' in df.columns else 'Unnamed Competition'
+        transformed_df['description'] = df['description'].fillna('') if 'description' in df.columns else ''
         transformed_df['location'] = 'Online'  # Kaggle competitions are online
         transformed_df['mode'] = 'online'      # Kaggle competitions are online
-        transformed_df['prize_amount'] = df['prize_pool'].fillna('')
-        transformed_df['organizer'] = df['organizer'].fillna('Kaggle')
+        transformed_df['prize_amount'] = df['prize_pool'].fillna('') if 'prize_pool' in df.columns else ''
+        transformed_df['organizer'] = df['organizer'].fillna('Kaggle') if 'organizer' in df.columns else 'Kaggle'
+        
+        # Ensure URL is set - critical for deduplication
+        if 'url' in df.columns:
+            transformed_df['url'] = df['url'].fillna('').astype(str)
+        elif 'competition_url' in df.columns:
+            transformed_df['url'] = df['competition_url'].fillna('').astype(str)
+        else:
+            # Generate a URL based on title if needed
+            transformed_df['url'] = df['title'].apply(
+                lambda x: f"https://www.kaggle.com/competitions/{x.lower().replace(' ', '-')}" if isinstance(x, str) else ""
+            )
         
         # Status from Kaggle data if available
         if 'status' in df.columns:
@@ -397,57 +433,123 @@ def map_source_fields(df, source_platform):
             else:
                 transformed_df[date_field] = None
         
-        # Images - Kaggle often doesn't have these
+        # Images - Kaggle now has these with Cloudinary integration
         transformed_df['banner_image_url'] = df['banner_url'].fillna('') if 'banner_url' in df.columns else ''
         transformed_df['logo_image_url'] = df['logo_url'].fillna('') if 'logo_url' in df.columns else ''
         
+        # Create images JSON object with all image URLs
+        transformed_df['images'] = df.apply(
+            lambda row: {
+                'banner': row.get('banner_url', '') if pd.notna(row.get('banner_url', '')) else '',
+                'logo': row.get('logo_url', '') if pd.notna(row.get('logo_url', '')) else '',
+                'organizer_logo': row.get('organizer_logo_url', '') if pd.notna(row.get('organizer_logo_url', '')) else ''
+            }, axis=1
+        )
+        
         # Handle JSON fields
-        if 'prizes_details' in df.columns:
+        if 'prize_details' in df.columns:  # Note: kaggle_crawler.py might use prize_details
+            transformed_df['prizes_details'] = df['prize_details'].apply(
+                lambda x: x if isinstance(x, dict) or isinstance(x, list) else 
+                         try_parse_json(x) if isinstance(x, str) else []
+            )
+        elif 'prize_breakdown' in df.columns:  # Kaggle crawler might use prize_breakdown
+            transformed_df['prizes_details'] = df['prize_breakdown'].apply(
+                lambda x: x if isinstance(x, dict) or isinstance(x, list) else 
+                         try_parse_json(x) if isinstance(x, str) else []
+            )
+        elif 'prizes_details' in df.columns:
             transformed_df['prizes_details'] = df['prizes_details'].apply(
                 lambda x: x if isinstance(x, dict) or isinstance(x, list) else 
-                         json.loads(x) if isinstance(x, str) else []
+                         try_parse_json(x) if isinstance(x, str) else []
             )
         else:
             transformed_df['prizes_details'] = [[] for _ in range(len(df))]
         
-        # Create schedule details
-        transformed_df['schedule_details'] = df.apply(
-            lambda row: {'schedule': f"{row.get('start_date', '')} to {row.get('end_date', '')}"} 
-            if 'start_date' in row and 'end_date' in row and not pd.isna(row.get('start_date')) and not pd.isna(row.get('end_date')) 
-            else {}, axis=1
-        )
+        # Handle timeline/schedule data
+        if 'timeline' in df.columns:
+            transformed_df['schedule_details'] = df['timeline'].apply(
+                lambda x: x if isinstance(x, dict) else
+                         try_parse_json(x) if isinstance(x, str) else
+                         {} 
+            )
+        else:
+            # Create schedule details from dates
+            transformed_df['schedule_details'] = df.apply(
+                lambda row: {'schedule': f"{row.get('start_date', '')} to {row.get('end_date', '')}"} 
+                if 'start_date' in row and 'end_date' in row and not pd.isna(row.get('start_date')) and not pd.isna(row.get('end_date')) 
+                else {}, axis=1
+            )
         
         # Tags - competitions often have categories or tags
-        if 'categories' in df.columns:
-            transformed_df['tags'] = df['categories'].apply(
-                lambda x: x if isinstance(x, list) else 
-                         x.split(',') if isinstance(x, str) else []
-            )
-        elif 'tags' in df.columns:
+        if 'tags' in df.columns:
             transformed_df['tags'] = df['tags'].apply(
                 lambda x: x if isinstance(x, list) else 
+                        (try_parse_json(x) if isinstance(x, str) and x.strip().startswith('[') else 
+                        x.split(',') if isinstance(x, str) else [])
+            )
+        elif 'categories' in df.columns:
+            transformed_df['tags'] = df['categories'].apply(
+                lambda x: x if isinstance(x, list) else 
+                         try_parse_json(x) if isinstance(x, str) and x.strip().startswith('[') else
                          x.split(',') if isinstance(x, str) else []
             )
         else:
             transformed_df['tags'] = [[] for _ in range(len(df))]
         
-        # Participants count
-        if 'num_participants' in df.columns:
+        # Participants count - handle various field names
+        if 'participation_stats' in df.columns:
+            # Extract numeric participant count from participation_stats
+            transformed_df['num_participants'] = df['participation_stats'].apply(
+                lambda x: extract_participant_count(x) if x else None
+            )
+        elif 'num_participants' in df.columns:
             transformed_df['num_participants'] = pd.to_numeric(df['num_participants'], errors='coerce')
         elif 'participants_count' in df.columns:
             transformed_df['num_participants'] = pd.to_numeric(df['participants_count'], errors='coerce')
-    
-    # Create the images JSON object for all platforms
-    transformed_df['images'] = df.apply(
-        lambda row: {
-            'banner': row.get('banner_url', '') if 'banner_url' in row and not pd.isna(row.get('banner_url', '')) else '',
-            'logo': row.get('logo_url', '') if 'logo_url' in row and not pd.isna(row.get('logo_url', '')) else '',
-        }, axis=1
-    )
-    
+        elif 'entrants' in df.columns:
+            transformed_df['num_participants'] = pd.to_numeric(df['entrants'], errors='coerce')
+
+    # Create the images JSON object for all platforms if not already set (for kaggle)
+    if 'images' not in transformed_df.columns:
+        transformed_df['images'] = df.apply(
+            lambda row: {
+                'banner': row.get('banner_url', '') if pd.notna(row.get('banner_url', '')) else '',
+                'logo': row.get('logo_url', '') if pd.notna(row.get('logo_url', '')) else '',
+                # Include organizer logo if it exists
+                'organizer_logo': row.get('organizer_logo_url', '') if pd.notna(row.get('organizer_logo_url', '')) else ''
+            }, axis=1
+        )
+
     print(f"Field mapping complete for {source_platform}. Total rows: {len(transformed_df)}")
     
     return transformed_df
+
+def extract_participant_count(stats):
+    """Extract participant count from participation_stats dict"""
+    if not stats:
+        return None
+    
+    # Convert string representation to dict if needed
+    if isinstance(stats, str):
+        try:
+            stats = json.loads(stats)
+        except:
+            return None
+    
+    # Check if it's a dictionary
+    if not isinstance(stats, dict):
+        return None
+    
+    # Try different possible keys
+    for key in ['participants', 'entrants', 'teams', 'submissions']:
+        if key in stats:
+            try:
+                # Convert to numeric, removing commas
+                return pd.to_numeric(stats[key].replace(',', '') if isinstance(stats[key], str) else stats[key])
+            except:
+                pass
+    
+    return None
 
 def import_from_csv(csv_file, source_platform=None):
     """Import data from CSV file with source platform detection"""
@@ -522,7 +624,12 @@ def prepare_records_for_insert(df):
         
         # Clean up NaN values
         for key, value in list(record.items()):
-            if pd.isna(value):
+            # Handle arrays and scalar values differently
+            if isinstance(value, (list, np.ndarray)):
+                # For arrays, check if they're empty or None
+                if value is None or (hasattr(value, 'size') and value.size == 0):
+                    record[key] = []
+            elif pd.isna(value):
                 record[key] = None
         
         # Convert all dates to ISO format strings
@@ -553,78 +660,159 @@ def main():
         existing_urls = get_existing_hackathons(supabase)
         print(f"Found {len(existing_urls)} existing hackathons in the database")
         
-        # Process all CSV files in the current directory with hackathon data
-        csv_files = []
-        sources = ['devfolio', 'devpost', 'mlh', 'hackerearth', 'kaggle']
-        
-        for source in sources:
-            # Look for CSV files for this source
-            source_files = glob.glob(f"*{source}*.csv")
-            if source_files:
-                print(f"Found {len(source_files)} CSV files for {source}")
-                csv_files.extend([(file, source) for file in source_files])
-        
-        if not csv_files:
-            print("No CSV files found. Please run crawlers first.")
-            return
-        
-        print(f"Found {len(csv_files)} total CSV files to process")
-        
-        # Process each CSV file
-        for csv_file, source in csv_files:
-            print(f"\nProcessing {csv_file} (source: {source})...")
+        # Check if a specific file was provided as a command line argument
+        if len(sys.argv) > 1:
+            # Use the file provided as a command line argument
+            csv_file = sys.argv[1]
+            print(f"\nProcessing specified file: {csv_file}")
             
-            # Import and transform data
-            transformed_df = import_from_csv(csv_file, source)
-            
-            # Skip empty dataframes
-            if transformed_df.empty:
-                print(f"No data to import from {csv_file}")
-                continue
-            
-            # Filter out duplicates
-            print(f"Checking for duplicates among {len(transformed_df)} records...")
-            if 'url' in transformed_df.columns:
-                duplicates = transformed_df['url'].isin(existing_urls)
-                new_records = transformed_df[~duplicates]
+            try:
+                # Auto-detect source platform
+                source_platform = None
+                if 'devpost' in csv_file.lower():
+                    source_platform = 'devpost'
+                elif 'devfolio' in csv_file.lower():
+                    source_platform = 'devfolio'
+                elif 'mlh' in csv_file.lower():
+                    source_platform = 'mlh'
+                elif 'hackerearth' in csv_file.lower():
+                    source_platform = 'hackerearth'
+                elif 'kaggle' in csv_file.lower():
+                    source_platform = 'kaggle'
                 
-                print(f"Found {duplicates.sum()} duplicates, {len(new_records)} new records")
+                # Import and transform data
+                transformed_df = import_from_csv(csv_file, source_platform)
                 
-                if new_records.empty:
-                    print(f"No new records to import from {csv_file}")
-                    continue
+                # Skip empty dataframes
+                if transformed_df.empty:
+                    print(f"No data to import from {csv_file}")
+                    return
                 
-                # Prepare records for insert
-                records = prepare_records_for_insert(new_records)
-                
-                # Insert data in batches
-                BATCH_SIZE = 10
-                total_inserted = 0
-                
-                for i in range(0, len(records), BATCH_SIZE):
-                    batch = records[i:i+BATCH_SIZE]
-                    try:
-                        response = supabase.table('hackathons').insert(batch).execute()
-                        
-                        if hasattr(response, 'data'):
-                            inserted_count = len(response.data)
-                            total_inserted += inserted_count
-                            print(f"Inserted batch {i//BATCH_SIZE + 1} ({inserted_count} records)")
+                # Filter out duplicates
+                print(f"Checking for duplicates among {len(transformed_df)} records...")
+                if 'url' in transformed_df.columns:
+                    duplicates = transformed_df['url'].isin(existing_urls)
+                    new_records = transformed_df[~duplicates]
+                    
+                    print(f"Found {duplicates.sum()} duplicates, {len(new_records)} new records")
+                    
+                    if new_records.empty:
+                        print(f"No new records to import from {csv_file}")
+                        return
+                    
+                    # Prepare records for insert
+                    records = prepare_records_for_insert(new_records)
+                    
+                    # Insert data in batches
+                    BATCH_SIZE = 10
+                    total_inserted = 0
+                    
+                    for i in range(0, len(records), BATCH_SIZE):
+                        batch = records[i:i+BATCH_SIZE]
+                        try:
+                            response = supabase.table('hackathons').insert(batch).execute()
                             
-                            # Update existing_urls with new URLs
-                            for record in batch:
-                                if 'url' in record and record['url']:
-                                    existing_urls.add(record['url'])
-                        else:
-                            print(f"Warning: Unexpected response format from batch {i//BATCH_SIZE + 1}")
+                            if hasattr(response, 'data'):
+                                inserted_count = len(response.data)
+                                total_inserted += inserted_count
+                                print(f"Inserted batch {i//BATCH_SIZE + 1} ({inserted_count} records)")
+                                
+                                # Update existing_urls with new URLs
+                                for record in batch:
+                                    if 'url' in record and record['url']:
+                                        existing_urls.add(record['url'])
+                            else:
+                                print(f"Warning: Unexpected response format from batch {i//BATCH_SIZE + 1}")
+                            
+                        except Exception as e:
+                            print(f"Error inserting batch {i//BATCH_SIZE + 1}: {e}")
+                    
+                    print(f"Successfully inserted {total_inserted} out of {len(records)} records from {csv_file}")
+                else:
+                    print(f"CSV file {csv_file} is missing the 'url' column required for deduplication")
+            except Exception as e:
+                print(f"Error processing {csv_file}: {e}")
+                import traceback
+                traceback.print_exc()
+                
+        else:
+            # Process all CSV files in the current directory with hackathon data
+            csv_files = []
+            sources = ['devfolio', 'devpost', 'mlh', 'hackerearth', 'kaggle']
+            
+            for source in sources:
+                # Look for CSV files for this source
+                source_files = glob.glob(f"*{source}*.csv")
+                if source_files:
+                    print(f"Found {len(source_files)} CSV files for {source}")
+                    csv_files.extend([(file, source) for file in source_files])
+            
+            if not csv_files:
+                print("No CSV files found. Please run crawlers first.")
+                return
+            
+            print(f"Found {len(csv_files)} total CSV files to process")
+            
+            # Process each CSV file
+            for csv_file, source in csv_files:
+                print(f"\nProcessing {csv_file} (source: {source})...")
+                
+                try:
+                    # Import and transform data
+                    transformed_df = import_from_csv(csv_file, source)
+                    
+                    # Skip empty dataframes
+                    if transformed_df.empty:
+                        print(f"No data to import from {csv_file}")
+                        continue
+                    
+                    # Filter out duplicates
+                    print(f"Checking for duplicates among {len(transformed_df)} records...")
+                    if 'url' in transformed_df.columns:
+                        duplicates = transformed_df['url'].isin(existing_urls)
+                        new_records = transformed_df[~duplicates]
                         
-                    except Exception as e:
-                        print(f"Error inserting batch {i//BATCH_SIZE + 1}: {e}")
-                
-                print(f"Successfully inserted {total_inserted} out of {len(records)} records from {csv_file}")
-            else:
-                print(f"CSV file {csv_file} is missing the 'url' column required for deduplication")
-                
+                        print(f"Found {duplicates.sum()} duplicates, {len(new_records)} new records")
+                        
+                        if new_records.empty:
+                            print(f"No new records to import from {csv_file}")
+                            continue
+                        
+                        # Prepare records for insert
+                        records = prepare_records_for_insert(new_records)
+                        
+                        # Insert data in batches
+                        BATCH_SIZE = 10
+                        total_inserted = 0
+                        
+                        for i in range(0, len(records), BATCH_SIZE):
+                            batch = records[i:i+BATCH_SIZE]
+                            try:
+                                response = supabase.table('hackathons').insert(batch).execute()
+                                
+                                if hasattr(response, 'data'):
+                                    inserted_count = len(response.data)
+                                    total_inserted += inserted_count
+                                    print(f"Inserted batch {i//BATCH_SIZE + 1} ({inserted_count} records)")
+                                    
+                                    # Update existing_urls with new URLs
+                                    for record in batch:
+                                        if 'url' in record and record['url']:
+                                            existing_urls.add(record['url'])
+                                else:
+                                    print(f"Warning: Unexpected response format from batch {i//BATCH_SIZE + 1}")
+                                
+                            except Exception as e:
+                                print(f"Error inserting batch {i//BATCH_SIZE + 1}: {e}")
+                        
+                        print(f"Successfully inserted {total_inserted} out of {len(records)} records from {csv_file}")
+                    else:
+                        print(f"CSV file {csv_file} is missing the 'url' column required for deduplication")
+                except Exception as e:
+                    print(f"Error processing {csv_file}: {e}")
+                    import traceback
+                    traceback.print_exc()
+        
         print("\nImport complete!")
         
     except Exception as e:

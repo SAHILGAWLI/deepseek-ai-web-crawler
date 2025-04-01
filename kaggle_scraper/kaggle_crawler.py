@@ -10,9 +10,30 @@ from playwright.async_api import async_playwright, Error as PlaywrightError
 import pandas as pd
 from dotenv import load_dotenv
 import traceback
+import cloudinary
+import cloudinary.uploader
+import aiohttp
 
 # Load environment variables
 load_dotenv()
+
+# Cloudinary Configuration
+CLOUDINARY_CLOUD_NAME = os.getenv("CLOUDINARY_CLOUD_NAME")
+CLOUDINARY_API_KEY = os.getenv("CLOUDINARY_API_KEY")
+CLOUDINARY_API_SECRET = os.getenv("CLOUDINARY_API_SECRET")
+
+# Configure Cloudinary if credentials are available
+if CLOUDINARY_CLOUD_NAME and CLOUDINARY_API_KEY and CLOUDINARY_API_SECRET:
+    cloudinary.config(
+        cloud_name=CLOUDINARY_CLOUD_NAME,
+        api_key=CLOUDINARY_API_KEY,
+        api_secret=CLOUDINARY_API_SECRET
+    )
+    CLOUDINARY_ENABLED = True
+    print("Cloudinary configuration loaded successfully.")
+else:
+    CLOUDINARY_ENABLED = False
+    print("Warning: Cloudinary credentials not found. Images will not be uploaded to Cloudinary.")
 
 # Configuration
 BASE_URL = "https://www.kaggle.com/competitions"
@@ -37,6 +58,76 @@ async def smart_wait(min_delay=MIN_RATE_LIMIT_DELAY, max_delay=MAX_RATE_LIMIT_DE
     delay = random.uniform(min_delay, max_delay)
     print(f"Waiting for {delay:.2f} seconds to avoid rate limiting...")
     await asyncio.sleep(delay)
+
+async def upload_image_to_cloudinary(image_url, competition_id, image_type):
+    """Upload an image to Cloudinary and return the secure URL.
+    
+    Args:
+        image_url (str): The URL of the image to upload
+        competition_id (str): The ID of the competition
+        image_type (str): The type of image (logo, banner, etc.)
+        
+    Returns:
+        str: The Cloudinary URL if successful, otherwise the original URL
+    """
+    if not CLOUDINARY_ENABLED or not image_url:
+        return image_url
+    
+    try:
+        print(f"Uploading {image_type} for {competition_id} to Cloudinary...")
+        
+        # Create a unique public_id based on competition and image type
+        public_id = f"kaggle_{image_type}_{competition_id}"
+        
+        # Remove any query parameters from URL for more reliable uploads
+        clean_url = image_url.split('?')[0]
+        
+        # Upload using Cloudinary's upload API
+        result = cloudinary.uploader.upload(
+            clean_url,
+            public_id=public_id,
+            folder="kaggle_images",
+            overwrite=True,
+            resource_type="auto"
+        )
+        
+        # Return the secure URL
+        cloudinary_url = result['secure_url']
+        print(f"Uploaded {image_type} to Cloudinary: {cloudinary_url}")
+        return cloudinary_url
+    
+    except Exception as e:
+        print(f"Error uploading {image_type} to Cloudinary: {e}")
+        # Try a second approach with aiohttp for images that might need special handling
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.get(image_url) as response:
+                    if response.status == 200:
+                        # Create a temporary file
+                        temp_file = f"temp_{competition_id}_{image_type}.jpg"
+                        with open(temp_file, 'wb') as f:
+                            f.write(await response.read())
+                        
+                        # Upload the file
+                        result = cloudinary.uploader.upload(
+                            temp_file,
+                            public_id=public_id,
+                            folder="kaggle_images",
+                            overwrite=True,
+                            resource_type="auto"
+                        )
+                        
+                        # Clean up temp file
+                        if os.path.exists(temp_file):
+                            os.remove(temp_file)
+                            
+                        cloudinary_url = result['secure_url']
+                        print(f"Uploaded {image_type} to Cloudinary using alternative method: {cloudinary_url}")
+                        return cloudinary_url
+        except Exception as inner_e:
+            print(f"Alternative upload method also failed: {inner_e}")
+        
+        return image_url  # Return original URL as fallback
 
 async def retry_with_backoff(coroutine, max_retries=MAX_RETRIES, start_delay=5):
     """Retry a coroutine with exponential backoff for rate limiting"""
@@ -990,6 +1081,31 @@ async def extract_competition_links(page):
         with open('competition_listing_data.json', 'w') as f:
             json.dump(competition_data, f, indent=2)
         
+        # Upload logo images to Cloudinary if enabled
+        if CLOUDINARY_ENABLED:
+            updated_competition_data = []
+            for item in competition_data:
+                if item.get('logo_url'):
+                    # Extract competition ID from URL
+                    competition_id = item.get('url', '').split('/')[-1]
+                    if not competition_id:
+                        competition_id = item.get('title', '').lower().replace(' ', '_')
+                    
+                    # Upload logo to Cloudinary
+                    item['logo_url'] = await upload_image_to_cloudinary(
+                        item['logo_url'],
+                        competition_id,
+                        'logo_listing'
+                    )
+                updated_competition_data.append(item)
+            
+            # Replace with updated data
+            competition_data = updated_competition_data
+            
+            # Save updated data with Cloudinary URLs
+            with open('competition_listing_data_cloudinary.json', 'w') as f:
+                json.dump(competition_data, f, indent=2)
+        
         return competition_links, competition_data
     
     except Exception as e:
@@ -1494,6 +1610,32 @@ async def extract_competition_details(page, url, listing_data=None):
         
         # Add source platform
         competition_details['source_platform'] = 'kaggle'
+        
+        # Upload images to Cloudinary if enabled
+        if CLOUDINARY_ENABLED:
+            # Upload logo image if available
+            if competition_details.get('logo_url'):
+                competition_details['logo_url'] = await upload_image_to_cloudinary(
+                    competition_details['logo_url'],
+                    competition_id,
+                    'logo'
+                )
+            
+            # Upload banner image if available
+            if competition_details.get('banner_url'):
+                competition_details['banner_url'] = await upload_image_to_cloudinary(
+                    competition_details['banner_url'],
+                    competition_id,
+                    'banner'
+                )
+            
+            # Upload organizer logo if available
+            if competition_details.get('organizer_logo_url'):
+                competition_details['organizer_logo_url'] = await upload_image_to_cloudinary(
+                    competition_details['organizer_logo_url'],
+                    competition_id,
+                    'organizer_logo'
+                )
         
         print(f"Extracted details for: {competition_details.get('title', 'Unknown competition')}")
         return competition_details

@@ -1,0 +1,765 @@
+[
+  {
+    "url": "https://www.kaggle.com/competitions/playground-series-s5e4",
+    "title": "playground-series-s5e4",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/91715/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=LaUE4fbtItS8oUuxHq%2F3ZEaMjApgGG7%2FVmnYmWkAqMo6NTIMZIzYWqNgqgJtBK962soRH0Dodc6WI0Jcs0vK9AIqJjcSJ4v6QhKFHjoi0qYe3vwh93As38Y53ETqVxgXI2PNoRg3UtFASQhZKUb%2FlXWewFINLkyxLLODXA78cLlFCNmfAMlA4bdKTylbF4il%2FDMTuHHlXaz0DO5G6zPKcb92XZ%2B41qxbj42DOMFLIGqwVqa60HGc1Tr2mvdQhMPGqtMZhEos9iWLUWuk%2FvDKn9cXesVimWfDeVfbIfLf43zAo6zS%2Fj5btAKz9GYVWzw05Wm8D%2FZWSWCo%2FIGruq5Iew%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/91715/images/header",
+    "organizer": "Walter Reade and Elizabeth Park. Predict Podcast Listening Time. https://kaggle.com/competitions/playground-series-s5e4, 2025. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "Beginner",
+      "Beginner",
+      "Tabular",
+      "Tabular",
+      "Mean Squared Error"
+    ],
+    "abstract": "Welcome to the 2025 Kaggle Playground Series! We plan to continue in the spirit of previous playgrounds, providing interesting and approachable datasets for our community to practice their machine learning skills, and anticipate a competition each month.\n\nYour Goal: Your task it to predict listening time of a podcast episode.\n\nStart",
+    "timeline": [
+      {
+        "text": "Start Date - April 1, 2025"
+      },
+      {
+        "text": "Entry Deadline - Same as the Final Submission Deadline"
+      },
+      {
+        "text": "Team Merger Deadline - Same as the Final Submission Deadline"
+      },
+      {
+        "text": "Final Submission Deadline -  April 30, 2025"
+      }
+    ],
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/arc-prize-2025",
+    "title": "arc-prize-2025",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/91496/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=tQvAC7AtlBlaHDeQh3VXwSF2EDiJDUj8PymGWkczslb6PHpY1b%2Bam4xZaxrHA%2B0ZcL2hahdAjT7HiBtYfb%2Bvd1%2BOGHJfBt4q%2F%2FEz8uD8Fxny3dHUdL1tUnEcSrTYJgAUXhUyl6rpzcdQ2h%2F8bTf33fz9E307cCNz5QPV5azk0iZg9OGctsei4a4RPdjv4FqhInOVxxS0PkX19aVg7VHRCFLyvidVAqgYd5X9qs%2BPI6WMjjO00zqeMaX3BYeMsKWypFgQsgtIdrPEHsnLM6%2B8NWr2D1EgsCKiNRAAK6OcBok%2BgMNxrsiQzrXVap5rp9vf%2Bp6EJAQHI9Kd%2BK02Roehlg%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/91496/images/header",
+    "organizer": "Francois Chollet, Mike Knoop, Greg Kamradt, Walter Reade, and Addison Howard. ARC Prize 2025. https://kaggle.com/competitions/arc-prize-2025, 2025. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/3733/thumbnail.png",
+    "tags": [
+      "Artificial Intelligence",
+      "Artificial Intelligence",
+      "Custom Metric"
+    ],
+    "abstract": "In this competition, you\u2019ll develop AI systems to efficiently learn new skills and solve open-ended problems, rather than depend exclusively on systems trained with extensive datasets. The top submissions will show improvement toward human level reasoning.\n\nStart",
+    "description": "Note: This is the second ARC Prize competition on Kaggle. It builds upon the ARC Prize 2024. This second competition has an updated dataset of human-calibrated problems and increased compute for participants.\nCurrent AI systems can not generalize to new problems outside their training data, despite extensive training on large datasets. LLMs have brought AI to the mainstream for a large selection of known tasks. However, progress towards Artificial General Intelligence (AGI) is idea constrained. Improvements in AGI could enable AI systems that think and invent alongside humans.\nThe Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC-AGI-2) benchmark measures an AI system's ability to efficiently learn new skills. Humans have collectively scored 100% in ARC, whereas the best AI systems only score 4%. The ARC Prize competition encourages researchers to explore ideas beyond LLMs, which depend heavily on large datasets and struggle with novel problems. \nThis competition includes several components. The competition as described here carries a prize of $125,000 with an additional $600,000 available if any team can beat a score of 85% on the leaderboard. Further opportunities outside of Kaggle may also be available- to learn more visit ARCprize.org.\nYour work could contribute to new AI problem-solving applicable across industries. Vastly improved AGI will likely reshape human-machine interactions. Winning solutions will be open-sourced to promote transparency and collaboration in the field of AGI.",
+    "timeline": [
+      {
+        "date": "March 24, 2025",
+        "event": "Start Date"
+      },
+      {
+        "date": "October 27, 2025",
+        "event": "Entry deadline. You must accept the competition rules before this date in order to compete."
+      },
+      {
+        "date": "October 27, 2025",
+        "event": "Team Merger deadline. This is the last day participants\u00a0may join or merge teams."
+      },
+      {
+        "date": "November 3, 2025",
+        "event": "Final submission deadline."
+      },
+      {
+        "date": "November 9, 2025",
+        "event": "Paper Award submission deadline."
+      }
+    ],
+    "start_date": "March 24, 2025",
+    "end_date": "November 9, 2025",
+    "prize_details": "TOTAL PRIZES AVAILABLE: $725,000\n\n2025 Progress Prizes: $125,000\nGrand Prize: $600,000\n\nIn line with the spirit of the competition, participants eligible for a prize will be removed from the competition if they do not open source their solutions.\n2025 Progress Prizes\n\nPrizes for Top-Ranking Teams in this Competition: $50,000\n\nFirst Prize: $25,000\nSecond Prize: $10,000\nThird Prize: $5,000\nFourth Prize: $5,000\nFifth Prize: $5,000\nPaper Award Prizes: $75,000\n\nWinner: $50,000\nFirst Runner Up: $20,000\nSecond Runner Up: $5,000\n\nSee the Paper Award tab for more details on submission and evaluation.\nGrand Prize\nA Grand Prize of an additional $600,000 will be unlocked in the event that a team achieves a score of at least 85% accuracy on the competition leaderboard. At the end of the competition, the Grand Prize will be divided among the Top 5 teams that have achieved 85% accuracy as outlined below. In the event that fewer than 5 teams have achieved 85% accuracy, those prizes will be divided proportionately among qualifying teams.\n\nFirst Prize: $300,000\nSecond Prize: $120,000\nThird Prize: $60,000\nFourth Prize: $60,000\nFifth Prize: $60,000",
+    "prize_pool": "$725,000",
+    "prize_breakdown": [
+      {
+        "rank": "First",
+        "amount": "$25,000"
+      },
+      {
+        "rank": "First",
+        "amount": "$25,000"
+      },
+      {
+        "rank": "Second",
+        "amount": "$10,000"
+      },
+      {
+        "rank": "Third",
+        "amount": "$5,000"
+      },
+      {
+        "rank": "Fourth",
+        "amount": "$5,000"
+      },
+      {
+        "rank": "Fifth",
+        "amount": "$5,000"
+      },
+      {
+        "rank": "First",
+        "amount": "$20,000"
+      },
+      {
+        "rank": "First",
+        "amount": "$20,000"
+      },
+      {
+        "rank": "Second",
+        "amount": "$5,000"
+      },
+      {
+        "rank": "First",
+        "amount": "$300,000"
+      },
+      {
+        "rank": "Second",
+        "amount": "$120,000"
+      },
+      {
+        "rank": "Third",
+        "amount": "$60,000"
+      },
+      {
+        "rank": "Fourth",
+        "amount": "$60,000"
+      },
+      {
+        "rank": "Fifth",
+        "amount": "$60,000"
+      }
+    ],
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/birdclef-2025",
+    "title": "birdclef-2025",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/91844/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=xxAA2lBZM86sAgAGNC%2FqDFLaVIwvG1MPS9x9rvVqIQcsZqqDwWxbM%2FWU66b8i5pQsiuqCRJsNUDW3FLjMhWmEovCHhMHFMXwacxwgwFCSSFuhtwU4i%2BVOhvo8IwClCJOHr%2Fllhl53FSjRzFTf0TT8Yl3R592OyEmApYN059DK3mKMVqFjG%2BontozYPVLr%2BPOsrfzXRiu4cNfPmIpKfJqijXpOGoHKTWzKNfLoJcXDqGX0N4RkrZW011X4U5zMOVvMcYnKJLoIpirSO99wta7FfGl83QtYX4v2TN3X%2FoO7aLGzvMZgfxaIEKkGUGdK9cIDhUacToDaaoaLLOY%2BCuLaw%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/91844/images/header",
+    "organizer": "Holger Klinck, Juan Sebasti\u00e1n Ca\u00f1as, Maggie Demkin, Sohier Dane, Stefan Kahl, and Tom Denton. BirdCLEF+ 2025. https://kaggle.com/competitions/birdclef-2025, 2025. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/3747/thumbnail.png?r=251",
+    "tags": [
+      "Earth and Nature",
+      "Earth and Nature",
+      "Audio Event Classification",
+      "Audio Event Classification",
+      "Animals",
+      "Animals",
+      "Multilabel Classification",
+      "Multilabel Classification",
+      "Custom Metric"
+    ],
+    "abstract": "Mobile and habitat-diverse species serve as valuable indicators of biodiversity change, as shifts in their assemblages and population dynamics can signal the success or failure of ecological restoration efforts. However, conducting traditional observer-based biodiversity surveys across large areas is both costly and logistically demanding. In contrast, passive acoustic monitoring (PAM), combined with modern machine learning techniques, enables conservationists to sample across broader spatial scales with greater temporal resolution, providing deeper insights into the relationship between restoration interventions and biodiversity.\n\nFor this competition, you'll apply your machine-learning expertise to identify under-studied species based on their acoustic signatures. Specifically, you'll develop computational methods to process continuous audio data and recognize species from different taxonomic groups by their sounds. The most effective solutions will demonstrate the ability to train reliable classifiers with limited labeled data. If successful, your work will contribute to ongoing efforts to enhance biodiversity monitoring, including research initiatives in the lowlands of the Magdalena Valley of Colombia.\n\n\n\nHumid tropical rainforests, Earth's most biodiverse and ancient ecosystems, are vital for climate regulation and water resource protection. However, rainforests face severe threats. In Colombia, a megadiverse country, the lowlands of the Magdalena Valley are a biodiversity hotspot and home to many endangered species. Over 70% of the Magdalena Valley lowland rainforests are replaced by vast pastures for cattle ranching, and illegal logging is common in forest fragment remnants. The protection of the last forest remnants and wetlands is an urgent need.\n\nFundaci\u00f3n Biodiversa Colombia (FBC) collaborates with local communities, landowners, and organizations to conserve, restore, and connect fragments of forests and wetlands. Established in 2012, El Silencio Natural Reserve protects 5,407 acres of tropical lowland forests and wetlands. Home to diverse wildlife, including 295 birds, 34 amphibians, 69 mammals, 50 reptiles, and nearly 500 plant species, El Silencio is a model for regional conservation and sustainability.\n\nA significant part of the reserve, previously used for extensive livestock farming, is under an ecological restoration project. Through the Kaggle competition, we aim to automate detecting and classifying different taxonomic groups of soundscapes from El Silencio Natural Reserve, intending to provide a better understanding of the ecological process of the restoration projects.\n\nThe broader goals for this Kaggle competition include:\n\n(1) Identify species of different taxonomic groups in the Middle Magdalena Valley of Colombia/El Silencio Natural Reserve in soundscape data.\n\n(2) Train machine learning models with very limited amounts of training samples for rare and endangered species.\n\n(3) Enhance machine learning models with unlabeled data for improving detection/classification.\n\nThanks to your innovations, it will be easier for researchers and conservation practitioners to understand restoration activities' effect trends accurately. As a result, they'll be able to evaluate threats and adjust their conservation actions regularly and more effectively.\n\nThis competition is collaboratively organized by (alphabetic order) the Chemnitz University of Technology, Fundaci\u00f3n Biodiversa Colombia, Google Research, iNaturalist, Instituto Humboldt, K. Lisa Yang Center for Conservation Bioacoustics at the Cornell Lab of Ornithology, LifeCLEF, Red Ecoac\u00fastica Colombiana, University College London, and Xeno-canto.\n\nStart",
+    "timeline": [
+      {
+        "date": "March 10, 2025",
+        "event": "Start Date."
+      },
+      {
+        "date": "May 29, 2025",
+        "event": "Entry Deadline. You must accept the competition rules before this date to compete."
+      },
+      {
+        "date": "May 29, 2025",
+        "event": "Team Merger Deadline. This is the last day participants may join or merge teams."
+      },
+      {
+        "date": "June 5, 2025",
+        "event": "Final Submission Deadline."
+      }
+    ],
+    "start_date": "March 10, 2025",
+    "end_date": "June 5, 2025",
+    "prize_details": "1st Place - $ 15,000\n2nd Place - $ 10,000\n3rd Place - $ 8,000\n4th Place - $ 7,000\n5th Place - $ 5,000\n\nBest working note award (optional):\nParticipants of this competition are encouraged to submit working notes to the CLEF 2025 conference. A best BirdCLEF+ working note competition will be held as part of the conference. The top two best working note award winners will receive $2,500 each. See the Evaluation page for judging criteria.",
+    "prize_pool": "$2,500",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/byu-locating-bacterial-flagellar-motors-2025",
+    "title": "byu-locating-bacterial-flagellar-motors-2025",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/91249/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=57XhOg%2B6Mmp4csqXJ%2FZHiU5lZsfvHGiW660fXRuIdMm4wjMe%2F6r%2BR7eI9%2FnwfXcFt5FAgQvm3X8lgs0kYVAl30X7IW%2FYiAAng%2FAtjVCmYXUchVN1ulw2xyYOB06NO88uvDpKDfgtLg4CgESZ27TuUaHuCknRDmw6MHv%2BqmPG7yWuZyh9bjByEG7gVdeRyhaEI%2Fn0zzB5w9QihogqvJpHkz%2FRsDLfzppPX%2BuZhzBtKlEt960IaThPXCCjjVYkse0Ss7WE8hu2gEhnJCTZRPKr5pm8pQICbtyJyVJzChvP3p0ATGvBhefwivVMGAThJKAVsrDNGyBZIhRHnmhGSSU8GQ%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/91249/images/header",
+    "organizer": "Andrew Darley, Braxton Owens, Bryan Morse, Eben Lonsdale, Gus Hart, Jackson Pond, Joshua Blaser, Matias Gomez Paz, Matthew Ward, Rachel Webb, Andrew Crowther, Nathan Smith, Grant J. Jensen, TJ Hart, Maggie Demkin, Walter Reade, and Elizabeth Park. BYU - Locating Bacterial Flagellar Motors 2025. https://kaggle.com/competitions/byu-locating-bacterial-flagellar-motors-2025, 2025. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/5081/thumbnail.png?t=2025-02-20-19-54-29",
+    "tags": [
+      "Image",
+      "Image",
+      "Object Detection",
+      "Object Detection",
+      "Biology",
+      "Biology",
+      "Computer Vision",
+      "Computer Vision",
+      "Custom Metric"
+    ],
+    "abstract": "The goal of this competition is to develop an algorithm to identify the presence and location of flagellar motors in 3D reconstructions of bacteria. Automating this traditionally manual task will accelerate the study of macromolecular complexes, which helps answer fundamental questions in molecular biology, improve drug development, and advance synthetic biology.\n\nStart",
+    "description": "Introduction\nThe flagellar motor is a molecular machine that facilitates the motility of many microorganisms, playing a key role in processes ranging from chemotaxis to pathogenesis. Cryogenic electron tomography (cryo-ET) has enabled us to image these nanomachines in near-native conditions. But identifying flagellar motors in these three-dimensional reconstructions (tomograms) is labor intensive. Factors such as a low signal-to-noise ratio, variable motor orientations, and the complexity of crowded intracellular environments complicate automated identification. Cryo-ET studies become limited by the bottle-neck of a human in the loop. In this contest, your task is to develop an image processing algorithm that identifies the location of a flagellar motor, if it is present.\nA tomogram is a three-dimensional image that has been reconstructed from a series of 2D projection images. The images in this challenge are tomograms of bacteria that have been flash-frozen in ice, which preserves the molecular structure of the bacteria for the imaging process. This video walks through slices of a tomogram highlighting different features of a bacterial cell, including a flagellar motor. The accompanying text describes the purpose and function of the motor.",
+    "timeline": [
+      {
+        "date": "March 5, 2025",
+        "event": "Start Date."
+      },
+      {
+        "date": "May 28, 2025",
+        "event": "Entry Deadline. You must accept the competition rules before this date in order to compete."
+      },
+      {
+        "date": "May 28, 2025",
+        "event": "Team Merger Deadline. This is the last day participants may join or merge teams."
+      },
+      {
+        "date": "June 4, 2025",
+        "event": "Final Submission Deadline."
+      }
+    ],
+    "start_date": "March 5, 2025",
+    "end_date": "June 4, 2025",
+    "prize_details": "First Prize: $20,000\nSecond Prize: $15,000\nThird Prize: $12,000\nFourth Prize: $10,000\nFifth Prize: $8,000",
+    "prize_pool": "$20,000",
+    "prize_breakdown": [
+      {
+        "rank": "First",
+        "amount": "$20,000"
+      },
+      {
+        "rank": "Second",
+        "amount": "$15,000"
+      },
+      {
+        "rank": "Third",
+        "amount": "$12,000"
+      },
+      {
+        "rank": "Fourth",
+        "amount": "$10,000"
+      },
+      {
+        "rank": "Fifth",
+        "amount": "$8,000"
+      }
+    ],
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding",
+    "title": "stanford-rna-3d-folding",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/87793/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=upozTxSPXLqEqhpxfUgXlxc3Mt7wU2Tgrp%2FmViEXjEofCAbw2z4POBgPWScF0CZEjL5%2BOERnk67jGglyMBbau1%2BfWjgi4bfbDQ0XvV9cmHI%2BkDDHBOhMzKqapVqw4bz9YH0SS47zyNnLUG2862syGgBgxL9g8g2UFwQhc3nQwZ3FfzEtbn9pk2a6KqDNC%2FF9M37UCLJp%2BVS0Z9wR%2FCrVMUI3qy9F5DmgXlqUDjO5FZV0lgPS68QTyWXE3sr4crKUbWLsEqVibWMlU7eL4V0WdkIR2PUxAEsU1coYCaoEUSKIXMoM16dS8jCZJUxxJYU2%2BNwKKOoUWAnWGrtu34v6jw%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/87793/images/header",
+    "organizer": "Shujun He, CASP16 organizers, CASP16 RNA experimentalists, RNA-Puzzles consortium, VFOLD team, Rachael Kretsch, Alissa Hummer, Andrew Favor, Walter Reade, Maggie Demkin, Rhiju Das, et al. Stanford RNA 3D Folding. https://kaggle.com/competitions/stanford-rna-3d-folding, 2025. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-media/competitions/Stanford/stanford-university-seal-seeklogo.com.png",
+    "tags": [
+      "Video Games",
+      "Video Games",
+      "Biology",
+      "Biology",
+      "Chemistry",
+      "Chemistry",
+      "Biotechnology",
+      "Biotechnology",
+      "Regression",
+      "Regression",
+      "Custom Metric"
+    ],
+    "abstract": "If you sat down to complete a puzzle without knowing what it should look like, you\u2019d have to rely on patterns and logic to piece it together. In the same way, predicting Ribonucleic acid (RNA)\u2019s 3D structure involves using only its sequence to figure out how it folds into the structures that define its function.\n\nIn this competition, you\u2019ll develop machine learning models to predict an RNA molecule\u2019s 3D structure from its sequence. The goal is to improve our understanding of biological processes and drive new advancements in medicine and biotechnology.\n\nStart",
+    "description": "RNA is vital to life\u2019s most essential processes, but despite its significance, predicting its 3D structure is still difficult. Deep learning breakthroughs like AlphaFold have transformed protein structure prediction, but progress with RNA has been much slower due to limited data and evaluation methods.\nThis competition builds on recent advances, like the deep learning foundation model RibonanzaNet, which emerged from a prior Kaggle competition. Now, you\u2019ll take on the next challenge\u2014predicting RNA\u2019s full 3D structure.\nYour work could push RNA-based medicine forward, making treatments like cancer immunotherapies and CRISPR gene editing more accessible and effective. More fundamentally, your work may be the key step in illuminating the folds and functions of natural RNA molecules, which have been called the 'dark matter of biology'.\nThis competition is made possible through a worldwide collaborative effort including the organizers, experimental RNA structural biologists, and predictors of the CASP16 and RNA-Puzzles competitions; Howard Hughes Medical Institute; the Institute of Protein Design; and Stanford University School of Medicine.",
+    "timeline": [
+      {
+        "date": "February 27, 2025",
+        "event": "Start Date."
+      },
+      {
+        "date": "April 23, 2025",
+        "event": "Public leaderboard refresh & Early Sharing Prizes"
+      },
+      {
+        "date": "May 22, 2025",
+        "event": "Entry Deadline. You must accept the competition rules before this date in order to compete."
+      },
+      {
+        "date": "May 22, 2025",
+        "event": "Team Merger Deadline. This is the last day participants may join or merge teams."
+      },
+      {
+        "date": "May 29, 2025",
+        "event": "Final Submission Deadline."
+      },
+      {
+        "date": "September 24, 2025",
+        "event": "Competition End Date - This date is subject to change based upon the availability of new sequences. Watch the forum after the competition end for updates."
+      }
+    ],
+    "start_date": "February 27, 2025",
+    "end_date": "September 24, 2025",
+    "prize_details": "Leaderboard Prizes\n\n1st Place -   $ 45,000\n2nd Place - $ 15,000\n3rd Place -  $ 10,000\n\nEarly Sharing Prizes\nParticipants of this competition are encouraged to make publicly available their notebooks through the competition. There will be a refresh of the public leaderboard 2 months after competition start. At that time, $2,500 will be awarded to the first two teams to publish a public notebook scoring above the VFOLD_human_expert score on the leaderboard.  A discussion post will detail timing of the refresh. \nTo be eligible for the Early Sharing Prize, you will need to:\n1) Publish a public notebook scoring above the benchmark score on the leaderboard after the data refresh (first two notebooks that meet this criteria will be evaluated).\n2) Out of all participants or Teams who have submitted notebooks scoring above the benchmark score, be the first two to make your notebooks public. The public notebook needs to adhere to the same requirements and restrictions regarding licensing, reproducibility, and documentation to which the winning Submission is subject (see Competition Rules).\n3) Keep the notebooks and any datasets they use publicly available until the final Progress Prizes are awarded to the winning Teams at the end of the competition. Submissions should only make use of information publicly available before the temporal_cutoff dates provided with test sequences.\nThe Competition Sponsor will, after the data refresh, assess all Submissions that are eligible for the Early Sharing Prize in the order in which Submissions were made. If it is discovered that such a Submissions that scored more than the benchmark score has no or incomplete documentation, incompatible licensing, or is in any other way incompatible with the rules to which the winning Submission is subject, it will not be considered towards the Early Sharing Prize and the next Submissions will be assessed.\nPaper Authorship\nTop performing participants on the Public Leaderboard rankings at the final submission deadline will be invited to contribute their code and model descriptions to a scientific paper summarizing the competition's scientific outcome.",
+    "prize_pool": "$2,500",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/drawing-with-llms",
+    "title": "drawing-with-llms",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/89659/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=uzeSHsZcz%2BV%2BY4mswfUccTC9NS3peGn7vGJDnXAQv53%2BhphMWGAnzn89x5yJHbhrpUh53%2BH5zPOLFEva4xeTpS%2FVw1SAJemm3jDA1iefVT91X0GCABEZ5KxHfQPhL0AkHBWR2OxfflfAMBNa3WfWnRWtbrS8L21AHXd3WPGflEw%2FECnXCemi2qxaaxcdQc9wUM4ivd%2FrY0z5ofxuURiqtGbxiYDvIfP1GHmgLaLmE3WzEbBicVgD8PK9n6gsRKH41IqRwUUOoc4vXIWu5sRNmqQpiqKV41XSHBpOb5TvYLDaxgkmH0%2FtLrLLQZJtBE1OkQx2FNKHqWjdP8TC35cAbw%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/89659/images/header",
+    "organizer": "Ryan Holbrook, DJ Sterling, Paul Mooney, Maggie Demkin, and Elizabeth Park. Drawing with LLMs. https://kaggle.com/competitions/drawing-with-llms, 2025. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "Art",
+      "Art",
+      "Image Generator",
+      "Image Generator",
+      "NLP",
+      "NLP",
+      "Custom Metric"
+    ],
+    "abstract": "Given a text prompt describing an image, your task is to generate Scalable Vector Graphics (SVG) code that renders it as an image as closely as possible. Your submissions will be built with Kaggle Packages, a new feature for building reusable models as Python libraries.\n\nWe have two Starter Notebooks with more details:\n\nStart",
+    "description": "Specialized solutions can significantly outperform even the impressive capabilities of generative models like ChatGPT and Gemini while providing greater transparency into how they\u2019re built. And while LLMs may demonstrate \u201csparks of AGI\u201d, their capacity to generate image-rendering code is one area that needs improvement.\n\nThis competition challenges you to build practical, reusable solutions for image generation that follow robust software engineering patterns. Given a text description of an image, your task is to generate SVG code which renders it as closely as possible. Scalable Vector Graphics (SVG) is a vector image format that uses XML to describe two-dimensional graphics which can be scaled in size without quality loss.\nYour submission, created using the new Kaggle Packages feature, will be a class Model with a predict() function which generates SVG code for a given prompt. The end results will be a set of deployable model packages evaluated on their ability to deeply reason about abstract descriptions and translate them into precise, executable code.\nIf you have feedback or questions, please let us know in this competition's Discussion forum. We appreciate your input as we improve and continue to develop Kaggle Packages as a new way to run Kaggle Competitions.",
+    "timeline": [
+      {
+        "date": "February 25, 2025",
+        "event": "Start Date."
+      },
+      {
+        "date": "May 19, 2025",
+        "event": "Entry Deadline. You must accept the competition rules before this date in order to compete."
+      },
+      {
+        "date": "May 19, 2025",
+        "event": "Team Merger Deadline. This is the last day participants may join or merge teams."
+      },
+      {
+        "date": "May 27, 2025",
+        "event": "Final Submission Deadline."
+      }
+    ],
+    "start_date": "February 25, 2025",
+    "end_date": "May 27, 2025",
+    "prize_details": "1st Place - $12,000\n2nd Place - $10,000\n3rd Place - $10,000\n4th Place - $10,000\n5th Place - $8,000",
+    "prize_pool": "$12,000",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/march-machine-learning-mania-2025",
+    "title": "march-machine-learning-mania-2025",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/91497/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=NPivT9qfKGEb8%2BAaW9oCkmstHsskSxFNXqm3DTS%2FQFo5B7ox%2F%2B5fvsaEH8MmqGmHYF4sDgcEdNUddcjBaBZyeSwaI3xQM%2BeRarp9kMx%2FbvIT9HB9CelUG3PwVLQYUai0SVTMe9jJT%2BWOGLYFdWZy5nNxAx8QNmIWdXe7plRCmr8Gwp%2Fo6V%2BqXBDhL0P6ZqJVV9g2H1C5I9iRrUseUZT6sMHUakVrW38aQOx6Fi1SmE%2FG7To%2BxNjNIfn%2BTTo0T%2Fc6cVx%2FfQTo7rLSd1qCPsw993SDbtbDDz5bx23iSjumvmjPIWP%2FgfVrDNURZxfk7PG0Iwrx9N6IR%2B7okuJQdWicig%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/91497/images/header",
+    "organizer": "Jeff Sonas, Paul Mooney, Addison Howard, and Will Cukierski. March Machine Learning Mania 2025. https://kaggle.com/competitions/march-machine-learning-mania-2025, 2025. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "Basketball",
+      "Basketball",
+      "Sports",
+      "Sports",
+      "Mean Squared Error"
+    ],
+    "abstract": "You will be forecasting the outcomes of both the men's and women's 2025 collegiate basketball tournaments, by submitting predictions for every possible tournament matchup.\n\nStart",
+    "description": "Another year, another chance to predict the upsets, call the probabilities, and put your bracketology skills to the leaderboard test. In our eleventh annual March Machine Learning Mania competition, Kagglers will once again join the millions of fans who attempt to predict the outcomes of this year's college basketball tournaments. Unlike most fans, you will pick the winners and losers using a combination of rich historical data and computing power, while the ground truth unfolds on television.\nYou are provided data of historical NCAA games to forecast the outcomes of the Division 1 Men's and Women's basketball tournaments. This competition is the official 2025 edition, with points, medals, prizes, and basketball glory at stake.\nWe have reverted back to the format from 2023 where you are making predictions about every possible matchup in the tournament, evaluated using the Brier score. See the Evaluation Page for full details.\nPrior to the start of the tournaments, the leaderboard of this competition will reflect scores from 2021-2024 only. Kaggle will periodically fill in the outcomes and rescore once the 2025 games begin.\nGood luck and happy forecasting!",
+    "timeline": [
+      {
+        "date": "February 10, 2025",
+        "event": "Start Date"
+      },
+      {
+        "text": "Week of February 18-21, 2025 - 2025 Tournament Submission File Available"
+      },
+      {
+        "text": "March 20, 2025  4PM UTC - Final Submission Deadline. Note that Kaggle will release updated data at least once in advance of the deadline in order to include as much of the current season's data as possible."
+      },
+      {
+        "text": "March 20 - April 8 - Watch your tournament results play out! Kaggle will refresh the leaderboard throughout the tournaments."
+      }
+    ],
+    "start_date": "February 10, 2025",
+    "prize_details": "1st Place - $10,000\n2nd Place - $8,000\n3rd Place - $7,000\n4th - 8th Place(s) - $5,000",
+    "prize_pool": "$10,000",
+    "end_date": "Unknown",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/konwinski-prize",
+    "title": "konwinski-prize",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/84795/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=s1uKvlSvFvfGQDeRm92U3P71JE6Nl2ulpvX5u%2Fkt4wPxjkrimRGLFITkEBIiG34DXaVa7uVaY038FoHLKEGr63CiLzXe3jBPGiOiqEWwYwBbsFG6gzRPJQSSnN27OTQpVYe8qnsNShLm8fD35WdgtBkC3YI75IsqLKeeDRgIEDL1ONMyEkJ8wMLCOYHL9ZrvjpD0cFMDD6odfCUdDZ3TpWDmtWI5pjni1M8oVXebBEvoWeeBQIyE%2F7Yq7wJLSGE94kDj7tuSKxCAYWde0NJRVZ9%2Bd2ELdYP4eUqkETCWz7N2XYVKf6sto9JwWrkiwsGV9iCxrtmCg5KlJ5SnyMdc8A%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/84795/images/header",
+    "organizer": "Andy Konwinski, Christopher Rytting, Justin Fiedlerand Alex Shaw, Sohier Dane, Walter Reade, and Maggie Demkin. Konwinski Prize. https://kaggle.com/competitions/konwinski-prize, 2024. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-media/competitions/Konwinski-Prize/400x400%20Andy%20Gray%20Sweater.jpg",
+    "tags": [
+      "Computer Science",
+      "Computer Science",
+      "Custom Metric"
+    ],
+    "abstract": "I'm Andy, and I\u2019m giving $1M to the first team that exceeds 90% on a new version of the SWE-bench benchmark containing GitHub issues we collect after we freeze submissions. I want to see what a contamination-free leaderboard looks like. Your challenge is to build an AI that crushes this yet-to-be-collected set of SWE-bench issues.\n\nStart",
+    "description": "I fell in love with SWE-bench the moment I saw it. What a great idea: have AIs solve real Issues from popular GitHub repos. SWE-bench felt more difficult, grounded, and relevant than other AI benchmarks. But I've always wondered how the leaderboard would change if the test set weren\u2019t public. So for this competition we will collect a new test set after the submission deadline.\nI also believe in the power of open source communities, so for this competition cash will only be awarded to submissions that use open source code and open weight models.\nAutomating this task will let human software engineers spend lots more time designing new features, reforming abstractions, interfacing with users, and other tasks that are more inherently human (and, for many of us, more fun). If we get this right, we can spend less time fixing bugs and more time building.  \nNow let\u2019s get AI actually solving our GitHub issues.",
+    "timeline": [
+      {
+        "date": "December 11, 2024",
+        "event": "Start Date."
+      },
+      {
+        "date": "March 5, 2025",
+        "event": "Entry Deadline. You must accept the competition rules before this date in order to compete."
+      },
+      {
+        "date": "March 5, 2025",
+        "event": "Team Merger Deadline. This is the last day participants may join or merge teams."
+      },
+      {
+        "date": "March 12, 2025",
+        "event": "Final Submission Deadline."
+      },
+      {
+        "date": "June 11, 2025",
+        "event": "Competition End Date"
+      }
+    ],
+    "start_date": "December 11, 2024",
+    "end_date": "June 11, 2025",
+    "prize_details": "TOTAL PRIZE FUND: $1,225,000\nLeaderboard Prizes for Top-Ranking Teams in this Competition:\n1st Place: $50,000\n2nd Place: $20,000\n3rd Place: $10,000\n4th Place: $10,000\n5th Place: $10,000\nThreshold Prizes for Leaderboard Prize Winners:\nIf any team in the top 5 places on the leaderboard reaches a score of 30%, an additional pool of $50,000 will be distributed among the winning teams reaching the threshold, in direct proportion to their Leaderboard Prize winnings. For example, if only the first and second place teams reach the 30% threshold they would receive roughly $35,700 and $14,300 respectively. This also applies to the score thresholds of 40%, 50%, 60%, 70% 80%, and 90%.\nGrand Prize:\nIf the first place team reaches a score of 90% they will receive an additional $775,000. The Grand Prize will bring the first place team's total winnings to one million dollars.\nAllocation Demo Code\nThis snippet illustrates how to perform the full prize allocation.\nimport numpy as np\n\ndef calculate_prizes(winner_scores: np.array) -> np.array:\n    # Confirm scores are provided in descending order / leaderboard order\n    assert all(np.sort(winner_scores)[::-1] == winner_scores)\n    leaderboard_prizes = np.array([50_000, 20_000, 10_000, 10_000, 10_000])\n    totals = np.copy(leaderboard_prizes)\n    threshold_boost = 50_000\n    for threshold in [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]:\n        matching_lb_prizes = leaderboard_prizes * (winner_scores >= threshold)\n        eligible_lb_total = np.sum(matching_lb_prizes)\n        totals = totals + (threshold_boost / eligible_lb_total) * matching_lb_prizes\n    if winner_scores[0] > 0.9:\n        totals[0] += 775_000\n    return np.round(totals, decimals=2)\ncontent_copy\nNote: All prize winners need to adhere to the same requirements and restrictions regarding licensing, reproducibility, and documentation to which the winning Submission is subject (see Competition Rules). Leaderboard prize winners who do not meet the open source requirements will also be removed from the leaderboard.",
+    "prize_pool": "$1,225,000",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/ai-mathematical-olympiad-progress-prize-2",
+    "title": "ai-mathematical-olympiad-progress-prize-2",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/86023/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=1%2FrOZkHESWs43FCaO9jeHSuV3sTaPLwkbwFuRt3fHs2PSXBSE8eHp6KdwZFXdm5h%2Bv1%2BUlojlOe888tvMfhWoyMjIQTR0K%2Fu7nEuAFOipPC3EolAFxOtVscWqLqJefWNhK94yarJZ9yws4TY%2B%2Bl1RhtprXONjGGIBxkeq0FCghhFOOA3Fgfzt0oig8dTDuQE%2Fzg3F4GENU3u941Fg53F4z6oAcZ4HtvOdhwNG4eO%2BIzXnOrQ9IrhZD%2BSv6qp5Ix286YCFlQGgQTEXGVASB4m2Wjg5Obei%2FTcjQiCHqE0LK%2B8p%2BEcPv2C86Itvgr4SIjBRJ0v6tSHu9U9OYYp4%2B5k5g%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/86023/images/header",
+    "organizer": "Simon Frieder, Sam Bealing, Arsenii Nikolaiev, Geoff C. Smith, Kevin Buzzard, Timothy Gowers, Peter J. Liu, Po-Shen Loh, Lester Mackey, Leonardo de Moura, Dan Roberts, D. Sculley, Terence Tao, David Balduzzi, Simon Coyle, Alex Gerko, Ryan Holbrook, Addison Howard, and XTX Markets. AI Mathematical Olympiad - Progress Prize 2. https://kaggle.com/competitions/ai-mathematical-olympiad-progress-prize-2, 2024. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4015/thumbnail.png",
+    "tags": [
+      "NLP",
+      "NLP",
+      "Mathematics",
+      "Mathematics",
+      "Accuracy Score"
+    ],
+    "abstract": "The goal of this competition is to create algorithms and models that can solve tricky math problems written in LaTeX format. Your participation will help to advance AI models\u2019 mathematical reasoning skills and drive frontier knowledge.\n\nStart",
+    "description": "Note: This is the second AIMO Progress Prize competition. It builds upon the first AIMO Progress Prize competition, which was won in July 2024 by Project Numina. This second competition has an increased prize pool, a new dataset of problems, increased compute for participants and updated rules for using open-source LLMs.\nThe ability to reason mathematically is a critical milestone for AI. Mathematical reasoning is the foundation for solving many complex problems, from engineering marvels to intricate financial models. However, current AI capabilities are limited in this area.\nThe AI Mathematical Olympiad (AIMO) Prize is a $10mn fund to spur the open development of AI models capable of performing as well as top human participants in the International Mathematical Olympiad (IMO).\nThis second AIMO Progress Prize competition has 110 math problems in algebra, combinatorics, geometry and number theory. The difficulty has been increased from the first competition, and the problems are now around the National Olympiad level. The problems have also been designed to be 'AI hard' in terms of the mathematical reasoning required, which was tested against current open LLMs' capabilities. \nTo address the challenge of train-test leakage, the competition uses novel math problems created by an international team of problem solvers. Using this transparent and fair evaluation framework, the competition will help to strengthen the benchmarks for assessing AI models' mathematical reasoning skills, without the risk of contamination from training data.\nThis latest AIMO Progress Prize competition offers an exciting opportunity to drive innovation in the field of AI for Math, while also fostering healthy competition and supporting open science. \nJoin us as we work towards a future where AI models\u2019 mathematical reasoning skills are accurately and reliably assessed, driving progress and innovation.",
+    "timeline": [
+      {
+        "date": "October 17, 2024",
+        "event": "Start Date."
+      },
+      {
+        "date": "March 25, 2025",
+        "event": "Entry Deadline. You must accept the competition rules before this date in order to compete."
+      },
+      {
+        "date": "March 25, 2025",
+        "event": "Team Merger Deadline. This is the last day participants may join or merge teams."
+      },
+      {
+        "date": "April 1, 2025",
+        "event": "Final Submission Deadline."
+      }
+    ],
+    "start_date": "October 17, 2024",
+    "end_date": "April 1, 2025",
+    "prize_details": "TOTAL FUND FOR PROGRESS PRIZE 2: $2,117,152\nPrizes for Top-Ranking Teams in this Competition:\n1st Place: $262,144\n2nd Place: $131,072\n3rd Place: $65,536\n4th Place: $32,768\n5th Place: $16,384\nOverall Progress Prize Winner: The Overall Progress Prize Winner shall be the highest ranking team that achieves a score of at least 47/50 on both public and private test sets. After any prizes for the five top-ranking teams have been awarded, the remainder of the total fund shall be awarded to the Overall Progress Prize Winner.\nIf a team is named the Overall Progress Prize Winner in this competition, the prize will be at least $1,589,248. If no team is named the Overall Progress Prize Winner in this competition, the remainder of the total fund shall roll over to the next competition, where the same prize allocation will apply.\nEarly Sharing Prize: $20,000. An additional $20,000 cash prize will be awarded for sharing high-scoring public notebooks early in the competition to encourage participants to share information earlier and help the community make more progress over the course of the competition.\nTo be eligible for the Early Sharing Prize, you will need to:\n1) Be the first to publish a public notebook scoring at least 20/50 on the leaderboard before January 1st, 2025, 11:59 PM UTC.\n2) Out of all participants or Teams who have submitted notebooks scoring at least 20/50, be the first to make your notebook public. The public notebook needs to adhere to the same requirements and restrictions regarding licensing, reproducibility, and documentation to which the winning Submission is subject (see Competition Rules).\n3) Keep the notebooks and any datasets they use publicly available until the final Progress Prizes are awarded to the winning Teams at the end of the competition.\nThe Competition Sponsor will, after 1 January 2025, 11:59 PM UTC, assess all Submissions that are eligible for the Early Sharing Prize in the order in which Submissions were made. If it is discovered that such a Submissions that scored more than 20 points has no or incomplete documentation, incompatible licensing, or is in any other way incompatible with the rules to which the winning Submission is subject, it will not be considered towards the Early Sharing Prize and the next Submissions will be assessed.",
+    "prize_pool": "$2,117,152",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/llm-classification-finetuning",
+    "title": "llm-classification-finetuning",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/86518/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=iOo6ssaRZkbroTaNrggB3QRzJQNEYbb4vN7r7%2BxUKpdYrB0Blbh3ncheDUsJOG8MYOmeKGTexboytzR79zHQKphRDgtSzxumgy%2BA1GDo1q5XlyOIZli4bwGA2umnkgBfZr7IzHCz7gU%2FRr1HO2hiBdje7tC1OOt8d4n2rORjCPxXk6z8P7r%2FgwUD%2BM2KKMN8P8IC5P7g9HRXbyn68zUNGiT4KfVUW2wXTmtfIovwX%2B4qp%2FCS6Olpcr9YrKtrU31jkCx6E8lJaKO%2B3Xo4ZkKa8UxLI3tiEOBidesKN22a6jDrpGpi55rhA6IFiFN7mtNBB4qy70NNA%2BRVrHnrwTZLqg%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/86518/images/header",
+    "organizer": "Wei-lin Chiang, Lianmin Zheng, Lisa Dunlap, Joseph E. Gonzalez, Ion Stoica, Paul Mooney, Sohier Dane, Addison Howard, and Nate Keating. LLM Classification Finetuning. https://kaggle.com/competitions/llm-classification-finetuning, 2024. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Languages",
+      "Languages",
+      "Text Conversation",
+      "Text Conversation",
+      "Log Loss"
+    ],
+    "abstract": "This competition challenges you to predict which responses users will prefer in a head-to-head battle between chatbots powered by large language models (LLMs). You'll be given a dataset of conversations from the Chatbot Arena, where different LLMs generate answers to user prompts. By developing a winning machine learning model, you'll help improve how chatbots interact with humans and ensure they better align with human preferences.",
+    "description": "Large language models (LLMs) are rapidly entering our lives, but ensuring their responses resonate with users is critical for successful interaction. This competition presents a unique opportunity to tackle this challenge with real-world data and help us bridge the gap between LLM capability and human preference.\nWe utilized a large dataset collected from Chatbot Arena, where users chat with two anonymous LLMs and choose the answer they prefer. Your task in this competition is to predict which response a user will prefer in these head-to-head battles.\nThis challenge aligns with the concept of \"reward models\" or \"preference models\" in reinforcement learning from human feedback (RLHF). Previous research has identified limitations in directly prompting an existing LLM for preference predictions. These limitations often stem from biases such as favoring responses presented first (position bias), being overly verbose (verbosity bias), or exhibiting self-promotion (self-enhancement bias).\nWe encourage you to explore various machine-learning techniques to build a model that can effectively predict user preferences. Your work will be instrumental in developing LLMs that can tailor responses to individual user preferences, ultimately leading to more user-friendly and widely accepted AI-powered conversation systems.\nThis competition challenges you to predict which responses users will prefer in a head-to-head battle between chatbots powered by large language models (LLMs).\nHow Kaggle\u2019s Competitions Work\n\nJoin the Competition\nRead about the challenge description, accept the Competition Rules and gain access to the competition dataset.\nGet to Work\nCreate a Kaggle Notebook (see Code Requirements for more details), import the competition data, build models, and generate a prediction file.\nMake a Submission\nSubmit your notebook to the competition!\nCheck the Leaderboard\nSee how your model ranks against other Kagglers on our leaderboard. \nImprove Your Score\nCheck out the discussion forum to find lots of tutorials and insights from other competitors.\n\n\n  Kaggle Lingo Video\n  You may run into unfamiliar lingo as you dig into the Kaggle discussion forums and public notebooks. Check out  Dr. Rachael Tatman\u2019s video on Kaggle Lingo to get up to speed!\n\nGot it! I\u2019m ready to get started. Where do I get help if I need it?\n\nFor Competition Help: Competition Discussion Forum\n\nKaggle doesn\u2019t have a dedicated team to help troubleshoot your code so you\u2019ll typically find that you receive a response more quickly by asking your question in the appropriate forum. The forums are full of useful information on the data, metric, and different approaches. We encourage you to use the forums often. If you share your knowledge, you'll find that others will share a lot in turn!\nA Last Word on Kaggle Notebooks\nAs we mentioned before, Kaggle Notebooks is our no-setup, customizable, Jupyter Notebooks environment with no-cost GPUs and a huge repository of community published data & code.\nIn every competition, you\u2019ll find many Notebooks shared with incredible insights. It\u2019s an invaluable resource worth becoming familiar with. Check out this competition\u2019s Notebooks here.",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting",
+    "title": "jane-street-real-time-market-data-forecasting",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/84493/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=nbuVJWsT5kWLDOvkSLxFly61UdQwiUSVhlHOYzJss7KQLGbSJqQOSe8iytF%2BO7cQmmTuxHIR8Dy909BApPv%2FXRDvLGFUfL3oMHJZ9dV%2Bg%2BOA%2BdrdeFHn%2BmNdUiLGhh%2BChL%2BB%2FGBoeUxRkfeqYnUgirn2YGVsxr3gAvRbUDt5nliTlh3HZ%2BYsocqNQ1IfHzrui7D1%2BQzF2a7s5cAsCTynjRcUllxR339fBIXjkC9lGIkZVTazIgAw7EIKqTJCAEQHBFyIzvJCbfB9rb13hZB3hZK2LIQ5aY%2F%2Bcl6WZaz6qrRdSbls8OOn5dAZ%2FyGgmFBPOF4XMAVtqi1I0GoCgkAupw%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/84493/images/header",
+    "organizer": "Maanit Desai, Yirun Zhang, Ryan Holbrook, Kait O'Neil, and Maggie Demkin. Jane Street Real-Time Market Data Forecasting. https://kaggle.com/competitions/jane-street-real-time-market-data-forecasting, 2024. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-media/competitions/Jane%20Street/Kaggle_Logo_400pxl%20x%20400pxl-04.png",
+    "tags": [
+      "Finance",
+      "Finance",
+      "Regression",
+      "Regression",
+      "Tabular",
+      "Tabular",
+      "Custom Metric"
+    ],
+    "abstract": "In this competition, hosted by Jane Street, you'll build a model using real-world data derived from production systems, which offers a glimpse into the daily challenges of successful trading. This challenge highlights the difficulties in modeling financial markets, including fat-tailed distributions, non-stationary time series, and sudden shifts in market behavior.\n\nStart",
+    "description": "When approaching modeling problems in modern financial markets, there are many reasons to believe that the problems you are trying to solve are impossible. Even if you put aside the beliefs that the prices of financial instruments rationally reflect all available information, you\u2019ll have to grapple with time series and distributions that have properties you don\u2019t encounter in other sorts of modeling problems. Distributions can be famously fat-tailed, time series can be non-stationary, and data can generally fail to satisfy a lot of the underlying assumptions on which very successful statistical approaches rely. Layer on all of this the fact that the financial markets are ultimately a human endeavor involving a large number of individuals and institutions that are constantly changing with advances in technology and shifts in society, and responding to economic and geopolitical issues as they arise - and you can start to get a sense of the difficulties involved!\nIn this challenge, we ask you to build a model using real-world data derived from some of our production systems. This data gives a very close picture of some of the things we have to do every day to be successful at trading in modern financial markets. We\u2019ve assembled a collection of features and responders related to markets where we run automated trading strategies and are concerned about having good underlying models. To balance crafting a challenging, relevant problem that ties into our business while respecting the proprietary and highly competitive nature of our trading, you will notice that we have anonymized and lightly obfuscated some of the features and responders we present in the data. These modifications don\u2019t change the essence of the problem at hand, but they do allow us to give you a difficult task that meaningfully illustrates the work we do at Jane Street.\nJane Street has spent decades relentlessly innovating on all aspects of our trading, and building machine learning models to aid our decision-making. These models help us actively trade thousands of financial products each day across 200+ trading venues around the world. While this challenge only presents a tiny fraction of the quantitative problems Jane Streeters work on daily, we are very interested in seeing how the Kaggle community will approach this challenge, and in engaging with you about your solutions to the problem!",
+    "timeline": [
+      {
+        "date": "October 14, 2024",
+        "event": "Start date."
+      },
+      {
+        "date": "January 6, 2025",
+        "event": "Entry deadline. You must accept the competition rules before this date in order to compete."
+      },
+      {
+        "date": "January 6, 2025",
+        "event": "Team Merger deadline. This is the last day participants may join or merge teams."
+      },
+      {
+        "date": "January 13, 2025",
+        "event": "Final submission deadline."
+      },
+      {
+        "date": "July 12, 2025",
+        "event": "Competition End Date"
+      }
+    ],
+    "start_date": "October 14, 2024",
+    "end_date": "July 12, 2025",
+    "prize_details": "1st Place -   $50,000\n2nd Place - $25,000\n3rd Place -  $10,000\n4th - 10th Place - $5,000",
+    "prize_pool": "$50,000",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/spaceship-titanic",
+    "title": "spaceship-titanic",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/34377/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=fb1Y5MKNCpLzoP8N0oyM3WqrcZbfx8GnCole7EO9sVP86W93EDgwdQTWFM8P3gGmzPYMzr4nxsW9UpwMYdbigsSAgBcjJucl%2B%2BFdzuAljtuNeWqnlaxw6ZV9gLdglYMmLdfAHbpaVxL%2FPFMru34v%2FSqrgvANT2eO8pMo2%2Fls0iau1ix%2F4keDOWDMmehsFRabj30%2B7SzpqtsAzHHD%2FIcM7%2FnLkO%2BAnMhyd9wvLoxpMVMAHyXT%2FU3WT4bXlE%2BmxJ4DN%2BkZCD9VbxanpB3KJzcwFD88a%2FNXk9N0%2F3dvYx6CyxnBAwAIBPfdAlJL%2Fo6ed5xJq36uenHVxkTpa7qp32BJEA%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/34377/images/header",
+    "organizer": "Addison Howard, Ashley Chow, and Ryan Holbrook. Spaceship Titanic. https://kaggle.com/competitions/spaceship-titanic, 2022. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Beginner",
+      "Beginner",
+      "Tabular",
+      "Tabular",
+      "Binary Classification",
+      "Binary Classification",
+      "Categorization Accuracy"
+    ],
+    "description": "\ud83d\udce3\u00a0  Recommended Competition\n  We highly recommend Titanic - Machine Learning from Disaster to get familiar with the basics of machine learning and Kaggle competitions.\n\nWelcome to the year 2912, where your data science skills are needed to solve a cosmic mystery. We've received a transmission from four lightyears away and things aren't looking good.\nThe Spaceship Titanic was an interstellar passenger liner launched a month ago. With almost 13,000 passengers on board, the vessel set out on its maiden voyage transporting emigrants from our solar system to three newly habitable exoplanets orbiting nearby stars.\nWhile rounding Alpha Centauri en route to its first destination\u2014the torrid 55 Cancri E\u2014the unwary Spaceship Titanic collided with a spacetime anomaly hidden within a dust cloud. Sadly, it met a similar fate as its namesake from 1000 years before. Though the ship stayed intact, almost half of the passengers were transported to an alternate dimension!\n\nTo help rescue crews and retrieve the lost passengers, you are challenged to predict which passengers were transported by the anomaly using records recovered from the spaceship\u2019s damaged computer system.\nHelp save them and change history!\n\n  \ud83d\udca1\u00a0  Getting Started Notebook\n  To get started quickly, feel free to take advantage of this starter notebook.\n\nIf you want to talk with other users about this competition, come join our Discord! We've got channels for competitions, job postings and career discussions, resources, and socializing with your fellow data scientists. Follow the link here: https://discord.gg/kaggle\nAcknowledgments\nPhotos by Joel Filipe, Richard Gatley and ActionVance on Unsplash.",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/store-sales-time-series-forecasting",
+    "title": "store-sales-time-series-forecasting",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/29781/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=fXT2xZ7CfY0jRyeZ0wi3%2BxD6WDO0KyzE9rR0tZRo2wwamXL%2FkSFhTKpXt7fBVAa8kzuAOOaLh%2BVkxva8IHC0M5cSEYznqzjvd%2F8iCReWmtxf6GeJvl%2FQWfK1fJiKLTh2sLDLHtArjbZSHVaKfzwX38udznBwJDHe%2B32xKCHMb4Dka8ZsbqWwDY7117U8AkM9ZD8F8iZJ1V0i9LbhZK0t%2F%2BByTVPLwwGBqw9geuyCgtKmEcbkZKkyoD3bNqqNH%2BJ5MUS4vJmrA2hgkp6tPmNli01RMsfmY%2F8lmBmFT%2BT3HuCG1VaNj3nDidmPh4W6qPDNdiQoBJpKhlqc18lxm3LN5Q%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/29781/images/header",
+    "organizer": "Alexis Cook, DanB, inversion, and Ryan Holbrook. Store Sales - Time Series Forecasting. https://kaggle.com/competitions/store-sales-time-series-forecasting, 2021. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Tabular",
+      "Tabular",
+      "Time Series Analysis",
+      "Time Series Analysis",
+      "Beginner",
+      "Beginner",
+      "Root Mean Squared Logarithmic Error"
+    ],
+    "description": "Goal of the Competition\nIn this \u201cgetting started\u201d competition, you\u2019ll use time-series forecasting to forecast store sales on data from Corporaci\u00f3n Favorita, a large Ecuadorian-based grocery retailer.\nSpecifically, you'll build a model that more accurately predicts the unit sales for thousands of items sold at different Favorita stores. You'll practice your machine learning skills with an approachable training dataset of dates, store, and item information, promotions, and unit sales.\n\nGet Started\nWe highly recommend the Time Series course, which walks you through how to make your first submission.  The lessons in this course are inspired by winning solutions from past Kaggle time series forecasting competitions.\n\nContext\nForecasts aren\u2019t just for meteorologists. Governments forecast economic growth. Scientists attempt to predict the future population. And businesses forecast product demand\u2014a common task of professional data scientists. Forecasts are especially relevant to brick-and-mortar grocery stores, which must dance delicately with how much inventory to buy. Predict a little over, and grocers are stuck with overstocked, perishable goods. Guess a little under, and popular items quickly sell out, leading to lost revenue and upset customers. More accurate forecasting, thanks to machine learning, could help ensure retailers please customers by having just enough of the right products at the right time.\nCurrent subjective forecasting methods for retail have little data to back them up and are unlikely to be automated. The problem becomes even more complex as retailers add new locations with unique needs, new products, ever-transitioning seasonal tastes, and unpredictable product marketing. \nPotential Impact\nIf successful, you'll have flexed some new skills in a real world example. For grocery stores, more accurate forecasting can decrease food waste related to overstocking and improve customer satisfaction. The results of this ongoing competition, over time, might even ensure your local store has exactly what you need the next time you shop.",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/gan-getting-started",
+    "title": "gan-getting-started",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/21755/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=WPVQTfjon1f5RmaHRi%2B9Sbpp71jo2j%2FkA5AdUh290b0A4Nw622ytgb%2FI31Yhmu%2BIcESFwYSthO3edZWszp0oxECjWK0Tgg6yMf4AXGkdRtSGa4MHdV7x3w9ql3QHUcImNkr%2B%2BOAPZGz%2B77yCtZeAK7CRbKZ%2FQ7mS7PANFkPMc1gWPkw5xd%2Bgo7QncSKB0hMkBJdN%2F1syPoFKL6hn6EXup5gug2GFY8SM8m92ngbmJyi462C2Y6HMRgzT36ME9qQm7NpFA4xfapT6PzcSOht5nLD045hUNy1L%2Ft8SihVoLe0fcPKEaOUXFeSsIR%2BBZahyGMoHwotrtCz84%2FgsqXMpuA%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/21755/images/header",
+    "organizer": "Amy Jang, Ana Sofia Uzsoy, and Phil Culliton. I\u2019m Something of a Painter Myself. https://kaggle.com/competitions/gan-getting-started, 2020. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Image",
+      "Image",
+      "GAN",
+      "GAN",
+      "Custom Metric"
+    ],
+    "description": "\u201cEvery artist dips his brush in his own soul, and paints his own nature into his pictures.\u201d\n  -Henry Ward Beecher\n\nWe recognize the works of artists through their unique style, such as color choices or brush strokes. The \u201cje ne sais quoi\u201d of artists like Claude Monet can now be imitated with algorithms thanks to generative adversarial networks (GANs). In this getting started competition, you will bring that style to your photos or recreate the style from scratch!\nComputer vision has advanced tremendously in recent years and GANs are now capable of mimicking objects in a very convincing way.  But creating museum-worthy masterpieces is thought of to be, well, more art than science. So can (data) science, in the form of GANs, trick classifiers into believing you\u2019ve created a true Monet? That\u2019s the challenge you\u2019ll take on!\nThe Challenge:\nA GAN consists of at least two neural networks: a generator model and a discriminator model. The generator is a neural network that creates the images. For our competition, you should generate images in the style of Monet. This generator is trained using a discriminator.\nThe two models will work against each other, with the generator trying to trick the discriminator, and the discriminator trying to accurately classify the real vs. generated images.\nYour task is to build a GAN that generates 7,000 to 10,000 Monet-style images. \nGetting Started:\nDetails on the dataset can be found here and an overview of the evaluation process can be found here.\nTo learn how to submit and answers to other FAQs, review the Frequently Asked Questions.\n\nRecommended Tutorial\nWe highly recommend Amy Jang's notebook  that goes over the basics of loading data from TFRecords, using TPUs, and building a CycleGAN.\n\nAlthough the competition dataset only includes Monet images, check out this dataset for Cezanne, Ukiyo-e, and Van Gogh paintings to run your GAN on.",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/contradictory-my-dear-watson",
+    "title": "contradictory-my-dear-watson",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/21733/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=y0E%2BF3bl9Oryw%2Fv3JzbjqfBnhvt08JwGzmv4Yqas2iwFRKy8GWkArsOeJzTmlfIvQnbFHsKVvanySevRQyhCQ9mrJ2m8ed9SdQXzGUeOiNoeu1RhbvvqBV7XjtmU%2F%2FA8uOAuRiqICy3JvPPuEBrklhRSjZ7J29VFw%2BXzoQ860s3aCWTAtKpi3I2dFbKtkim1hmbCpGgsTd9jRhgFPlTZSSFXarXig%2Fask0Bf1KSLHrSv3RwqKSVoqKKTEuL3QPEQ9atW%2FzgZoQrIKHPm01lSH5isvryWAAlWhxYZNKkMr%2F4iEMpjiyMcLUCOV2PZdaWdS4cm2xA7QkscuWjWoZMJHA%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/21733/images/header",
+    "organizer": "Amy Jang, Ana Sofia Uzsoy, and Phil Culliton. Contradictory, My Dear Watson. https://kaggle.com/competitions/contradictory-my-dear-watson, 2020. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Text",
+      "Text",
+      "Multiclass Classification",
+      "Multiclass Classification",
+      "NLP",
+      "NLP",
+      "Categorization Accuracy"
+    ],
+    "description": "\"\u2026when you have eliminated the impossible,\nwhatever remains, however improbable, must be the truth\"\n  -Sir Arthur Conan Doyle\n\nOur brains process the meaning of a sentence like this rather quickly. \nWe're able to surmise:\n\nSome things to be true: \"You can find the right answer through the process of elimination.\u201d\nOthers that may have truth: \"Ideas that are improbable are not impossible!\"\nAnd some claims are clearly contradictory: \"Things that you have ruled out as impossible are where the truth lies.\"\n\nNatural language processing (NLP) has grown increasingly elaborate over the past few years. Machine learning models tackle question answering, text extraction, sentence generation, and many other complex tasks. But, can machines determine the relationships between sentences, or is that still left to humans? If NLP can be applied between sentences, this could have profound implications for fact-checking, identifying fake news, analyzing text, and much more. \nThe Challenge:\nIf you have two sentences, there are three ways they could be related: one could entail the other, one could contradict the other, or they could be unrelated. Natural Language Inferencing (NLI) is a popular NLP problem that involves determining how pairs of sentences (consisting of a premise and a hypothesis) are related. \nYour task is to create an NLI model that assigns labels of 0, 1, or 2 (corresponding to entailment, neutral, and contradiction) to pairs of premises and hypotheses. To make things more interesting, the train and test set include text in fifteen different languages! You can find more details on the dataset by reviewing the Data page.\nToday, the most common approaches to NLI problems include using embeddings and transformers like BERT. In this competition, we\u2019re providing a starter notebook to try your hand at this problem using the power of Tensor Processing Units (TPUs). TPUs are powerful hardware accelerators specialized in deep learning tasks, including Natural Language Processing. Kaggle provides all users TPU Quota at no cost, which you can use to explore this competition. Check out our TPU documentation and Kaggle\u2019s YouTube playlist for more information and resources.\n\nRecommended Tutorial\nWe highly recommend this excellent tutorial on using KerasNLP to solve this problem, from the Keras team as well as Ana Sofia Uzsoy\u2019s Tutorial that walks you through creating your very first submission step by step with TPUs and BERT.\n\nThis is a great opportunity to flex your NLP muscles and solve an exciting problem!\nDisclaimer: The dataset for this competition contains text that may be considered profane, vulgar, or offensive.",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/tpu-getting-started",
+    "title": "tpu-getting-started",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/21154/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=14c3t%2B%2F1JC2FcpF7ClcX2InKU%2Fb9vyJmxiZUuKCqG5DLK6W7OJ6h%2FUeWP8OBk7lRGKr4VNHYL%2FbmPrZElzgNclUmCoB%2BorRBr%2Fsmqme7NW2UCh0CarUN0%2FHhLmlayENRJAHYn1rIgMG2hgz084NAfhMDw6tCZ0RlM2sojmIoIw7fBYU5A7pJJLIWou3z0lebQgcTS7Vwb0xxcCDu4D7fAysUgeBzYqa3cOxwSt1e1lMhMCLMisGMmuOAgBzqKailmjcZIXCpmOfFrYAep1Nn2vabXM7qHO%2FMYkTqcWFQdk8f6j9dKplsYq1UUN0iMSOcZRnPl3LhcDSZwzPiHaLCpA%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/21154/images/header",
+    "organizer": "Alexis Cook, Phil Culliton, and Ryan Holbrook. Petals to the Metal - Flower Classification on TPU. https://kaggle.com/competitions/tpu-getting-started, 2020. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Image",
+      "Image",
+      "Multiclass Classification",
+      "Multiclass Classification",
+      "F-Score (Macro)"
+    ],
+    "description": "Learn how to use Tensor Processing Units (TPUs) on Kaggle\nTPUs are powerful hardware accelerators specialized in deep learning tasks. They were developed (and first used) by Google to process large image databases, such as extracting all the text from Street View. This competition is designed for you to give TPUs a try.\nTPU quotas are available on Kaggle at no cost to users.\nWatch the video below to see how to get started!  You can follow along with this notebook.\n\n  \n\nThe Challenge\nIt\u2019s difficult to fathom just how vast and diverse our natural world is.\nThere are over 5,000 species of mammals, 10,000 species of birds, 30,000 species of fish \u2013 and astonishingly, over 400,000 different types of flowers.\nIn this competition, you\u2019re challenged to build a machine learning model that identifies the type of flowers in a dataset of images (for simplicity, we\u2019re sticking to just over 100 types).\n\nRecommended Tutorial\nWe highly recommend Ryan Holbrook\u2019s Tutorial that walks you through making your very first submission step by step.\n\nHave Questions?\nKaggle Data Scientists will be actively monitoring the competition forum - your fellow data scientists and TPU users will be there too! If you have a question or need help troubleshooting, that\u2019s the best place to find help.\n\nLearn More\nCheck out  Kaggle\u2019s Youtube playlist for more videos introducing TPUs.\nRead the TPU documentation for more information and resources.\nMany thanks to Martin G\u00f6rner, Google Developer Advocate and author of Tensorflow without a PhD for his tireless work on the dataset, the notebooks, and the original competition that this Getting Started competition draws from.",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/connectx",
+    "title": "connectx",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/17651/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=5BxbVNfvlhzOKHO6oh4My%2FFhAABNJGHA1S7jGNgwLOBHKqzLsLT7aEJ8vrDUUep%2FFiu0C5eaCneBe87tDkLJd%2BjgBhPIfwnHx%2BcjZD%2Fa86SVxMlB5wJYjXzLmNn8IuJ4Y9YoK8fLwAna%2Ff%2FY81PQPFE2C4zBB1xPlOk9j7pPTDQf2kUnvhzvowNcY%2FJE68Z%2FTfh5Gbmc5aYv23uB0IhynJL7zg%2FVo0T75v8K4HqrV7sbEOo4UI98ecO1OdngVm8YaJIwEdw1PuJm%2FMV9S2ePw4bQ5rmu26vaiCIYt%2Fh8%2FrLTm51qJFEKUN505rWyMgjCBam3TWa3%2FS8D5wHZ3bTvIQ%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/17592/images/header",
+    "organizer": "Adam, Addison Howard, and Bovard Doerschuk-Tiberi. Connect X. https://kaggle.com/competitions/connectx, 2020. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Simulations",
+      "Simulations",
+      "Custom Metric"
+    ],
+    "description": "We\u2019re excited to announce a beta-version of a brand-new type of ML competition called Simulations. In Simulation Competitions, you\u2019ll compete against a set of rules, rather than against an evaluation metric. To enter, accept the rules and create a python submission file that can \u201cplay\u201d against a computer, or another user.\nThe Challenge\n\nIn this game, your objective is to get a certain number of your checkers in a row horizontally, vertically, or diagonally on the game board before your opponent. When it's your turn, you \u201cdrop\u201d one of your checkers into one of the columns at the top of the board. Then, let your opponent take their turn. This means each move may be trying to either win for you, or trying to stop your opponent from winning. The default number is four-in-a-row, but we\u2019ll have other options to come soon.\nBackground History\nFor the past 10 years, our competitions have been mostly focused on supervised machine learning. The field has grown, and we want to continue to provide the data science community cutting-edge opportunities to challenge themselves and grow their skills.\nSo, what\u2019s next? Reinforcement learning is clearly a crucial piece in the next wave of data science learning. We hope that Simulation Competitions will provide the opportunity for Kagglers to practice and hone this burgeoning skill.\nHow is this Competition Different?\nInstead of submitting a CSV file, or a Kaggle Notebook, you will submit a Python .py file (more submission options are in development). You\u2019ll also notice that the leaderboard is not based on how accurate your model is but rather how well you\u2019ve performed against other users. See Evaluation for more details.\nWe\u2019d Love Your Feedback\nThis competition is a low-stakes, trial-run introduction. We\u2019re considering this a beta launch \u2013 there are complicated new mechanics in play and we\u2019re still working on refining the process. We\u2019d love your help testing the experience and want to hear your feedback.\nPlease note that we may make changes throughout the competition that could include things like resetting the leaderboard, invalidating episodes, making changes to the interface, or changing the environment configuration (e.g. modifying the number of columns, rows, or tokens in a row required to win, etc).",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/nlp-getting-started",
+    "title": "nlp-getting-started",
+    "logo_url": "https://storage.googleapis.com/kaggle-media/competitions/nlp-getting-started.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=c60MhmjFUmW6o5qzRbyxhuJ1J18gQJzMd04347ObVzg7jI0cDgflNu7nj4k%2BfAGMVpp9ZEDuWOphC8YsLcWev28kPEDIUsy51HHcW%2BrBE5UZFRWzQ6QL3doGdcRxUmNfjsC%2FHIuvi6dTKp7bPO7c5WFm0cQQO6w17X0kWdesQtWJ5B8DBWGCVJDZDbhHJxVzvlwPijLTLEJ%2FzE0owrYzI4RL98m5BwCARhRU9OXEOoUZnylBtFErnbt2GYHBY3a2jH8Owlw%2F7NOtzeLkHCpA70kUlJCH%2FRiriqJhDFRNvMbHKC%2Bhk1fNgfhkmS%2BO4goeGt3mKa4GSeoHDiMQy0FDaQ%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/17777/images/header",
+    "organizer": "Addison Howard, devrishi, Phil Culliton, and Yufeng Guo. Natural Language Processing with Disaster Tweets. https://kaggle.com/competitions/nlp-getting-started, 2019. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Text",
+      "Text",
+      "Binary Classification",
+      "Binary Classification",
+      "NLP",
+      "NLP",
+      "Custom Metric"
+    ],
+    "description": "Welcome to one of our \"Getting Started\" competitions \ud83d\udc4b\nThis particular challenge is perfect for data scientists looking to get started with Natural Language Processing. The competition dataset is not too big, and even if you don\u2019t have much personal computing power, you can do all of the work in our free, no-setup, Jupyter Notebooks environment called Kaggle Notebooks.\nIf you want to talk with other users about this competition, come join our Discord! We've got channels for competitions, job postings and career discussions, resources, and socializing with your fellow data scientists. Follow the link here: https://discord.gg/kaggle\nCompetition Description\nTwitter has become an important communication channel in times of emergency.\nThe ubiquitousness of smartphones enables people to announce an emergency they\u2019re observing in real-time. Because of this, more agencies are interested in programatically monitoring Twitter (i.e. disaster relief organizations and news agencies).\nBut, it\u2019s not always clear whether a person\u2019s words are actually announcing a disaster. Take this example:\n\n\nThe author explicitly uses the word \u201cABLAZE\u201d but means it metaphorically. This is clear to a human right away, especially with the visual aid. But it\u2019s less clear to a machine.\nIn this competition, you\u2019re challenged to build a machine learning model that predicts which Tweets are about real disasters and which one\u2019s aren\u2019t. You\u2019ll have access to a dataset of 10,000 tweets that were hand classified. If this is your first time working on an NLP problem, we've created a quick tutorial to get you up and running. \nDisclaimer: The dataset for this competition contains text that may be considered profane, vulgar, or offensive.\n\n  \ud83d\udca1Getting Started Notebook\n  To get started quickly, feel free to take advantage of this starter notebook.\n\nAcknowledgments\nThis dataset was created by the company figure-eight and originally shared on their \u2018Data For Everyone\u2019 website here.\nTweet source: https://twitter.com/AnyOtherAnnaK/status/629195955506708480",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/home-data-for-ml-course",
+    "title": "home-data-for-ml-course",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/10211/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=05jCSe6HfFaen9yb0idYRTAXLn7eSv2%2BrWoJrGaWByXl439we97dujxOkspTyOsV5kIjzDOH25NyhPP1BLXDUTdh2Sq0XeJWkKi5rMaSlF%2FAcwAM9pzejEojRQty%2BYuTUYQDgtJCZPIfVUC4yDbRZ2Mt97DxXvxsTdEwyqx2%2FRjwAbQkgvmAszBSAMxf9PUkaf9qgL3pO8ZXmxqan3Gg2OiXBhI375aSql0IQqMRmnp4tc0WQ%2BnOTTqL1mEzCUZHgeh%2FcX77GjwJ00DdTjoO4%2BdG3z0UkSeBrc4Mv8uz6KAdAZ4JLcysUlgHBRfWfRJL1DvcNB2EFbX7omtZudXnSg%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/10211/images/header",
+    "organizer": "DanB. Housing Prices Competition for Kaggle Learn Users. https://kaggle.com/competitions/home-data-for-ml-course, 2018. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Mean Absolute Error"
+    ],
+    "description": "Start here if...\nYou have some experience\u00a0with R or Python and\u00a0machine learning basics. This is a perfect competition for data science students\u00a0who have completed an online course in machine learning and are looking to expand their skill set before trying a featured competition.\u00a0\nCompetition Description\n\nAsk a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this playground competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.\nWith 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.\nPractice Skills\n\nCreative feature engineering\u00a0\nAdvanced regression techniques like random forest and gradient boosting\n\nAcknowledgments\nThe Ames Housing\u00a0dataset\u00a0was compiled\u00a0by Dean De Cock for use in data science education. It's an incredible alternative\u00a0for data scientists looking for a modernized and expanded version of the often cited Boston Housing dataset.",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques",
+    "title": "house-prices-advanced-regression-techniques",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/5407/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618969&Signature=YTwl8lA3JuJO81nug6f3%2BwyvlViKWWEUkWNy8Sz1FolvB8q3q6LBRAY2mrN3xp3ozIxacJxTi%2BUbX11a0%2FkPe%2B4KbFnw81SJMsP7iSDAEyXqEBu6iitquKThCdxHs6x4FXxluctT43THTKrYT%2BMZkM8gqlpzsja%2B8g2H%2Bfoj6T4iAle0vith3g5xUL0OWDjsVom3uUoHG%2FIGfT1AnIN3O8WgQYkTDlWaPnV6ZmHwyFKPD07rJCz%2B9ntythKtK8fgGYmAemWNLYu24aHYjNwI3WjOZcTuNG1%2BBH9k2F8mswiUyB82GQDPMM0xy45b80Gk4AFVkD%2B9Ip3yqCtQuxmfmQ%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/5407/images/header",
+    "organizer": "Anna Montoya and DataCanary. House Prices - Advanced Regression Techniques. https://kaggle.com/competitions/house-prices-advanced-regression-techniques, 2016. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Regression",
+      "Regression",
+      "Tabular",
+      "Tabular",
+      "Root Mean Squared Logarithmic Error"
+    ],
+    "description": "Start here if...\nYou have some experience\u00a0with R or Python and\u00a0machine learning basics. This is a perfect competition for data science students\u00a0who have completed an online course in machine learning and are looking to expand their skill set before trying a featured competition.\u00a0\n\n\ud83d\udca1Getting Started Notebook\nTo get started quickly, feel free to take advantage of this starter notebook.\n\nCompetition Description\n\nAsk a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this playground competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.\nWith 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.\nPractice Skills\n\nCreative feature engineering\u00a0\nAdvanced regression techniques like random forest and gradient boosting\n\nAcknowledgments\nThe Ames Housing\u00a0dataset\u00a0was compiled\u00a0by Dean De Cock for use in data science education. It's an incredible alternative\u00a0for data scientists looking for a modernized and expanded version of the often cited Boston Housing dataset.\u00a0\n\nPhoto by Tom Thain on Unsplash.",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/titanic",
+    "title": "titanic",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/3136/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618977&Signature=llRZfbL7rWCHHSyiYhqWEx7NFaxo%2BfTBckjIuQaEAasQWB4xVt4YxnzSKWMZ11EHpe0O0Xpai5RjReH6z83aBywalSjxGNy9CcbJkguPokvDKp0bBJ%2BLGsmNVN7fBIu2TKE7p0zDQ3RrsAnyxyqSpubPqSilGb%2FShnDmd6og%2B53QAuadwLN1Wf9hCD6iC9puSjNHepknQqFyACtn0TTebOTDV%2FQLWhMuYuf4%2BBzObd7y7c6zNXgqG6qTzfrIByKOqe6et0O738uEJJqOxeAd43Uqs4b955MvhhFCXPPdfW6WAjLoEZpHPSI0PlCbeEckY8cCc0me7TzR6CbRxaEoeA%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/3136/images/header",
+    "organizer": "Will Cukierski. Titanic - Machine Learning from Disaster. https://kaggle.com/competitions/titanic, 2012. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Binary Classification",
+      "Binary Classification",
+      "Tabular",
+      "Tabular",
+      "Beginner",
+      "Beginner",
+      "Categorization Accuracy"
+    ],
+    "description": "\ud83d\udc4b\ud83d\udef3\ufe0f Ahoy, welcome to Kaggle! You\u2019re in the right place.\nThis is the legendary Titanic ML competition \u2013 the best, first challenge for you to dive into ML competitions and familiarize yourself with how the Kaggle platform works.\nIf you want to talk with other users about this competition, come join our Discord! We've got channels for competitions, job postings and career discussions, resources, and socializing with your fellow data scientists. Follow the link here: https://discord.gg/kaggle\nThe competition is simple: use machine learning to create a model that predicts which passengers survived the Titanic shipwreck.\nRead on or watch the video below to explore more details. Once you\u2019re ready to start competing, click on the \"Join Competition button to create an account and gain access to the competition data. Then check out Alexis Cook\u2019s Titanic Tutorial that walks you through step by step how to make your first submission!\n\nThe Challenge\nThe sinking of the Titanic is one of the most infamous shipwrecks in history.\nOn April 15, 1912, during her maiden voyage, the widely considered \u201cunsinkable\u201d RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren\u2019t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew.\nWhile there was some element of luck involved in surviving, it seems some groups of people were more likely to survive than others.\nIn this challenge, we ask you to build a predictive model that answers the question: \u201cwhat sorts of people were more likely to survive?\u201d using passenger data (ie name, age, gender, socio-economic class, etc).\n\n  Recommended Tutorial\n  We highly recommend Alexis Cook\u2019s Titanic Tutorial that walks you through making your very first submission step by step and this starter notebook to get started.\n\nHow Kaggle\u2019s Competitions Work\n\nJoin the Competition\nRead about the challenge description, accept the Competition Rules and gain access to the competition dataset.\nGet to Work\nDownload the data, build models on it locally or on Kaggle Notebooks (our no-setup, customizable Jupyter Notebooks environment with free GPUs) and generate a prediction file.\nMake a Submission\nUpload your prediction as a submission on Kaggle and receive an accuracy score.\nCheck the Leaderboard\nSee how your model ranks against other Kagglers on our leaderboard. \nImprove Your Score\nCheck out the discussion forum to find lots of tutorials and insights from other competitors.\n\n\n  Kaggle Lingo Video\n  You may run into unfamiliar lingo as you dig into the Kaggle discussion forums and public notebooks. Check out  Dr. Rachael Tatman\u2019s video on Kaggle Lingo to get up to speed!\n\nWhat Data Will I Use in This Competition?\nIn this competition, you\u2019ll gain access to two similar datasets that include passenger information like name, age, gender, socio-economic class, etc. One dataset is titled train.csv and the other is titled test.csv.\nTrain.csv will contain the details of a subset of the passengers on board (891 to be exact) and importantly, will reveal whether they survived or not, also known as the \u201cground truth\u201d.\nThe test.csv dataset contains similar information but does not disclose the \u201cground truth\u201d for each passenger. It\u2019s your job to predict these outcomes.\nUsing the patterns you find in the train.csv data, predict whether the other 418 passengers on board (found in test.csv) survived.\nCheck out the \u201cData\u201d tab to explore the datasets even further. Once you feel you\u2019ve created a competitive model, submit it to Kaggle to see where your model stands on our leaderboard against other Kagglers.\nHow to Submit your Prediction to Kaggle\nOnce you\u2019re ready to make a submission and get on the leaderboard:\n\nClick on the \u201cSubmit Predictions\u201d button\n\nUpload a CSV file in the submission file format. You\u2019re able to submit 10 submissions a day.\n\n\nSubmission File Format:\nYou should submit a csv file with exactly 418 entries plus a header row. Your submission will show an error if you have extra columns (beyond PassengerId and Survived) or rows.\nThe file should have exactly 2 columns:\n\nPassengerId (sorted in any order)\nSurvived (contains your binary predictions: 1 for survived, 0 for deceased)\n\nGot it! I\u2019m ready to get started. Where do I get help if I need it?\n\nFor Competition Help: Titanic Discussion Forum\n\nKaggle doesn\u2019t have a dedicated team to help troubleshoot your code so you\u2019ll typically find that you receive a response more quickly by asking your question in the appropriate forum. The forums are full of useful information on the data, metric, and different approaches. We encourage you to use the forums often. If you share your knowledge, you'll find that others will share a lot in turn!\nA Last Word on Kaggle Notebooks\nAs we mentioned before, Kaggle Notebooks is our no-setup, customizable, Jupyter Notebooks environment with free GPUs and a huge repository of community published data & code.\nIn every competition, you\u2019ll find many Notebooks shared with incredible insights. It\u2019s an invaluable resource worth becoming familiar with. Check out this competition\u2019s Notebooks here.\n\ud83c\udfc3\u200d\u2640Ready to Compete? Join the Competition Here!",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  },
+  {
+    "url": "https://www.kaggle.com/competitions/digit-recognizer",
+    "title": "digit-recognizer",
+    "logo_url": "https://storage.googleapis.com/kaggle-competitions/kaggle/3004/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1743618977&Signature=2ycdzg3wpAqplM5g9YKdkWa8j4eiGyx9n80yKjCiSGpoz2SUI3%2FOdyepVlHhYHb91Zg8MMWCHjzhjljejU4uK4oL4aDtR4er61QFrhc3s29KwZHt4W9MOhcN0zMG8U0kt9CjKNV1e%2FMfwDdOZTMcucom9443wZfI9h4bWF%2BhXid12i06Q2LTdl6glTLonppYQQLtwAhinfgpi4k67oqlXBB4jpD7nqSJuzH6OEPpiwhOexYFtO8iczVdjq1pTFaHtNclsRzW%2BoBFR0uhP7PwPWRXoaxYvffYZbp2SLWBZ6aJwMzyrc8l6iZrIuzHy%2FExYHJ%2BO76XqKQF2JirafpIiQ%3D%3D",
+    "banner_url": "https://www.kaggle.com/competitions/3004/images/header",
+    "organizer": "AstroDave and Will Cukierski. Digit Recognizer. https://kaggle.com/competitions/digit-recognizer, 2012. Kaggle.",
+    "organizer_logo_url": "https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png",
+    "tags": [
+      "This competition runs indefinitely with a rolling leaderboard. Learn more",
+      "Tabular",
+      "Tabular",
+      "Image",
+      "Image",
+      "Multiclass Classification",
+      "Multiclass Classification",
+      "Categorization Accuracy"
+    ],
+    "description": "Start here if...\nYou have some experience with R or Python and machine learning basics, but you\u2019re new to computer vision. This competition is the perfect introduction to techniques like neural networks using a classic dataset including pre-extracted features.\n\n\nCompetition Description\nMNIST (\"Modified National Institute of Standards and Technology\") is the de facto \u201chello world\u201d dataset of computer vision. Since its release in 1999, this classic dataset of handwritten images has served as the basis for benchmarking classification algorithms. As new machine learning techniques emerge, MNIST remains a reliable resource for researchers and learners alike.\nIn this competition, your goal is to correctly identify digits from a dataset of tens of thousands of handwritten images. We\u2019ve curated a set of tutorial-style kernels which cover everything from regression to neural networks. We encourage you to experiment with different algorithms to learn first-hand what works well and how techniques compare.\nPractice Skills\n\n\nComputer vision fundamentals including simple neural networks\n\n\nClassification methods such as SVM and K-nearest neighbors\n\n\nAcknowledgements\u00a0\nMore details about the dataset, including algorithms that have been tried on it and their levels of success, can be found at http://yann.lecun.com/exdb/mnist/index.html. The dataset is made available under a Creative Commons Attribution-Share Alike 3.0 license.",
+    "start_date": "Unknown",
+    "end_date": "Unknown",
+    "prize_pool": "See competition details",
+    "source_platform": "kaggle"
+  }
+]
